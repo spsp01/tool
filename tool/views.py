@@ -19,10 +19,13 @@ class Extractor(TemplateView):
         form2 = ExtractUrlForm(request.POST)
         if form.is_valid():
             extractform = form.cleaned_data['extract']
-            links = aExtract(extractform)
+            links, alllinks, uniquelinks = aExtract(extractform)
+
 
         if form2.is_valid():
             extractform = form2.cleaned_data['urla']
-            links = gethtml(extractform)
+            links, alllinks, uniquelinks = gethtml(extractform)
+            print(alllinks)
+            print(uniquelinks)
 
-        return render(request, self.template_name, {'form': form,'form2':form2,'payload':links})
+        return render(request, self.template_name, {'form': form,'form2':form2,'payload':links,'alllinks':alllinks,'uniquelinks':uniquelinks})
