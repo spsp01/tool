@@ -1,5 +1,5 @@
 from django.urls import path
-from tool.views import Index, Extractor,Httpheader,Senutourl
+from tool.views import Index, Extractor,Httpheader,Senutourl,Googletop
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -9,4 +9,6 @@ urlpatterns = [
     path('extractor', Extractor.as_view(), name='extractor' ),
     path('httpheader', Httpheader.as_view(), name='httpheader' ),
     path('senuto', Senutourl.as_view(), name='senuto' ),
+    path('googletop', Senutourl.as_view(), name='googletop' ),
+
     ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

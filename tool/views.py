@@ -58,3 +58,17 @@ class Senutourl(TemplateView):
             extractform = form.cleaned_data['urlb']
             keywordspair= senutourl(extractform)
         return render(request, self.template_name,{'form': form,'keywordspair':keywordspair})
+
+class Googletop(TemplateView):
+    template_name = 'tool/senuto.html'
+
+    def get(self,request):
+        form = ExtractText()
+        return render(request, self.template_name, {'form': form,})
+
+    def post(self, request):
+        form = ExtractText(request.POST)
+        if form.is_valid():
+            extractform = form.cleaned_data['urlb']
+            keywordspair= senutourl(extractform)
+        return render(request, self.template_name,{'form': form,'keywordspair':keywordspair})
