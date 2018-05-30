@@ -1,0 +1,54 @@
+{% extends 'tool/base.html' %}
+{% load static %}
+{% block content %}
+<div class="my-3 my-md-5">
+    <div class="container">
+        <div class="page-header">
+            <h1 class="page-title">
+                Http header
+            </h1>
+        </div>
+     <div class="row">
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">URL</h3>
+                </div>
+                <div class="card-body">
+                    <form action='/httpheader' method="post">
+                        {% csrf_token %}
+                    <div class="form-group">
+                      <label for class="form-label">Wpisz adres URL</label>
+                      {{form.urla}}
+                    </div>
+                    <button class="btn btn-primary btn-block">Extract</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-lg-8">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">HttpHeader</h3>
+                </div>
+                <div class="card-body">
+    <ul>
+
+                    {% for key,value in payload.items %}
+                    <li>{{key}}:{{value}}</li>
+                    {% endfor %}
+
+                   </ul>
+
+                </div>
+            </div>
+
+        </div>
+         </div>
+    </div>
+
+    </div>
+
+{% endblock content %}

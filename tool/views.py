@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView, View
-from tool.forms import ExtractForm,ExtractUrlForm
-from tool.utils import aExtract,gethtml
+from tool.forms import ExtractForm,ExtractUrlForm,ExtractText
+from tool.utils import aExtract,gethtml,httpresponse,senutourl
 
 class Index(TemplateView):
     template_name = 'tool/index.html'
@@ -29,3 +29,32 @@ class Extractor(TemplateView):
             print(uniquelinks)
 
         return render(request, self.template_name, {'form': form,'form2':form2,'payload':links,'alllinks':alllinks,'uniquelinks':uniquelinks})
+
+
+class Httpheader(TemplateView):
+    template_name = 'tool/httpheader.html'
+
+    def get(self,request):
+        form = ExtractUrlForm()
+        return render(request, self.template_name, {'form': form,})
+
+    def post(self, request):
+        form = ExtractUrlForm(request.POST)
+        if form.is_valid():
+            extractform = form.cleaned_data['urla']
+            httpresp= httpresponse(extractform)
+        return render(request, self.template_name,{'form': form,'payload':httpresp})
+
+class Senutourl(TemplateView):
+    template_name = 'tool/senuto.html'
+
+    def get(self,request):
+        form = ExtractText()
+        return render(request, self.template_name, {'form': form,})
+
+    def post(self, request):
+        form = ExtractText(request.POST)
+        if form.is_valid():
+            extractform = form.cleaned_data['urlb']
+            keywords,positions= senutourl(extractform)
+        return render(request, self.template_name,{'form': form,'keywords':keywords,'positions':positions})
