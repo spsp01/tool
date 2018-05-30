@@ -48,4 +48,4 @@ def senutourl(url):
     return(keywordspair)
 
 
-senutourl('axa.pl/')
+

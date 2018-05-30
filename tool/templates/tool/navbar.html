@@ -14,19 +14,19 @@
               <div class="col-lg order-lg-first">
                 <ul class="nav nav-tabs border-0 flex-column flex-lg-row">
                   <li class="nav-item">
-                    <a href="/" class="nav-link active"><i class="fe fe-home"></i>Główna</a>
+                    <a href="/" class="nav-link {% if active == 'home' %} active {% endif %}"><i class="fe fe-home"></i>Główna</a>
                   </li>
                   <li class="nav-item">
-                    <a href="/extractor" class="nav-link" ><i class="fe fe-anchor"></i>Link Extractor</a>
+                    <a href="{% url 'toolseo:extractor' %}" class="nav-link {% if active == 'extractor' %} active {% endif %}"><i class="fe fe-anchor"></i>Link Extractor</a>
                   </li>
                    <li class="nav-item">
-                    <a href="/httpheader" class="nav-link" ><i class="fe fe-book-open"></i>Httpheader</a>
+                    <a href="{% url 'toolseo:httpheader' %}" class="nav-link {% if active == 'httpheader' %} active {% endif %}" ><i class="fe fe-book-open"></i>Httpheader</a>
                   </li>
                   <li class="nav-item">
-                    <a href="/senuto" class="nav-link" ><i class="fe fe-book-open"></i>Senuto URL</a>
+                    <a href="{% url 'toolseo:senuto' %}" class="nav-link {% if active == 'senuto' %} active {% endif %}" ><i class="fe fe-book-open"></i>Senuto URL</a>
                   </li>
                    <li class="nav-item">
-                    <a href="/googletop" class="nav-link" ><i class="fe fe-book-open"></i>Google TOP</a>
+                    <a href="{% url 'toolseo:googletop' %}" class="nav-link {% if active == 'googletop' %} active {% endif %}" ><i class="fe fe-book-open"></i>Google TOP</a>
                   </li>
                 </ul>
               </div>

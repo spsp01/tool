@@ -9,6 +9,6 @@ urlpatterns = [
     path('extractor', Extractor.as_view(), name='extractor' ),
     path('httpheader', Httpheader.as_view(), name='httpheader' ),
     path('senuto', Senutourl.as_view(), name='senuto' ),
-    path('googletop', Senutourl.as_view(), name='googletop' ),
+    path('googletop', Googletop.as_view(), name='googletop' ),
 
     ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
