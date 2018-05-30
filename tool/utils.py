@@ -43,8 +43,9 @@ def senutourl(url):
             kp ={}
             kp['keyword'] = i.split(',')[0].replace('"', '')
             kp['position'] = i.split(',')[1]
+            kp['llow'] = i.split(',')[3]
             keywordspair.append(kp)
-    return(keywords,position)
+    return(keywordspair)
 
 
 senutourl('axa.pl/')

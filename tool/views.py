@@ -56,5 +56,5 @@ class Senutourl(TemplateView):
         form = ExtractText(request.POST)
         if form.is_valid():
             extractform = form.cleaned_data['urlb']
-            keywords,positions= senutourl(extractform)
-        return render(request, self.template_name,{'form': form,'keywords':keywords,'positions':positions})
+            keywordspair= senutourl(extractform)
+        return render(request, self.template_name,{'form': form,'keywordspair':keywordspair})
