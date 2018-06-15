@@ -5,23 +5,23 @@
     <div class="container">
         <div class="page-header">
             <h1 class="page-title">
-                Google TOP
+                Google Site
             </h1>
         </div>
      <div class="row">
         <div class="col-lg-4">
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">Fraza</h3>
+                    <h3 class="card-title">Domena</h3>
                 </div>
                 <div class="card-body">
-                    <form action='/googletop' method="post">
+                    <form action='/googlesite' method="post">
                         {% csrf_token %}
                     <div class="form-group">
-                      <label for class="form-label">Wpisz frazę</label>
+                      <label for class="form-label">Wpisz domenę</label>
                       {{form.urlb}}
                     </div>
-                    <button class="btn btn-primary btn-block">Extract</button>
+                    <button class="btn btn-primary btn-block">Site</button>
                     </form>
                 </div>
             </div>
@@ -31,7 +31,7 @@
         <div class="col-lg-8">
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">Google TOP</h3>
+                    <h3 class="card-title">Google Site</h3>
                 </div>
                 <div class="card-body">
 

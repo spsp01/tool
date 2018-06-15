@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView, View
 from tool.forms import ExtractForm,ExtractUrlForm,ExtractText
-from tool.utils import aExtract,gethtml,httpresponse,senutourl
+from tool.utils import aExtract,gethtml,httpresponse,senutourl,getgooglelinks,getsitelinks
 
 class Index(TemplateView):
     template_name = 'tool/index.html'
@@ -60,7 +60,7 @@ class Senutourl(TemplateView):
         return render(request, self.template_name,{'form': form,'keywordspair':keywordspair})
 
 class Googletop(TemplateView):
-    template_name = 'tool/senuto.html'
+    template_name = 'tool/googletop.html'
 
     def get(self,request):
         form = ExtractText()
@@ -70,5 +70,21 @@ class Googletop(TemplateView):
         form = ExtractText(request.POST)
         if form.is_valid():
             extractform = form.cleaned_data['urlb']
-            keywordspair= senutourl(extractform)
-        return render(request, self.template_name,{'form': form,'keywordspair':keywordspair})
+            links= getgooglelinks(extractform)
+
+        return render(request, self.template_name,{'form': form,'links':links})
+
+class Googlesite(TemplateView):
+    template_name = 'tool/googlesite.html'
+
+    def get(self,request):
+        form = ExtractText()
+        return render(request, self.template_name, {'form': form,})
+
+    def post(self, request):
+        form = ExtractText(request.POST)
+        if form.is_valid():
+            extractform = form.cleaned_data['urlb']
+            links= getsitelinks(extractform)
+
+        return render(request, self.template_name,{'form': form,'links':links})
