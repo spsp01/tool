@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView, View
 from tool.forms import ExtractForm,ExtractUrlForm,ExtractText
-from tool.utils import aExtract,gethtml,httpresponse,senutourl,getgooglelinks,getsitelinks
+from tool.utils.utils import aExtract,gethtml,httpresponse,senutourl,getgooglelinks,getsitelinks
 
 class Index(TemplateView):
     template_name = 'tool/index.html'
