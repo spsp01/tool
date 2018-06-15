@@ -12,13 +12,13 @@
         <div class="col-lg-4">
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">Fraza</h3>
+                    <h3 class="card-title">URL</h3>
                 </div>
                 <div class="card-body">
-                    <form action='/googletop' method="post">
+                    <form action='/senuto' method="post">
                         {% csrf_token %}
                     <div class="form-group">
-                      <label for class="form-label">Wpisz frazę</label>
+                      <label for class="form-label">Wpisz adres URL</label>
                       {{form.urlb}}
                     </div>
                     <button class="btn btn-primary btn-block">Extract</button>
@@ -36,11 +36,21 @@
                 <div class="card-body">
 
 
-             <ol>
-                   {% for link in links %}
-                     <li>{{link}}</li>
+                    <table style="width:100%">
+                        <tr>
+                            <th>Positions</th>
+                            <th>Keyword</th>
+                            <th>Llow</th>
+
+                        </tr>
+                          {% for i in keywordspair %}
+                         <tr>
+                        <td>{{i.position}}</td>
+                        <td>{{i.keyword}} </td>
+                        <td>{{i.llow}}</td>
+                         </tr>
                            {% endfor %}
-             </ol>
+                    </table>
 
 
                 </div>
