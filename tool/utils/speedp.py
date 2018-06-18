@@ -11,14 +11,7 @@ def download(url):
     string = url+';'+str(req['ruleGroups']['SPEED']['score'])+';'+str(req['pageStats']['numberHosts'])+';'+str(req['pageStats']['numberJsResources'])+';'+str(req['pageStats']['numberCssResources'])+';'+str(req['pageStats']['numberResources'])+';'+str(req['pageStats']['imageResponseBytes'])
     print(string)
     return string
-    # print('Page Speed Result: '+ str(req['ruleGroups']['SPEED']['score']))
-    # print('Number of host: '+str(req['pageStats']['numberHosts']))
-    # print('JS Resources: '+str(req['pageStats']['numberJsResources']))
-    # print('CSS Resources: '+str(req['pageStats']['numberCssResources']))
-    # print('Total Resources: '+str(req['pageStats']['numberResources']))
-    # print('Total Image Size (in kb): '+str(req['pageStats']['imageResponseBytes']))
 
-#download('https://www.dyson.pl/suszarki-do-rak/airblade-v.aspx')
 with open('urls.txt','r',encoding='UTF-8') as f:
     content = f.readlines()
     content = [x.strip() for x in content]
