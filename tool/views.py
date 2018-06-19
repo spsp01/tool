@@ -2,6 +2,11 @@ from django.shortcuts import render
 from django.views.generic import TemplateView, View
 from tool.forms import ExtractForm,ExtractUrlForm,ExtractText
 from tool.utils.utils import aExtract,gethtml,httpresponse,senutourl,getgooglelinks,getsitelinks
+from tool.utils.speedp import download, createurljson
+from django.http import JsonResponse
+from django.http import HttpResponse
+from django.views.decorators.csrf import csrf_exempt
+
 
 class Index(TemplateView):
     template_name = 'tool/index.html'
@@ -88,3 +93,30 @@ class Googlesite(TemplateView):
             links= getsitelinks(extractform)
 
         return render(request, self.template_name,{'form': form,'links':links})
+
+class Speedpage(TemplateView):
+    template_name = 'tool/pagespeed.html'
+
+    def get(self,request):
+        form = ExtractText()
+        return render(request, self.template_name, {'form': form,})
+
+    def post(self, request):
+        form = ExtractText(request.POST)
+        if form.is_valid():
+            extractform = form.cleaned_data['urlb']
+            links= getsitelinks(extractform)
+
+        return render(request, self.template_name,{'form': form,'links':links})
+
+@csrf_exempt
+def profile(request):
+    b=request.POST
+    for i in b:
+        b = download(i)
+        html = "<html><body> " + b + " </body></html>"
+        c = b.split(';')
+        print(c[0])
+        data = {'d': b}
+        return JsonResponse(data)
+    #return HttpResponse(html)
