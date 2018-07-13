@@ -62,6 +62,7 @@ class Senutourl(TemplateView):
         if form.is_valid():
             extractform = form.cleaned_data['urlb']
             keywordspair= senutourl(extractform)
+
         return render(request, self.template_name,{'form': form,'keywordspair':keywordspair})
 
 class Googletop(TemplateView):
@@ -114,7 +115,7 @@ def profile(request):
     b=request.POST
     for i in b:
         b = download(i)
-        html = "<html><body> " + b + " </body></html>"
+        #html = "<html><body> " + b + " </body></html>"
         c = b.split(';')
         print(c[0])
         data = {'d': b}

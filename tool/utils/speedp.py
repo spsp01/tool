@@ -8,7 +8,7 @@ def createurljson(url,type):
 def download(url):
     urljson = createurljson(url,'desktop')
     req = requests.get(urljson, timeout=60).json()
-    string = url+';'+str(req['ruleGroups']['SPEED']['score'])+';'+str(req['pageStats']['numberHosts'])+';'+str(req['pageStats']['numberJsResources'])+';'+str(req['pageStats']['numberCssResources'])+';'+str(req['pageStats']['numberResources'])+';'+str(req['pageStats']['imageResponseBytes'])
+    string = url+';'+str(req['ruleGroups']['SPEED']['score'])+';'+str(req['pageStats']['numberHosts'])+';'+str(req['pageStats']['numberJsResources'])+';'+str(req['pageStats']['numberCssResources'])+';'+str(req['pageStats']['numberResources'])+';'+str(req['pageStats']['totalRequestBytes'])
     errors = ''
 
     print(string)
