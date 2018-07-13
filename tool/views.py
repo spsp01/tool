@@ -3,6 +3,7 @@ from django.views.generic import TemplateView, View
 from tool.forms import ExtractForm,ExtractUrlForm,ExtractText
 from tool.utils.utils import aExtract,gethtml,httpresponse,senutourl,getgooglelinks,getsitelinks
 from tool.utils.speedp import download, createurljson
+from tool.utils.screaming import NameScreaming
 from django.http import JsonResponse
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
@@ -109,6 +110,26 @@ class Speedpage(TemplateView):
             links= getsitelinks(extractform)
 
         return render(request, self.template_name,{'form': form,'links':links})
+
+class ScreamingFrog(TemplateView):
+    template_name = 'tool/screamingfrog.html'
+
+    def get(self,request):
+        name = NameScreaming.service()
+        summary = NameScreaming.summary()
+        internal =NameScreaming.internal()
+        response_codes = NameScreaming.response_codes()
+        uri = NameScreaming.uri()
+        page_titles = NameScreaming.page_titles()
+        meta_description = NameScreaming.meta_description()
+        h1 = NameScreaming.h1()
+        h2 = NameScreaming.h2()
+        images = NameScreaming.images()
+        return render(request, self.template_name, {'name':name,'summary': summary,'internal':internal,'response_codes':response_codes,
+                                                    'uri':uri,'page_titles':page_titles,'meta_description':meta_description,
+                                                    'h1':h1,'h2':h2,'images':images})
+
+
 
 @csrf_exempt
 def profile(request):

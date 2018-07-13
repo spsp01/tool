@@ -1,0 +1,188 @@
+{% extends 'tool/base.html' %}
+{% load static %}
+{% block content %}
+<div class="my-3 my-md-5">
+    <div class="container">
+        <div class="page-header">
+            <h1 class="page-title">
+                {{name}}
+            </h1>
+        </div>
+     <div class="row">
+        <div class="col-lg-4">
+
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Summary</h3>
+                </div>
+                <div class="card-body">
+                    <ul>
+                     {% for i in summary %}
+                            <li>{{i}}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+         <div class="col-lg-4">
+
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Internal</h3>
+                </div>
+                <div class="card-body">
+
+                    <ul>
+                        {% for i in internal %}
+                            <li>{{i}}</li>
+                        {% endfor %}
+
+
+                    </ul>
+
+
+                </div>
+            </div>
+
+        </div>
+         <div class="col-lg-4">
+
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Summary</h3>
+                </div>
+                <div class="card-body">
+
+                    {% for i in response_codes %}
+                            <li>{{i}}</li>
+                        {% endfor %}
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+             <div class="row">
+        <div class="col-lg-4">
+
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">URI</h3>
+                </div>
+                <div class="card-body">
+                    <ul>
+                     {% for i in uri %}
+                            <li>{{i}}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+         <div class="col-lg-4">
+
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Page Titles</h3>
+                </div>
+                <div class="card-body">
+
+                    <ul>
+                        {% for i in page_titles %}
+                            <li>{{i}}</li>
+                        {% endfor %}
+
+
+                    </ul>
+
+
+                </div>
+            </div>
+
+        </div>
+         <div class="col-lg-4">
+
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Meta Description</h3>
+                </div>
+                <div class="card-body">
+
+                    {% for i in meta_description %}
+                            <li>{{i}}</li>
+                        {% endfor %}
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+                 <div class="row">
+        <div class="col-lg-4">
+
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">H1</h3>
+                </div>
+                <div class="card-body">
+                    <ul>
+                     {% for i in h1 %}
+                            <li>{{i}}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+         <div class="col-lg-4">
+
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">H2</h3>
+                </div>
+                <div class="card-body">
+
+                    <ul>
+                        {% for i in h2 %}
+                            <li>{{i}}</li>
+                        {% endfor %}
+
+
+                    </ul>
+
+
+                </div>
+            </div>
+
+        </div>
+         <div class="col-lg-4">
+
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Images</h3>
+                </div>
+                <div class="card-body">
+
+                    {% for i in images %}
+                            <li>{{i}}</li>
+                        {% endfor %}
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    </div>
+
+
+{% endblock content %}
