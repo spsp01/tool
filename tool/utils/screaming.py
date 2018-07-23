@@ -1,4 +1,12 @@
 import csv
+import io
+
+def readcsvraport(csvfileraw):
+     decoded_file = csvfileraw.file.read().decode('utf-8')
+     io_string = io.StringIO(decoded_file)
+     csv_reader = csv.reader(io_string,delimiter=',', quotechar='"')
+     csvlist=list(csv_reader)
+     return(csvlist)
 
 
 class NameScreaming():
@@ -70,8 +78,3 @@ class NameScreaming():
         for i in range(108, 111):
             images.append(NameScreaming.rownumber(i))
         return images
-
-
-
-
-

@@ -13,9 +13,7 @@
               </div>
               <div class="col-lg order-lg-first">
                 <ul class="nav nav-tabs border-0 flex-column flex-lg-row">
-                  <li class="nav-item">
-                    <a href="/" class="nav-link {% if active == 'home' %} active {% endif %}"><i class="fe fe-home"></i>Główna</a>
-                  </li>
+
                   <li class="nav-item">
                     <a href="{% url 'toolseo:extractor' %}" class="nav-link {% if active == 'extractor' %} active {% endif %}"><i class="fe fe-anchor"></i>Link Extractor</a>
                   </li>
@@ -35,9 +33,14 @@
                     <a href="/speedp" class="nav-link" ><i class="fe fe-book-open"></i>Google PageSpeed</a>
                   </li>
                      </li>
-                  <li class="nav-item">
-                    <a href="/screaming" class="nav-link" ><i class="fe fe-book-open"></i>Screaming Raport</a>
-                  </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="javascript:void(0)" class="nav-link" data-toggle="dropdown"><i class="fe fe-file"></i>Screaming</a>
+                        <div class="dropdown-menu dropdown-menu-arrow">
+                            <a href="/screaming" class="dropdown-item ">Raport</a>
+                            <a href="/raport" class="dropdown-item ">Import</a>
+                        </div>
+                    </li>
                 </ul>
               </div>
             </div>

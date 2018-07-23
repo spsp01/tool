@@ -15,3 +15,8 @@ class ExtractText(forms.Form):
     urlb.widget.attrs['class'] = 'form-control'
 
 
+class UploadFileForm(forms.Form):
+    client = forms.CharField(max_length=50)
+    date_crawled = forms.DateField(widget=forms.widgets.DateInput())
+    file = forms.FileField()
+

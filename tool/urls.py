@@ -1,5 +1,5 @@
 from django.urls import path
-from tool.views import Index, Extractor,Httpheader,Senutourl,Googletop, Googlesite, profile, Speedpage,ScreamingFrog
+from tool.views import Index, Extractor,Httpheader,Senutourl,Googletop, Googlesite, profile, Speedpage,ScreamingFrog,RaportScreamingView,upload_file
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -13,5 +13,6 @@ urlpatterns = [
     path('googlesite', Googlesite.as_view(), name='googlesite' ),
     path('api',profile, name='profile'),
     path('speedp',Speedpage.as_view(), name='speedp'),
-    path('screaming',ScreamingFrog.as_view(), name='screaming')
-    ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    path('screaming',ScreamingFrog.as_view(), name='screaming'),
+    path('raport',upload_file, name='raport'),
+    ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)+static(settings.STATIC_URL, document_root=settings.MEDIA_URL)
