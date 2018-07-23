@@ -6,6 +6,19 @@ def readcsvraport(csvfileraw):
      io_string = io.StringIO(decoded_file)
      csv_reader = csv.reader(io_string,delimiter=',', quotechar='"')
      csvlist=list(csv_reader)
+     if not csvlist[216][1]:
+         csvlist[216][1] = 0
+     if not csvlist[217][1]:
+         csvlist[217][1] = 0
+     if not csvlist[217][1]:
+         csvlist[218][1] = 0
+     if not csvlist[217][1]:
+         csvlist[219][1] = 0
+     if not csvlist[217][1]:
+         csvlist[220][1] = 0
+     if not csvlist[217][1]:
+         csvlist[221][1] = 0
+
      return(csvlist)
 
 

@@ -110,6 +110,7 @@ class RaportScreaming(models.Model):
     href_missing_conf = models.IntegerField()
     href_inconsistent_language = models.IntegerField()
     href_noncanonical_conf  = models.IntegerField()
+    href_noindex_conf = models.IntegerField()
     href_incorrect_lanmguage_code = models.IntegerField()
     href_multiple_entries = models.IntegerField()
     href_missinf_self_ref = models.IntegerField()
