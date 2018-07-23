@@ -56,6 +56,7 @@ class RaportScreaming(models.Model):
     uri_uppercase = models.IntegerField()
     uri_duplicate = models.IntegerField()
     uri_parameters = models.IntegerField()
+    uri_over_115 = models.IntegerField()
     titles_all = models.IntegerField()
     titles_missing = models.IntegerField()
     titles_duplicate = models.IntegerField()
@@ -152,6 +153,7 @@ class Person(models.Model):
     name = models.CharField(max_length=30)
     email = models.EmailField(blank=True)
     birth_date = models.DateField()
+    birth_date2 = models.DateField()
     location = models.CharField(max_length=100, blank=True)
 
 # class CSVUpload(models.Model):

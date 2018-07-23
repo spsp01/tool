@@ -9,8 +9,8 @@ def top50g(keyword):
     chrome_options = Options()
     chrome_options.add_argument("--headless")
     d = webdriver.Chrome(chrome_options=chrome_options)
-    url_fraza = 'https://www.google.pl/search?q='+keyword+'&num=50'
-    base_url = d.get(url_fraza)
+    url_keyword = 'https://www.google.pl/search?q='+keyword+'&num=50'
+    base_url = d.get(url_keyword)
     a = d.find_elements_by_css_selector('h3.r a')
     urls = []
     for i in a:
