@@ -114,8 +114,8 @@ class ScreamingFrog(TemplateView):
     template_name = 'tool/screamingfrog.html'
 
     def get(self,request):
+        summary= RaportScreaming.objects.all()[1]
         name = NameScreaming.service()
-        summary = NameScreaming.summary()
         internal =NameScreaming.internal()
         response_codes = NameScreaming.response_codes()
         uri = NameScreaming.uri()

@@ -20,6 +20,7 @@ class UploadFileForm(forms.Form):
     date_crawled = forms.DateField(widget=forms.widgets.DateInput())
     file = forms.FileField()
     client.widget.attrs['class'] = 'form-control'
+    date_crawled.widget.attrs['class'] = 'form-control'
     file.widget.attrs['class'] = 'custom-file-input'
 
 

@@ -13,14 +13,13 @@
              <div class="col-lg-12">
                 <div class="card">
                   <div class="card-header">
-                    <h3 class="card-title">Import raport</h3>
+                    <h3 class="card-title">Klient</h3>
                   </div>
                     <div class="card-body">
-                    <div class="p-5">Import</div>
                      <form action='/raport' method="post" enctype="multipart/form-data">
                         {% csrf_token %}
                     <div class="form-group">
-                        <label class="form-label">Wybierz plik</label>
+                        <label class="form-label">Klient</label>
                       {{form.client}}
 
 
