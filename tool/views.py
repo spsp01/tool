@@ -230,7 +230,7 @@ def upload_file(request):
                                        h2_over_70 =data_raport[103][1],
                                        h2_multiple =data_raport[104][1],
                                        images_all =data_raport[107][1],
-                                       images_over =data_raport[109][1],
+                                       images_over =data_raport[108][1],
                                        images_missing_alt =data_raport[109][1],
                                        dir_all = data_raport[113][1],
                                        dir_canonical =data_raport[114][1],
