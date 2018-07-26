@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import TemplateView, View
+from django.views.generic import TemplateView, View, DetailView,ListView
 from tool.forms import ExtractForm,ExtractUrlForm,ExtractText, UploadFileForm
 from tool.utils.utils import aExtract,gethtml,httpresponse,senutourl,getgooglelinks,getsitelinks
 from tool.utils.speedp import download, createurljson
@@ -110,32 +110,26 @@ class Speedpage(TemplateView):
 
         return render(request, self.template_name,{'form': form,'links':links})
 
-class ScreamingFrog(TemplateView):
-    template_name = 'tool/screamingfrog.html'
-
-    def get(self,request):
-        summary= RaportScreaming.objects.all()[1]
-        name = NameScreaming.service()
-        internal =NameScreaming.internal()
-        response_codes = NameScreaming.response_codes()
-        uri = NameScreaming.uri()
-        page_titles = NameScreaming.page_titles()
-        meta_description = NameScreaming.meta_description()
-        h1 = NameScreaming.h1()
-        h2 = NameScreaming.h2()
-        images = NameScreaming.images()
-
-        return render(request, self.template_name, {'name':name,'summary': summary,'internal':internal,'response_codes':response_codes,
-                                                    'uri':uri,'page_titles':page_titles,'meta_description':meta_description,
-                                                    'h1':h1,'h2':h2,'images':images})
+class ScreamingFrog(ListView):
+    template_name = 'tool/screamingfrog_list.html'
+    model = RaportScreaming
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        return context
 
 
-class RaportScreamingView(TemplateView):
-    template_name = 'tool/importraport.html'
+class RaportScreamingView(DetailView):
+    model = RaportScreaming
+    template_name = 'tool/screamingfrog_detail.html'
+    def get_context_data(self, **kwargs):
+         context = super().get_context_data(**kwargs)
+         raport = context['object']
+         resources = str(round(5*(1- raport.internal_blocked_by_robots/raport.total_url_encountered),1)).replace(',','.')
+         codes = str(round(5*(raport.resp_success/raport.resp_all),1)).replace(',','.')
+         urladress = 5* (raport.uri_non_ascii/raport.uri_non_ascii)
+         context['add'] = {'zasoby':resources,'kody':codes}
+         return context
 
-    def get(self,request):
-        name= 'Kuba'
-        return render(request, self.template_name, {'name':name,})
 
 @csrf_exempt
 def profile(request):

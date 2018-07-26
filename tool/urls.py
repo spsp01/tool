@@ -13,6 +13,7 @@ urlpatterns = [
     path('googlesite', Googlesite.as_view(), name='googlesite' ),
     path('api',profile, name='profile'),
     path('speedp',Speedpage.as_view(), name='speedp'),
-    path('screaming',ScreamingFrog.as_view(), name='screaming'),
-    path('raport',upload_file, name='raport'),
+    path('raportlist',ScreamingFrog.as_view(), name='screaming'),
+    path('raport/<int:pk>',RaportScreamingView.as_view(), name='raport-detail'),
+    path('raportupload',upload_file, name='raport'),
     ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)+static(settings.STATIC_URL, document_root=settings.MEDIA_URL)

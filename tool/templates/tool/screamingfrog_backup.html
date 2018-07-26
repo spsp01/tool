@@ -1,0 +1,823 @@
+{% extends 'tool/base.html' %}
+{% load static %}
+{% block content %}
+<div class="my-3 my-md-5">
+    <div class="container">
+        <div class="page-header">
+            <h1 class="page-title">
+                {{object.client}}
+            </h1>
+            <div class="page-subtitle">{{object.date_crawled}}</div>
+
+        </div>
+
+     <div class="row">
+<div class="col-6 col-sm-4 col-lg-2">
+                <div class="card">
+                  <div class="card-body p-3 text-center">
+                    <div class="text-right text-green">
+                      6%
+                      <i class="fe fe-chevron-up"></i>
+                    </div>
+                    <div class="h1 m-0">5.0</div>
+                    <div class="text-muted mb-4">Zasoby</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-lg-2">
+                <div class="card">
+                  <div class="card-body p-3 text-center">
+                    <div class="text-right text-red">
+                      -3%
+                      <i class="fe fe-chevron-down"></i>
+                    </div>
+                    <div class="h1 m-0">4.9</div>
+                    <div class="text-muted mb-4">Kody odpowiedzi</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-lg-2">
+                <div class="card">
+                  <div class="card-body p-3 text-center">
+                    <div class="text-right text-green">
+                      9%
+                      <i class="fe fe-chevron-up"></i>
+                    </div>
+                    <div class="h1 m-0">4.8</div>
+                    <div class="text-muted mb-4">Budowa adresów URL</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-lg-2">
+                <div class="card">
+                  <div class="card-body p-3 text-center">
+                    <div class="text-right text-green">
+                      3%
+                      <i class="fe fe-chevron-up"></i>
+                    </div>
+                    <div class="h1 m-0">4.1</div>
+                    <div class="text-muted mb-4">Tytuły stron</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-lg-2">
+                <div class="card">
+                  <div class="card-body p-3 text-center">
+                    <div class="text-right text-red">
+                      -2%
+                      <i class="fe fe-chevron-down"></i>
+                    </div>
+                    <div class="h1 m-0">4.8</div>
+                    <div class="text-muted mb-4">Opisy stron</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-lg-2">
+                <div class="card">
+                  <div class="card-body p-3 text-center">
+                    <div class="text-right text-red">
+                      -1%
+                      <i class="fe fe-chevron-down"></i>
+                    </div>
+                    <div class="h1 m-0">4.8</div>
+                    <div class="text-muted mb-4">Nagłówki H1</div>
+                  </div>
+                </div>
+              </div>
+         <div class="col-sm-6 col-lg-3">
+                <div class="card p-3">
+                  <div class="d-flex align-items-center">
+                    <span class="stamp stamp-md bg-green mr-3">
+                      <i class="fa fa-link"></i>
+                    </span>
+                    <div>
+                      <h4 class="m-0"><a href="javascript:void(0)">{{object.total_url_encountered}} <small>URL</small></a></h4>
+                      <small class="text-muted">Wszystkich adresów URL</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+         <div class="col-sm-6 col-lg-3">
+                <div class="card p-3">
+                  <div class="d-flex align-items-center">
+                    <span class="stamp stamp-md bg-blue mr-3">
+                      <i class="fa fa-bolt"></i>
+                    </span>
+                    <div>
+                      <h4 class="m-0"><a href="javascript:void(0)">{{object.total_url_crawled}} <small>URL</small></a></h4>
+                      <small class="text-muted">Wszystkich przecrawlowanych</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+         <div class="col-sm-6 col-lg-3">
+                <div class="card p-3">
+                  <div class="d-flex align-items-center">
+                    <span class="stamp stamp-md bg-red mr-3">
+                      <i class="fa fa-bug"></i>
+                    </span>
+                    <div>
+                      <h4 class="m-0"><a href="javascript:void(0)">132 <small>URL</small></a></h4>
+                      <small class="text-muted">Zablokowanych wewnętrznych</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+         <div class="col-sm-6 col-lg-3">
+                <div class="card p-3">
+                  <div class="d-flex align-items-center">
+                    <span class="stamp stamp-md bg-yellow mr-3">
+                      <i class="fa fa-bug"></i>
+                    </span>
+                    <div>
+                      <h4 class="m-0"><a href="javascript:void(0)">132 <small>URL</small></a></h4>
+                      <small class="text-muted">Zablokowanych zewnętrznych</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+        <div class="col-lg-4">
+
+            <div class="card">
+                <div class="card-status bg-blue"></div>
+                <div class="card-header">
+                    <h3 class="card-title">Kody odpowiedzi</h3>
+                </div>
+                <div class="card-body">
+        <div id="chart"></div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+         <div class="col-lg-4">
+
+            <div class="card">
+                <div class="card-status bg-green"></div>
+                <div class="card-header">
+                    <h3 class="card-title">Budowa URL</h3>
+                </div>
+
+                <table class="table card-table">
+                    <tbody>
+
+                    <tr>
+                      <td width="1"><i class="fa fa-circle-o-notch  text-muted"></i></td>
+                      <td>Wszystkich URL</td>
+                      <td class="text-right"><span class="text-muted">{{object.uri_all}}</span></td>
+                    </tr>
+
+                    <tr>
+                      <td width="1"><i class="fa fa-language text-muted"></i></td>
+                      <td>Znaki specjalne</td>
+                      <td class="text-right"><span class="text-muted">{{object.uri_non_ascii}}</span></td>
+                    </tr>
+                    <tr>
+                      <td><i class="fa fa-underline text-muted"></i></td>
+                      <td>Podkreślniki</td>
+                      <td class="text-right"><span class="text-muted">{{object.uri_underscores}}</span></td>
+                    </tr>
+                    <tr>
+                      <td><i class="fa fa-header  text-muted"></i></td>
+                      <td>Wielkie litery</td>
+                      <td class="text-right"><span class="text-muted">{{object.uri_uppercase}}</span></td>
+                    </tr>
+                    <tr>
+                      <td><i class="fa fa-clone text-muted"></i></td>
+                      <td>Duplikaty</td>
+                      <td class="text-right"><span class="text-muted">{{object.uri_duplicate}}</span></td>
+                    </tr>
+                    <tr>
+                      <td><i class="fa fa-info text-muted"></i></td>
+                      <td>Parametry</td>
+                      <td class="text-right"><span class="text-muted">{{object.uri_parameters}}</span></td>
+                    </tr>
+                    <tr>
+                      <td><i class="fa fa-tag text-muted"></i></td>
+                      <td>Ponad 115 znaków</td>
+                      <td class="text-right"><span class="text-muted">{{object.uri_over_115}}</span></td>
+                    </tr>
+                  </tbody></table>
+
+
+            </div>
+
+        </div>
+              <div class="col-lg-4">
+
+            <div class="card">
+                <div class="card-status bg-blue"></div>
+                <div class="card-header">
+                    <h3 class="card-title">Depth</h3>
+                </div>
+<div id="chart1"></div>
+
+
+            </div>
+
+        </div>
+
+         <div class="col-lg-4">
+
+            <div class="card">
+
+                <div class="card-header">
+                    <h3 class="card-title">Tytuły</h3>
+                </div>
+                   <table class="table card-table">
+                    <tbody>
+                      <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right  text-muted"></i></td>
+                      <td>Wszystkich</td>
+                      <td class="text-right"><span class="text-muted">{{object.titles_all}}</span></td>
+                    </tr>
+                    <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right  text-muted"></i></td>
+                      <td>Brakujące</td>
+                      <td class="text-right"><span class="text-muted">{{object.titles_missing}}</span></td>
+                    </tr>
+
+                    <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>Zduplikowane</td>
+                      <td class="text-right"><span class="text-muted">{{object.titles_duplicate}}</span></td>
+                    </tr>
+                    <tr>
+                      <td><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>Powyżej 65 znaków</td>
+                      <td class="text-right"><span class="text-muted">{{object.titles_over_65}}</span></td>
+                    </tr>
+                    <tr>
+                      <td><i class="fa fa-caret-square-o-right  text-muted"></i></td>
+                      <td>Poniżej 30 znaków</td>
+                      <td class="text-right"><span class="text-muted">{{object.titles_below_30}}</span></td>
+                    </tr>
+                    <tr>
+                      <td><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>Powyżej 571 pixeli</td>
+                      <td class="text-right"><span class="text-muted">{{object.titles_over_571}}</span></td>
+                    </tr>
+                    <tr>
+                      <td><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>Popniżej 200 pixeli</td>
+                      <td class="text-right"><span class="text-muted">{{object.titles_below_200}}</span></td>
+                    </tr>
+                    <tr>
+                      <td><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>Identyczne z h1</td>
+                      <td class="text-right"><span class="text-muted">{{object.titles_same_h1}}</span></td>
+                    </tr>
+                        <tr>
+                      <td><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>Wielokrotnie na stronie</td>
+                      <td class="text-right"><span class="text-muted">{{object.titles_multiple}}</span></td>
+                    </tr>
+                  </tbody></table>
+            </div>
+
+
+        </div>
+
+
+
+        <div class="col-lg-4">
+
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Meta Description</h3>
+                </div>
+                 <table class="table card-table">
+                    <tbody>
+                      <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right  text-muted"></i></td>
+                      <td>Wszystkich</td>
+                      <td class="text-right"><span class="text-muted">{{object.description_all}}</span></td>
+                    </tr>
+                    <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right  text-muted"></i></td>
+                      <td>Brakujące</td>
+                      <td class="text-right"><span class="text-muted">{{object.description_missing}}</span></td>
+                    </tr>
+
+                    <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>Zduplikowane</td>
+                      <td class="text-right"><span class="text-muted">{{object.description_duplicate}}</span></td>
+                    </tr>
+                    <tr>
+                      <td><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>Powyżej 320 znaków</td>
+                      <td class="text-right"><span class="text-muted">{{object.description_over_320}}</span></td>
+                    </tr>
+                    <tr>
+                      <td><i class="fa fa-caret-square-o-right  text-muted"></i></td>
+                      <td>Poniżej 70 znaków</td>
+                      <td class="text-right"><span class="text-muted">{{object.description_below_70}}</span></td>
+                    </tr>
+                    <tr>
+                      <td><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>Powyżej 1866 pixeli</td>
+                      <td class="text-right"><span class="text-muted">{{object.description_over_1866}}</span></td>
+                    </tr>
+                    <tr>
+                      <td><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>Poniżej 400 pixeli</td>
+                      <td class="text-right"><span class="text-muted">{{object.description_below_400}}</span></td>
+                    </tr>
+                      <tr>
+                      <td><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>Wielokrotnie na stronie</td>
+                      <td class="text-right"><span class="text-muted">{{object.description_multiple}}</span></td>
+                    </tr>
+                  </tbody></table>
+            </div>
+
+        </div>
+
+         <div class="col-lg-4">
+
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Nagłówki H1</h3>
+                </div>
+                     <table class="table card-table">
+                    <tbody>
+                      <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right  text-muted"></i></td>
+                      <td>Wszystkich H1</td>
+                      <td class="text-right"><span class="text-muted">{{object.h1_all}}</span></td>
+                    </tr>
+                    <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right  text-muted"></i></td>
+                      <td>Brakujące</td>
+                      <td class="text-right"><span class="text-muted">{{object.h1_missing}}</span></td>
+                    </tr>
+
+                    <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>Zduplikowane</td>
+                      <td class="text-right"><span class="text-muted">{{object.h1_duplicate}}</span></td>
+                    </tr>
+                    <tr>
+                      <td><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>Powyżej 70 znaków</td>
+                      <td class="text-right"><span class="text-muted">{{object.h1_over_70}}</span></td>
+                    </tr>
+                    <tr>
+                      <td><i class="fa fa-caret-square-o-right  text-muted"></i></td>
+                      <td>Wielokrotnie na stronie</td>
+                      <td class="text-right"><span class="text-muted">{{object.h1_multiple}}</span></td>
+                    </tr>
+
+                  </tbody></table>
+            </div>
+
+        </div>
+         <div class="col-lg-4">
+
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Nagłówki H2</h3>
+                </div>
+                         <table class="table card-table">
+                    <tbody>
+                      <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right  text-muted"></i></td>
+                      <td>Wszystkich H2</td>
+                      <td class="text-right"><span class="text-muted">{{object.h2_all}}</span></td>
+                    </tr>
+                    <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right  text-muted"></i></td>
+                      <td>Brakujące</td>
+                      <td class="text-right"><span class="text-muted">{{object.h2_missing}}</span></td>
+                    </tr>
+
+                    <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>Zduplikowane</td>
+                      <td class="text-right"><span class="text-muted">{{object.h2_duplicate}}</span></td>
+                    </tr>
+                    <tr>
+                      <td><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>Powyżej 70 znaków</td>
+                      <td class="text-right"><span class="text-muted">{{object.h2_over_70}}</span></td>
+                    </tr>
+                    <tr>
+                      <td><i class="fa fa-caret-square-o-right  text-muted"></i></td>
+                      <td>Wielokrotnie na stronie</td>
+                      <td class="text-right"><span class="text-muted">{{object.h2_multiple}}</span></td>
+                    </tr>
+
+                  </tbody></table>
+            </div>
+
+        </div>
+
+
+
+        <div class="col-lg-4">
+
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Obrazy</h3>
+                </div>
+               <table class="table card-table">
+                    <tbody>
+                      <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right  text-muted"></i></td>
+                      <td>Wszystkie obrazy</td>
+                      <td class="text-right"><span class="text-muted">{{object.images_all}}</span></td>
+                    </tr>
+                    <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right  text-muted"></i></td>
+                      <td>Brakujących opisów alt </td>
+                      <td class="text-right"><span class="text-muted">{{object.images_missing_alt}}</span></td>
+                    </tr>
+
+                    <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>Zbyt długie opisy</td>
+                      <td class="text-right"><span class="text-muted">{{object.images_over}}</span></td>
+                    </tr>
+
+
+                  </tbody></table>
+            </div>
+
+        </div>
+
+         <div class="col-lg-4">
+
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Dyrektywy cz.1</h3>
+                </div>
+                 <table class="table card-table">
+                    <tbody>
+                      <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right  text-muted"></i></td>
+                      <td>Wszystkie dyrektywy</td>
+                      <td class="text-right"><span class="text-muted">{{object.dir_all}}</span></td>
+                    </tr>
+                    <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right  text-muted"></i></td>
+                      <td>Występuje canonical </td>
+                      <td class="text-right"><span class="text-muted">{{object.dir_canonical}}</span></td>
+                    </tr>
+                        <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>Self canonical</td>
+                      <td class="text-right"><span class="text-muted">{{object.dir_canonical_self}}</span></td>
+                    </tr>
+
+                    <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>Wskazane przez canonical</td>
+                      <td class="text-right"><span class="text-muted">{{object.dir_canonicalised }}</span></td>
+                    </tr>
+                    <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>Brak canonical</td>
+                      <td class="text-right"><span class="text-muted">{{object.dir_no_canonical}}</span></td>
+                    </tr>
+                     <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>Występuje next/prev</td>
+                      <td class="text-right"><span class="text-muted">{{object.dir_next_prev}}</span></td>
+                    </tr>
+                     <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>Index</td>
+                      <td class="text-right"><span class="text-muted">{{object.dir_index}}</span></td>
+                    </tr>
+                     <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>Noindex</td>
+                      <td class="text-right"><span class="text-muted">{{object.dir_noindex}}</span></td>
+                    </tr>
+                     <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>Follow</td>
+                      <td class="text-right"><span class="text-muted">{{object.dir_follow}}</span></td>
+                    </tr>
+                     <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>Nofollow</td>
+                      <td class="text-right"><span class="text-muted">{{object.dir_nofollow}}</span></td>
+                    </tr>
+
+                  </tbody></table>
+            </div>
+
+        </div>
+         <div class="col-lg-4">
+
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Dyrektywy cz.2</h3>
+                </div>
+                <table class="table card-table">
+                    <tbody>
+
+                      <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>Brak dyrektywy</td>
+                      <td class="text-right"><span class="text-muted">{{object.dir_none}}</span></td>
+                    </tr>
+                     <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>Noarchive</td>
+                      <td class="text-right"><span class="text-muted">{{object.dir_noachive}}</span></td>
+                    </tr>
+                    <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>Nosnippet</td>
+                      <td class="text-right"><span class="text-muted">{{object.dir_nosnippet}}</span></td>
+                    </tr>
+                     <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>Noodp</td>
+                      <td class="text-right"><span class="text-muted">{{object.dir_noodp}}</span></td>
+                    </tr>
+                    <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>Noydir</td>
+                      <td class="text-right"><span class="text-muted">{{object.dir_noydir}}</span></td>
+                    </tr>
+                    <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>Noimage index</td>
+                      <td class="text-right"><span class="text-muted">{{object.dir_noimageindex}}</span></td>
+                    </tr>
+                    <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>No translate</td>
+                      <td class="text-right"><span class="text-muted">{{object.dir_notranslate}}</span></td>
+                    </tr>
+                    <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>Unavailable</td>
+                      <td class="text-right"><span class="text-muted">{{object.dir_unavailable}}</span></td>
+                    </tr>
+                     <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>Refresh</td>
+                      <td class="text-right"><span class="text-muted">{{object.dir_refresh}}</span></td>
+                    </tr>
+
+
+                  </tbody></table>
+            </div>
+
+        </div>
+
+                            <div class="col-lg-4">
+
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Hreflang</h3>
+                </div>
+                <table class="table card-table">
+                    <tbody>
+
+                      <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>Wszystkie hreflang</td>
+                      <td class="text-right"><span class="text-muted">{{object.href_all}}</span></td>
+                    </tr>
+                     <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>Missing conf</td>
+                      <td class="text-right"><span class="text-muted">{{object.href_missing_conf}}</span></td>
+                    </tr>
+                    <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>href_inconsistent_language</td>
+                      <td class="text-right"><span class="text-muted">{{object.href_inconsistent_language}}</span></td>
+                    </tr>
+                     <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>href_noncanonical_conf</td>
+                      <td class="text-right"><span class="text-muted">{{object.href_noncanonical_conf}}</span></td>
+                    </tr>
+                    <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>href_noindex_conf</td>
+                      <td class="text-right"><span class="text-muted">{{object.href_noindex_conf}}</span></td>
+                    </tr>
+                    <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>href_incorrect_lanmguage_code</td>
+                      <td class="text-right"><span class="text-muted">{{object.href_incorrect_lanmguage_code}}</span></td>
+                    </tr>
+                    <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>href_multiple_entries</td>
+                      <td class="text-right"><span class="text-muted">{{object.href_multiple_entries}}</span></td>
+                    </tr>
+                    <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>href_missinf_self_ref</td>
+                      <td class="text-right"><span class="text-muted">{{object.href_missinf_self_ref}}</span></td>
+                    </tr>
+                     <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>href_non_using_canonical</td>
+                      <td class="text-right"><span class="text-muted">{{object.href_non_using_canonical}}</span></td>
+                    </tr>
+                      <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>href_missing_xdefaults</td>
+                      <td class="text-right"><span class="text-muted">{{object.href_missing_xdefaults}}</span></td>
+                    </tr>
+                      <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>href_missing</td>
+                      <td class="text-right"><span class="text-muted">{{object.href_missing}}</span></td>
+                    </tr>
+
+
+                  </tbody></table>
+            </div>
+
+        </div>
+                            <div class="col-lg-4">
+
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Ajax</h3>
+                </div>
+                <table class="table card-table">
+                    <tbody>
+
+                      <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>ajax_all</td>
+                      <td class="text-right"><span class="text-muted">{{object.ajax_all}}</span></td>
+                    </tr>
+                     <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>ajax_hash</td>
+                      <td class="text-right"><span class="text-muted">{{object.ajax_hash}}</span></td>
+                    </tr>
+                    <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>ajax_without</td>
+                      <td class="text-right"><span class="text-muted">{{object.ajax_without}}</span></td>
+                    </tr>
+
+                  </tbody></table>
+            </div>
+
+        </div>
+
+                                         <div class="col-lg-4">
+
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Odpowiedź</h3>
+                </div>
+                <table class="table card-table">
+                    <tbody>
+
+                      <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>1</td>
+                      <td class="text-right"><span class="text-muted">{{object.resp_1}}</span></td>
+                    </tr>
+                     <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>2</td>
+                      <td class="text-right"><span class="text-muted">{{object.resp_2}}</span></td>
+                    </tr>
+                    <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>3</td>
+                      <td class="text-right"><span class="text-muted">{{object.resp_3}}</span></td>
+                    </tr>
+                     <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>4</td>
+                      <td class="text-right"><span class="text-muted">{{object.resp_4}}</span></td>
+                    </tr>
+                    <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>5</td>
+                      <td class="text-right"><span class="text-muted">{{object.resp_5}}</span></td>
+                    </tr>
+                    <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>6</td>
+                      <td class="text-right"><span class="text-muted">{{object.resp_6}}</span></td>
+                    </tr>
+                    <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>7</td>
+                      <td class="text-right"><span class="text-muted">{{object.resp_7}}</span></td>
+                    </tr>
+
+
+
+                  </tbody></table>
+            </div>
+
+        </div>
+                                                        <div class="col-lg-4">
+
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Content</h3>
+
+                </div>
+                <table class="table card-table">
+                    <tbody>
+
+                      <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>content_large_pages</td>
+                      <td class="text-right"><span class="text-muted">{{object.content_large_pages}}</span></td>
+                    </tr>
+                     <tr>
+                      <td width="1"><i class="fa fa-caret-square-o-right text-muted"></i></td>
+                      <td>content_low_content_pages</td>
+                      <td class="text-right"><span class="text-muted">{{object.content_low_content_pages}}</span></td>
+                    </tr>
+
+
+                  </tbody></table>
+            </div>
+
+        </div>
+
+
+
+<script>
+    var chart = c3.generate({
+
+        data: {
+        bindto: '#chart',
+        columns: [
+            {% if object.resp_blocked_robots != 0 %}
+            ['Zablokowane w robots.txt', {{object.resp_blocked_robots}}],
+            {% endif %}
+
+            {% if object.resp_blocked_resource != 0 %}
+            ['Zablokowany zasób', {{object.resp_blocked_resource}}],
+            {% endif %}
+
+            {% if object.object.resp_no_resp != 0 %}
+            ['Brak odpowiedzi', {{object.resp_no_resp}}],
+            {% endif %}
+
+            {% if object.object.resp_success != 0 %}
+            ['Sukces (2XX)', {{object.resp_success}}],
+            {% endif %}
+
+            {% if object.object.resp_redirection != 0 %}
+            ['Przekierowanie (3XX)', {{object.resp_redirection}}],
+            {% endif %}
+
+            {% if object.object.resp_redirection_javascript != 0 %}
+            ['Przekierowanie (JS)', {{object.resp_redirection_javascript}}],
+            {% endif %}
+
+            {% if object.object.resp_redirection_meta != 0 %}
+            ['Przekierowanie (Meta Refresh)', {{object.resp_redirection_meta}}],
+            {% endif %}
+
+            {% if object.object.resp_client_error != 0 %}
+            ['Błąd strony (4XX)', {{object.resp_client_error}}],
+            {% endif %}
+
+            {% if object.object.resp_server_error != 0 %}
+            ['Błąd serwera (5XX)', {{object.resp_server_error}}],
+            {% endif %}
+        ],
+        type : 'pie',
+    }
+});
+
+var chart2 = c3.generate({
+      data: {
+           columns:[
+                ['Depth',{{object.depth_1}},{{object.depth_2}},{{object.depth_3}},{{object.depth_4}},{{object.depth_5}},{{object.depth_6}},{{object.depth_7}},{{object.depth_8}},{{object.depth_9}},{{object.depth_10}}]
+              ],
+           type: 'bar'
+            },
+          bar: {
+            width: {
+              ratio: 0.5
+             }
+          },
+         bindto: '#chart1'
+    });
+
+
+</script>
+{% endblock content %}

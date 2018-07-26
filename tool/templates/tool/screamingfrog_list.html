@@ -1,0 +1,56 @@
+{% extends 'tool/base.html' %}
+{% load static %}
+{% block content %}
+<div class="my-3 my-md-5">
+    <div class="container">
+        <div class="page-header">
+            <h1 class="page-title">
+               Lista Raportów
+            </h1>
+
+
+        </div>
+
+     <div class="row">
+
+     <div class="col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">Raporty</h3>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table card-table table-vcenter text-nowrap">
+                      <thead>
+                        <tr>
+                          <th class="w-1">No.</th>
+                          <th>Nazwa</th>
+
+                        </tr>
+                      </thead>
+                      <tbody>
+                      {% for i in object_list %}
+                        <tr>
+                          <td>{{ forloop.counter }}</td>
+                           <td><a href="{% url 'toolseo:raport-detail' i.id %}">{{i}} </a></td>
+                         </tr>
+                      {% endfor %}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+ </div>
+
+{% endblock content %}
