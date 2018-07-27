@@ -125,9 +125,17 @@ class RaportScreamingView(DetailView):
          context = super().get_context_data(**kwargs)
          raport = context['object']
          resources = str(round(5*(1- raport.internal_blocked_by_robots/raport.total_url_encountered),1)).replace(',','.')
-         codes = str(round(5*(raport.resp_success/raport.resp_all),1)).replace(',','.')
-         urladress = 5* (raport.uri_non_ascii/raport.uri_non_ascii)
-         context['add'] = {'zasoby':resources,'kody':codes}
+         url_sum = raport.uri_non_ascii + raport.uri_underscores + raport.uri_uppercase + raport.uri_duplicate + raport.uri_parameters + raport.uri_over_115
+         codes = str(round(5 * (1 - (raport.resp_success / raport.resp_all/100)), 1)).replace(',', '.')
+         if url_sum != 0:
+             urladress = str(round(5 * (1- url_sum/6/raport.uri_all),1)).replace(',', '.')
+
+         else:
+             urladress = str(5.0)
+
+         raports_client = RaportScreaming.objects.filter(client=raport.client)
+         print(raports_client)
+         context['add'] = {'zasoby':resources,'kody':codes, 'urladress': urladress}
          return context
 
 
