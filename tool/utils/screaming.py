@@ -6,20 +6,30 @@ def readcsvraport(csvfileraw):
      io_string = io.StringIO(decoded_file)
      csv_reader = csv.reader(io_string,delimiter=',', quotechar='"')
      csvlist=list(csv_reader)
-     if not csvlist[216][1]:
-         csvlist[216][1] = 0
-     if not csvlist[217][1]:
-         csvlist[217][1] = 0
-     if not csvlist[217][1]:
-         csvlist[218][1] = 0
-     if not csvlist[217][1]:
-         csvlist[219][1] = 0
-     if not csvlist[217][1]:
-         csvlist[220][1] = 0
-     if not csvlist[217][1]:
-         csvlist[221][1] = 0
+
+     if csvlist[216][1] != None:
+         csvlist.insert(216, [0,0,0])
+     if csvlist[217][1] != None:
+         csvlist.insert(217, [0,0,0])
+     if csvlist[218][1] != None:
+         csvlist.insert(218, [0,0,0])
+     if csvlist[219][1] != None:
+         csvlist.insert(219, [0,0,0])
+     if csvlist[220][1] != None:
+         csvlist.insert(220, [0,0,0])
+     if csvlist[221][1] != None:
+         csvlist.insert(221, [0,0,0])
 
      return(csvlist)
+
+
+def readcsvallraport(csvfileraw):
+    decoded_file = csvfileraw.file.read().decode('utf-8')
+    io_string = io.StringIO(decoded_file)
+    csv_reader = csv.reader(io_string, delimiter=',', quotechar='"')
+    csvlist = list(csv_reader)
+    print(csvlist[2])
+    return (csvlist)
 
 
 class NameScreaming():

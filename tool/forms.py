@@ -23,4 +23,9 @@ class UploadFileForm(forms.Form):
     date_crawled.widget.attrs['class'] = 'form-control'
     file.widget.attrs['class'] = 'custom-file-input'
 
+class UploadRaportAllForm(forms.Form):
+
+    file = forms.FileField()
+    file.widget.attrs['class'] = 'custom-file-input'
+
 

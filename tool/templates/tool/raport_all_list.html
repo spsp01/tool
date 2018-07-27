@@ -1,0 +1,60 @@
+{% extends 'tool/base.html' %}
+{% load static %}
+{% block content %}
+<div class="my-3 my-md-5">
+    <div class="container">
+        <div class="page-header">
+            <h1 class="page-title">
+               Upload all raport
+            </h1>
+
+
+        </div>
+
+     <div class="row">
+
+     <div class="col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">Upload</h3>
+                  </div>
+                    <div class="card-body">
+      <form action='/raportallupload' method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+
+
+
+                        <div class="custom-file">
+                         <div class="form-group">
+                      {{form.file}}
+                             <label class="custom-file-label">Wybierz plik</label>
+                           </div>
+                            </div>
+
+
+                    <button class="btn btn-primary btn-block">Extract</button>
+                    </form>
+
+
+
+
+
+
+                    </div>
+                </div>
+              </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+ </div>
+
+{% endblock content %}

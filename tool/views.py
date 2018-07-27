@@ -1,9 +1,9 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView, View, DetailView,ListView
-from tool.forms import ExtractForm,ExtractUrlForm,ExtractText, UploadFileForm
+from tool.forms import ExtractForm,ExtractUrlForm,ExtractText, UploadFileForm,UploadRaportAllForm
 from tool.utils.utils import aExtract,gethtml,httpresponse,senutourl,getgooglelinks,getsitelinks
 from tool.utils.speedp import download, createurljson
-from tool.utils.screaming import NameScreaming, readcsvraport
+from tool.utils.screaming import NameScreaming, readcsvraport, readcsvallraport
 from django.http import JsonResponse, HttpResponseRedirect
 from django.views.decorators.csrf import csrf_exempt
 from tool.models import RaportScreaming, RaportScreamingtest, Client
@@ -133,9 +133,24 @@ class RaportScreamingView(DetailView):
          else:
              urladress = str(5.0)
 
+         title_list = [raport.titles_over_65,raport.titles_below_30,raport.titles_over_571,
+                       raport.titles_below_200,raport.titles_same_h1,raport.titles_multiple]
+         title_average = sum(title_list)/len(title_list)/raport.titles_all
+
+         title = str(round(5*(1- title_average-raport.titles_missing/raport.titles_all),1)).replace(',', '.')
+
+         description_list = [raport.description_duplicate,raport.description_over_320,raport.description_below_70,
+                             raport.description_over_1866,raport.description_below_400,
+                             raport.description_multiple]
+         description_average = sum(description_list)/len(description_list)/raport.description_all
+         description = str(round(5*(1- description_average-raport.description_missing/raport.description_all),1)).replace(',', '.')
+
+         h1_list = [raport.h1_duplicate, raport.h1_over_70, raport.h1_multiple,]
+         h1_average = sum(h1_list)/len(h1_list)/raport.h1_all
+         h1 = str(round(5*(1 - h1_average - raport.h1_missing/raport.h1_all),1)).replace(',', '.')
          raports_client = RaportScreaming.objects.filter(client=raport.client)
-         print(raports_client)
-         context['add'] = {'zasoby':resources,'kody':codes, 'urladress': urladress}
+         context['add'] = {'zasoby':resources,'kody':codes, 'urladress': urladress,'title':title,'description':description,
+                           'h1':h1, 'raports_client':raports_client,}
          return context
 
 
@@ -185,7 +200,7 @@ def upload_file(request):
                                        external_other =data_raport[33][1],
                                        protocol_http = data_raport[37][1],
                                        protocol_https =data_raport[38][1],
-                                       resp_all =data_raport[42][1],
+                                       resp_all =data_raport[41][1],
                                        resp_blocked_robots =data_raport[42][1],
                                        resp_blocked_resource =data_raport[43][1],
                                        resp_no_resp =data_raport[44][1],
@@ -291,3 +306,12 @@ def upload_file(request):
     else:
         form = UploadFileForm()
     return render(request, 'tool/importraport.html', {'form': form})
+
+def upload_raport_all(request):
+    if request.method == 'POST':
+        form = UploadRaportAllForm(request.POST, request.FILES)
+        if form.is_valid():
+            readcsvallraport(form.cleaned_data['file'])
+    else:
+        form = UploadRaportAllForm()
+    return render(request, 'tool/raport_all_list.html', {'form': form})
