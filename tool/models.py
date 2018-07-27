@@ -150,6 +150,12 @@ class RaportScreamingtest(models.Model):
     total_url_crawled = models.IntegerField()
    # Create your models here.
 
+
+class RaportScreamingAll(models.Model):
+    def __str__(self):
+        return str(self.client)+' '+str(self.date_crawled)
+
+
 class Person(models.Model):
     name = models.CharField(max_length=30)
     email = models.EmailField(blank=True)
