@@ -154,14 +154,11 @@ class RaportScreamingtest(models.Model):
 class RaportScreamingAll(models.Model):
     def __str__(self):
         return str(self.client)+' '+str(self.date_crawled)
+    client = models.ForeignKey('Client', on_delete='Cascade')
+    date_crawled = models.DateField()
+    url_info = models.CharField(max_length=255)
 
 
-class Person(models.Model):
-    name = models.CharField(max_length=30)
-    email = models.EmailField(blank=True)
-    birth_date = models.DateField()
-    birth_date2 = models.DateField()
-    location = models.CharField(max_length=100, blank=True)
 
 # class CSVUpload(models.Model):
 #     file = models.FileField(upload_to='/raport/')
