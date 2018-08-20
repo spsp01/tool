@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView, View, DetailView,ListView
-from tool.forms import ExtractForm,ExtractUrlForm,ExtractText, UploadFileForm,UploadRaportAllForm
+from tool.forms import ExtractForm,ExtractUrlForm,ExtractText, UploadFileForm
 from tool.utils.utils import aExtract,gethtml,httpresponse,senutourl,getgooglelinks,getsitelinks
 from tool.utils.speedp import download, createurljson
 from tool.utils.screaming import NameScreaming, readcsvraport, readcsvallraport
@@ -309,9 +309,14 @@ def upload_file(request):
 
 def upload_raport_all(request):
     if request.method == 'POST':
-        form = UploadRaportAllForm(request.POST, request.FILES)
+        form = UploadFileForm(request.POST, request.FILES)
         if form.is_valid():
-            readcsvallraport(form.cleaned_data['file'])
+           csv_data = readcsvallraport(form.cleaned_data['file'])
+           date_crawled = '2018-08-02'
+           client = 'Axa'
+           for i in csv_data:
+
+               print(i)
     else:
-        form = UploadRaportAllForm()
+        form = UploadFileForm()
     return render(request, 'tool/raport_all_list.html', {'form': form})

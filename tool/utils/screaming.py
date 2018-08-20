@@ -28,7 +28,7 @@ def readcsvallraport(csvfileraw):
     io_string = io.StringIO(decoded_file)
     csv_reader = csv.reader(io_string, delimiter=',', quotechar='"')
     csvlist = list(csv_reader)
-    print(csvlist[2])
+
     return (csvlist)
 
 

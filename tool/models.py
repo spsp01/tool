@@ -158,6 +158,52 @@ class RaportScreamingAll(models.Model):
     date_crawled = models.DateField()
     url_info = models.CharField(max_length=255)
 
+class RaportInlinks(models.Model):
+    def __str__(self):
+        return str(self.client) + ' ' + str(self.date_crawled)
+
+    client = models.ForeignKey('Client', on_delete='Cascade')
+    date_crawled = models.DateField()
+    url_info = models.CharField(max_length=255)
+    resource_type = models.CharField(max_length=255)
+    encoding = models.CharField(max_length=255)
+    status_code = models.IntegerField()
+    title = models.CharField(max_length=255)
+    title_len= models.IntegerField()
+    title_len_pix = models.IntegerField()
+    description = models.CharField(max_length=255)
+    desc_len = models.IntegerField()
+    desc_len_pix = models.IntegerField()
+    h1_1 = models.CharField(max_length=255)
+    h1_1_len = models.IntegerField()
+    h1_2 = models.CharField(max_length=255)
+    h1_2_len = models.IntegerField()
+    h2_1 = models.CharField(max_length=255)
+    h2_1_len = models.IntegerField()
+    h2_2 = models.CharField(max_length=255)
+    h2_2_len = models.IntegerField()
+    meta_robots =  models.CharField(max_length=255)
+    noindex = models.IntegerField()
+    nofollow = models.IntegerField()
+    meta_refresh = models.CharField(max_length=255)
+    canonical = models.CharField(max_length=255)
+    size = models.IntegerField()
+    word_count = models.IntegerField()
+    text_ratio = models.IntegerField()
+    crawl_depth = models.IntegerField()
+    inlinks = models.IntegerField()
+    unique_inlinks = models.IntegerField()
+    percent_total = models.IntegerField()
+    outlinks =  models.IntegerField()
+    unique_outlinks = models.IntegerField()
+    external_outlinks = models.IntegerField()
+    unique_external_outlinks = models.IntegerField()
+    response_time = models.IntegerField()
+    last_modified = models.CharField(max_length=255)
+    redirect_URI = models.CharField(max_length=255)
+    redirect_type = models.CharField(max_length=255)
+
+
 
 
 # class CSVUpload(models.Model):

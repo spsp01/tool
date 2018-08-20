@@ -173,6 +173,7 @@
 
         </div>
 
+
          <div class="col-lg-4">
 
             <div class="card">
@@ -467,6 +468,21 @@
 
 
                   </tbody></table>
+            </div>
+
+        </div>
+         <div class="col-lg-4">
+
+            <div class="card">
+                <div class="card-status bg-blue"></div>
+                <div class="card-header">
+                    <h3 class="card-title">Zasoby Wewnętrzne</h3>
+                </div>
+                <div class="card-body">
+        <div id="chart2"></div>
+
+
+                </div>
             </div>
 
         </div>
@@ -774,6 +790,7 @@
 
         </div>
 
+
      </div>
 
 <script>
@@ -818,7 +835,7 @@
             ['Błąd serwera (5XX)', {{object.resp_server_error}}],
             {% endif %}
         ],
-        type : 'pie',
+        type : 'donut',
     }
 });
 
@@ -836,6 +853,26 @@ var chart2 = c3.generate({
           },
          bindto: '#chart1'
     });
+
+
+var chart2 = c3.generate({
+      data: {
+           columns:[
+                ['Html',{{object.internal_html}}],
+                ['JavaScript',{{object.internal_javascript}}],
+                ['CSS',{{object.internal_css}}],
+                ['Obrazy',{{object.internal_images}}],
+                ['PDF',{{object.internal_pdf}}],
+                ['Flash',{{object.internal_flash}}],
+                ['Inne',{{object.internal_other}}],
+
+              ],
+           type: 'donut'
+            },
+
+         bindto: '#chart2'
+    });
+
 
 
 </script>
