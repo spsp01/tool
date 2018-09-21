@@ -1,0 +1,86 @@
+{% extends 'tool/base.html' %}
+{% load static %}
+{% block content %}
+<div class="my-3 my-md-5">
+    <div class="container">
+        <div class="page-header">
+            <h1 class="page-title">
+                Google Position
+            </h1>
+        </div>
+     <div class="row">
+        <div class="col-lg-4">
+{% csrf_token %}
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Frazy</h3>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for class="form-label">Domena</label>
+                        <input type="text" class="form-control" name="input-domain" id="domain" placeholder="domena">
+                    </div>
+                    <div class="form-group">
+                      <label for class="form-label">Frazy</label>
+                      <textarea id='urls' style="width:100%;"></textarea>
+                    </div>
+                    <button id="extract" class="btn btn-primary btn-block">Extract</button>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-lg-8">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Wynik</h3>
+                </div>
+                <div class="card-body">
+                <ol id="list" style="list-style: none;">
+
+                   </ol>
+
+                </div>
+            </div>
+
+        </div>
+         </div>
+    </div>
+
+    </div>
+
+<script>
+   function clearBox(elementID) {
+    document.getElementById(elementID).innerHTML = "";
+    }
+
+   var urls = $('#extract');
+   urls.click(function(e){
+   e.preventDefault();
+   document.getElementById('list').innerHTML = "";
+   var lines = $('#urls').val().split('\n');
+   var domain2 = $('#domain').val();
+   console.log(lines.length);
+   for(var i = 0;i < lines.length;i++){
+     $.ajax({
+         type: 'POST',
+         url: '/apiposition',
+         data: {'domain' : domain2,
+                'url': lines[i],
+                },
+         success: function (data) {
+         $('#list').append("<li>"+data['d']+"</li>");
+         console.log(data);
+         },
+         error: function (data) {
+             console.log('An error occurred.');
+         },
+     });
+        console.log(lines[i]);
+   };
+
+   });
+
+</script>
+{% endblock content %}

@@ -19,7 +19,8 @@
     <p></p>
                 <!-- Getting started -->
                 <div class="list-group list-group-transparent mb-0">
-<a href="/raportlist" class="list-group-item list-group-item-action"><span class="icon mr-3"><i class="fe fe-chevron-right"></i></span>Wszystkie</a>                </div>
+<a href="/raportlist" class="list-group-item list-group-item-action"><span class="icon mr-3"><i class="fe fe-chevron-right"></i></span>Wszystkie</a>
+                </div>
                 <!-- Components -->
 
                 <div class="list-group list-group-transparent mb-0">
@@ -28,12 +29,11 @@
                     {% endfor %}
                 </div>
 
-
               </div>
      <div class="col-lg-9 mb-8">
                 <div class="card">
                   <div class="card-header">
-                    <h3 class="card-title">Raporty</h3>
+                    <h3 class="card-title">Raporty {{client}}</h3>
                   </div>
                   <div class="table-responsive">
                     <table class="table card-table table-vcenter text-nowrap">
@@ -45,7 +45,7 @@
                         </tr>
                       </thead>
                       <tbody>
-                      {% for i in object_list %}
+                      {% for i in raportlist %}
                         <tr>
                           <td>{{ forloop.counter }}</td>
                            <td><a href="{% url 'toolseo:raport-detail' i.id %}">{{i}} </a></td>

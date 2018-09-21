@@ -22,3 +22,5 @@ class UploadFileForm(forms.Form):
     client.widget.attrs['class'] = 'form-control'
     date_crawled.widget.attrs['class'] = 'form-control'
     file.widget.attrs['class'] = 'custom-file-input'
+
+

@@ -148,7 +148,6 @@ class RaportScreamingtest(models.Model):
     date_crawled = models.DateField()
     total_url_encountered = models.IntegerField()
     total_url_crawled = models.IntegerField()
-   # Create your models here.
 
 
 class RaportScreamingAll(models.Model):
@@ -158,20 +157,20 @@ class RaportScreamingAll(models.Model):
     date_crawled = models.DateField()
     url_info = models.CharField(max_length=255)
 
-class RaportInlinks(models.Model):
+class RaportInlink(models.Model):
     def __str__(self):
         return str(self.client) + ' ' + str(self.date_crawled)
 
     client = models.ForeignKey('Client', on_delete='Cascade')
     date_crawled = models.DateField()
     url_info = models.CharField(max_length=255)
-    resource_type = models.CharField(max_length=255)
-    encoding = models.CharField(max_length=255)
+    content = models.CharField(max_length=255)
     status_code = models.IntegerField()
+    status = models.CharField(max_length=255)
     title = models.CharField(max_length=255)
-    title_len= models.IntegerField()
+    title_len = models.IntegerField()
     title_len_pix = models.IntegerField()
-    description = models.CharField(max_length=255)
+    description = models.TextField()
     desc_len = models.IntegerField()
     desc_len_pix = models.IntegerField()
     h1_1 = models.CharField(max_length=255)
@@ -182,7 +181,7 @@ class RaportInlinks(models.Model):
     h2_1_len = models.IntegerField()
     h2_2 = models.CharField(max_length=255)
     h2_2_len = models.IntegerField()
-    meta_robots =  models.CharField(max_length=255)
+    meta_robots = models.CharField(max_length=255)
     noindex = models.IntegerField()
     nofollow = models.IntegerField()
     meta_refresh = models.CharField(max_length=255)
@@ -194,7 +193,7 @@ class RaportInlinks(models.Model):
     inlinks = models.IntegerField()
     unique_inlinks = models.IntegerField()
     percent_total = models.IntegerField()
-    outlinks =  models.IntegerField()
+    outlinks = models.IntegerField()
     unique_outlinks = models.IntegerField()
     external_outlinks = models.IntegerField()
     unique_external_outlinks = models.IntegerField()
