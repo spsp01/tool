@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse, unquote
 from random import choice
+import time
 
 desktop_agents = [
     'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36',
@@ -19,30 +20,34 @@ def random_headers():
     return {'User-Agent': choice(desktop_agents),'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'}
 
 def geturlsgoogle(phrase):
-    print(phrase)
-    r = requests.get('https://www.google.pl/search?num=50&q='+ str(phrase),headers=random_headers())
+
+    r = requests.get('https://www.google.pl/search?num=50&q='+ str(phrase))
     soup = BeautifulSoup(r.text, 'lxml')
-    print(r.status_code)
     b= soup.find_all('h3',class_='r')
+    print(r.status_code)
+
     urls= []
     domains =[]
     for index,a in enumerate(b):
-       c= a.find('a')
-       print(c)
-       urlgoogle =c.get('href').replace('/url?q=','').split('&')[0]
-       urls.append(unquote(urlgoogle))
-       domains.append(urlparse(urlgoogle).hostname.replace("www.", ""))
+       c = a.find('a')
+       if c.get('href').find('/search?q='):
+           urlgoogle =c.get('href').replace('/url?q=','').split('&')[0]
+           urls.append(unquote(urlgoogle))
+           domains.append(urlparse(urlgoogle).hostname.replace("www.", ""))
 
     return(urls,domains)
 
 
 def getposition(phrase,domain):
+        phrase_plus= phrase.replace(' ','+')
+        print(phrase_plus)
+
         urls, domains = geturlsgoogle(phrase)
         if domain in domains:
             response = phrase+','+str(domains.index(domain) + 1) +',' + str(urls[domains.index(domain)])
             return response
         else:
-            return '>100, N/A'
+            return str(phrase)+ ', >100, N/A'
 
 #print(getposition('odkurzacze workowe','tefal.pl'))
 
