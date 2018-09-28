@@ -1,0 +1,55 @@
+{% extends 'tool/base.html' %}
+{% load static %}
+{% block content %}
+<div class="my-3 my-md-5">
+    <div class="container">
+        <div class="page-header">
+            <h1 class="page-title">
+                Screaming Start
+            </h1>
+        </div>
+     <div class="row">
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Domena</h3>
+                </div>
+                <div class="card-body">
+                    <form action='/screamingstart' method="post">
+                        {% csrf_token %}
+                    <div class="form-group">
+                      <label for class="form-label">Wpisz domenę</label>
+                      {{form.urlb}}
+                    </div>
+                    <button class="btn btn-primary btn-block">Site</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-lg-8">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Screaming Start</h3>
+                </div>
+                <div class="card-body">
+
+
+             <ol>
+                   {% for link in links %}
+                     <li>{{link}}</li>
+                           {% endfor %}
+             </ol>
+
+
+                </div>
+            </div>
+
+        </div>
+         </div>
+    </div>
+
+    </div>
+
+{% endblock content %}

@@ -5,6 +5,7 @@ from tool.utils.utils import aExtract,gethtml,httpresponse,senutourl,getgoogleli
 from tool.utils.speedp import download, createurljson
 from tool.utils.screaming import NameScreaming, readcsvraport, readcsvallraport
 from tool.utils.position import getposition
+from tool.utils.sfcli import startsf, getfile
 from django.http import JsonResponse, HttpResponseRedirect, HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from tool.models import RaportScreaming, RaportScreamingtest, Client, RaportInlink
@@ -408,8 +409,17 @@ class PositionView(TemplateView):
 
 
 class ScreamignstartView(TemplateView):
-    template_name = 'tool/positions.html'
+    template_name = 'tool/screamingstart.html'
 
     def get(self,request):
         form = ExtractText()
-        return render(request, self.template_name, {'form': form,})
+        files = getfile()
+        return render(request, self.template_name, {'form': form,'links':files})
+
+    def post(self, request):
+        form = ExtractText(request.POST)
+        if form.is_valid():
+            extractform = form.cleaned_data['urlb']
+            startsf(extractform)
+
+        return render(request, self.template_name,{'form': form,'links': 'OK' })
