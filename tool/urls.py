@@ -1,6 +1,6 @@
 from django.urls import path
 from tool.views import Index, Extractor,Httpheader,Senutourl,Googletop, Googlesite, profile, \
-    Speedpage,ScreamingFrog,RaportScreamingView,upload_file,upload_raport_all,Clientraportlist, positions,PositionView
+    Speedpage,ScreamingFrog,RaportScreamingView,upload_file,upload_raport_all,Clientraportlist, positions,PositionView, ScreamignstartView
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -21,4 +21,5 @@ urlpatterns = [
     path('raport/<client>',Clientraportlist.as_view(), name='raport-client'),
     path('raportupload',upload_file, name='raport'),
     path('raportallupload',upload_raport_all, name='raportall'),
+    path('screamingstart',ScreamignstartView.as_view(), name='screamingstart'),
     ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)+static(settings.STATIC_URL, document_root=settings.MEDIA_URL)

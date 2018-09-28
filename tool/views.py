@@ -405,3 +405,11 @@ class PositionView(TemplateView):
             links= getsitelinks(extractform)
 
         return render(request, self.template_name,{'form': form,'links':links})
+
+
+class ScreamignstartView(TemplateView):
+    template_name = 'tool/positions.html'
+
+    def get(self,request):
+        form = ExtractText()
+        return render(request, self.template_name, {'form': form,})
