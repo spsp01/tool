@@ -29,7 +29,10 @@ def httpresponse(url):
     if r.status_code == 200:
        return(r.headers)
     else:
-        return('Błedny kod odpowiedzi: '+ r.status_code)
+
+        string=  'Błedny kod odpowiedzi: '+ str(r.status_code)
+        header = {'Błąd': string}
+        return(header)
 
 
 def senutourl(url):
@@ -62,6 +65,7 @@ def getgooglelinks(fraza):
 def getsitelinks(domain):
     headers = {'user-agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36'}
     url_site = 'https://www.google.pl/search?q=site%3A'+domain+'&num=100'
+
     r = requests.get(url_site,headers=headers)
     if r.status_code == 200:
         soup = BeautifulSoup(r.text, 'lxml')
@@ -70,4 +74,5 @@ def getsitelinks(domain):
         for index,a in enumerate(h3s):
             if index > 0:
                 urls.append(a.find('a').get('href'))
+
         return(urls)

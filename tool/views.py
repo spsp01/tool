@@ -51,6 +51,7 @@ class Httpheader(TemplateView):
         if form.is_valid():
             extractform = form.cleaned_data['urla']
             httpresp= httpresponse(extractform)
+
         return render(request, self.template_name,{'form': form,'payload':httpresp})
 
 class Senutourl(TemplateView):
