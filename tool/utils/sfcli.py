@@ -96,7 +96,7 @@ def startlighthouse(url):
     return 'OK'
 
 #geturl('https://axa.pl/dsf/')
-startlighthouse('https://www.zdrowystartwprzyszlosc.pl/okresy-laktacji')
+#startlighthouse('https://axa.pl/ubezpieczenie-zycie-i-zdrowie/')
 # def readoutput():
 #     p= subprocess.Popen('dir',shell=True,  stdout=subprocess.PIPE)
 

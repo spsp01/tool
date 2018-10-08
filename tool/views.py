@@ -6,6 +6,7 @@ from tool.utils.speedp import download, createurljson
 from tool.utils.screaming import NameScreaming, readcsvraport, readcsvallraport
 from tool.utils.position import getposition
 from tool.utils.sfcli import startsf, getfile
+from tool.utils.readlight import Lighthouseraport
 from django.http import JsonResponse, HttpResponseRedirect, HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from tool.models import RaportScreaming, RaportScreamingtest, Client, RaportInlink
@@ -424,3 +425,14 @@ class ScreamignstartView(TemplateView):
             startsf(extractform)
 
         return render(request, self.template_name,{'form': form,'links': 'OK' })
+
+class ScreamignstartView(TemplateView):
+    template_name = 'tool/lighthouse-raport.html'
+
+    def get(self,request):
+        raport = Lighthouseraport('E:\lighthouse\\axa.pl\\5-10-2018\\axa.pl.json')
+
+        content = {'metrics':raport.readproperty('metrics'),
+                   'first_meaningful_paint': raport.readproperty('first-meaningful-paint')['displayValue']}
+        return render(request, self.template_name, {'content': content})
+

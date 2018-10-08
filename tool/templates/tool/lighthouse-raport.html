@@ -1,0 +1,38 @@
+{% extends 'tool/base.html' %}
+{% load static %}
+{% block content %}
+<div class="my-3 my-md-5">
+    <div class="container">
+        <div class="page-header">
+            <h1 class="page-title">
+                Raport lighthouse
+            </h1>
+        </div>
+     <div class="row">
+
+
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Lighthouse raport</h3>
+                </div>
+                <div class="card-body">
+                <ol id="list">
+
+                   <li>
+                       {{content.metrics}}
+                   </li>
+                     <li>
+                       {{content.first_meaningful_paint}}
+                   </li>
+                </ol>
+                </div>
+            </div>
+
+        </div>
+         </div>
+    </div>
+
+    </div>
+
+{% endblock content %}

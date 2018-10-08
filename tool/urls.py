@@ -22,4 +22,5 @@ urlpatterns = [
     path('raportupload',upload_file, name='raport'),
     path('raportallupload',upload_raport_all, name='raportall'),
     path('screamingstart',ScreamignstartView.as_view(), name='screamingstart'),
+    path('lighthouse',ScreamignstartView.as_view(), name='lighthouse'),
     ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)+static(settings.STATIC_URL, document_root=settings.MEDIA_URL)
