@@ -62,6 +62,7 @@ def getgooglelinks(fraza):
             urls.append(a.find('a').get('href'))
         return(urls)
 
+
 def getsitelinks(domain):
     headers = {'user-agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36'}
     url_site = 'https://www.google.pl/search?q=site%3A'+domain+'&num=100'

@@ -83,6 +83,7 @@ def geturl(url):
 
     return pathdash
 
+
 def cleanurl(url):
     if '?' in url:
         urlclean= url.split('?')[0]

@@ -42,6 +42,7 @@ class Lighthouseraport():
 
 
 
+
             # first_meaningful_paint = data['audits']['first-meaningful-paint']
             # estimated_input_latency = data['audits']['estimated-input-latency']
             # errors_in_console = data['audits']['errors-in-console']

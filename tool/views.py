@@ -436,3 +436,4 @@ class ScreamignstartView(TemplateView):
                    'first_meaningful_paint': raport.readproperty('first-meaningful-paint')['displayValue']}
         return render(request, self.template_name, {'content': content})
 
+
