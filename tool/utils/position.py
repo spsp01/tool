@@ -48,6 +48,3 @@ def getposition(phrase,domain):
             return response
         else:
             return str(phrase)+ ', >100, N/A'
-
-#print(getposition('odkurzacze workowe','tefal.pl'))
-

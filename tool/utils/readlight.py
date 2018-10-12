@@ -4,11 +4,11 @@ import json
 class Lighthouseraport():
     def __init__(self,path):
         self.path = path
-        self.raport = self.readfile(path)
+        self.raport = self.readfile()
 
-    def readfile(self,path):
-        filejson = path
-        with open(filejson, 'r', encoding='UTF-8') as read_file:
+    def readfile(self):
+
+        with open(self.path, 'r', encoding='UTF-8') as read_file:
             data = json.load(read_file)
             return data
 
@@ -40,8 +40,17 @@ class Lighthouseraport():
 
         return self.raport['audits'][property]
 
+    def readmetrics(self):
+        seo= raport.readfile()['categories']['seo']['score']
+        performance = raport.readfile()['categories']['performance']['score']
+        best_practices = raport.readfile()['categories']['best-practices']['score']
+        pwa = raport.readfile()['categories']['pwa']['score']
 
-
+        response = {'seo': int(seo*100),
+                    'performance': int(performance*100),
+                    'best_practices':int(best_practices*100),
+                    'pwa':int(pwa*100)}
+        return response
 
             # first_meaningful_paint = data['audits']['first-meaningful-paint']
             # estimated_input_latency = data['audits']['estimated-input-latency']
@@ -66,5 +75,5 @@ class Lighthouseraport():
             # external_anchors_use_rel_noopener = data['audits']['external-anchors-use-rel-noopener']
 
 
-# raport = Lighthouseraport('E:\lighthouse\\axa.pl\\5-10-2018\\axa.pl.json')
-# print(raport.readproperty('uses-responsive-images'))
+raport = Lighthouseraport('E:\lighthouse\\axa.pl\\5-10-2018\\axa.pl.json')
+print(raport.readmetrics())

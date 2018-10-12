@@ -20,21 +20,19 @@
                    <li class="nav-item">
                     <a href="{% url 'toolseo:httpheader' %}" class="nav-link {% if active == 'httpheader' %} active {% endif %}" ><i class="fe fe-list"></i>Httpheader</a>
                   </li>
-                  <li class="nav-item">
-                    <a href="{% url 'toolseo:senuto' %}" class="nav-link {% if active == 'senuto' %} active {% endif %}" ><i class="fe fe-database"></i>Senuto URL</a>
-                  </li>
-                   <li class="nav-item">
-                    <a href="{% url 'toolseo:googletop' %}" class="nav-link {% if active == 'googletop' %} active {% endif %}" ><i class="fe fe-award"></i>Google TOP</a>
-                  </li>
-                   <li class="nav-item">
-                    <a href="/googlesite" class="nav-link" ><i class="fe fe-book-open"></i>Google Site</a>
-                  </li>
+
                      <li class="nav-item">
-                    <a href="/speedp" class="nav-link" ><i class="fe fe-book-open"></i>Google PageSpeed</a>
+                    <a href="/lighthouse" class="nav-link" ><i class="fe fe-award"></i>Lighthouse</a>
                   </li>
-                     </li>
+                    <li class="nav-item dropdown">
+                        <a href="javascript:void(0)" class="nav-link" data-toggle="dropdown"><i class="fe fe-database"></i>Senuto</a>
+                        <div class="dropdown-menu dropdown-menu-arrow">
 
+                            <a href="{% url 'toolseo:senuto' %}" class="dropdown-item ">Senuto URL</a>
+                            <a href="/senutoposition" class="dropdown-item ">Senuto pozycje</a>
 
+                        </div>
+                    </li>
 
                     <li class="nav-item dropdown">
                         <a href="javascript:void(0)" class="nav-link" data-toggle="dropdown"><i class="fe fe-file"></i>Screaming</a>
@@ -44,6 +42,17 @@
                             <a href="/raportupload" class="dropdown-item ">Import</a>
                             <a href="/raportallupload" class="dropdown-item ">Import all</a>
                             <a href="/screamingstart" class="dropdown-item ">Screaming start</a>
+                        </div>
+                    </li>
+                      <li class="nav-item dropdown">
+                        <a href="javascript:void(0)" class="nav-link" data-toggle="dropdown"><i class="fe fe-file"></i>Google</a>
+                        <div class="dropdown-menu dropdown-menu-arrow">
+
+                            <a href="/googletop" class="dropdown-item ">Google TOP</a>
+                            <a href="/googlesite" class="dropdown-item ">Google Site</a>
+                            <a href="/speedp" class="dropdown-item ">Google Pagespeed</a>
+                            <a href="/position" class="dropdown-item ">Google pozycje</a>
+
                         </div>
                     </li>
                 </ul>

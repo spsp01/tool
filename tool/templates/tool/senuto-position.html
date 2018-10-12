@@ -1,0 +1,77 @@
+{% extends 'tool/base.html' %}
+{% load static %}
+{% block content %}
+<div class="my-3 my-md-5">
+    <div class="container">
+        <div class="page-header">
+            <h1 class="page-title">
+                Senuto Position
+            </h1>
+        </div>
+     <div class="row">
+        <div class="col-lg-12">
+
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Frazy</h3>
+                </div>
+
+
+                <div class="card-body">
+                    <form action="/senutoposition" method="post">
+                      {% csrf_token %}
+                 <div class="form-group">
+                        <label for class="form-label">Domena</label>
+                        {{form.urlb}}
+                    </div>
+                    <div class="form-group">
+                      <label for class="form-label">Frazy</label>
+                      {{form.phrase}}
+                    </div>
+                    <button class="btn btn-primary btn-block">Extract</button>
+                    </form>
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Wynik</h3>
+                </div>
+
+                    <table class="table card-table " >
+<thead>
+                        <tr>
+                          <th >Słowo</th>
+                          <th>Pozycja</th>
+                          <th>Url</th>
+                          <th>Llow</th>
+
+                        </tr>
+                      </thead>
+                        {%for i in content%}
+                        <tr>
+                  <td>{{i.keyword}}</td>
+                          <td>  {{i.position}}</td>
+                          <td>  {{i.url}}</td>
+                         <td>   {{i.llow}}</td>
+
+                        </tr>
+                {% endfor %}
+                    </table>
+
+
+
+            </div>
+
+        </div>
+         </div>
+    </div>
+
+    </div>
+
+{% endblock content %}

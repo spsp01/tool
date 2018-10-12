@@ -14,6 +14,11 @@ class ExtractText(forms.Form):
     urlb = forms.CharField()
     urlb.widget.attrs['class'] = 'form-control'
 
+class ExtractTwo(forms.Form):
+    urlb = forms.CharField()
+    phrase=forms.CharField(widget=forms.Textarea(attrs={'style':'width:100%'}))
+    urlb.widget.attrs['class'] = 'form-control'
+
 
 class UploadFileForm(forms.Form):
     client = forms.CharField(max_length=50)

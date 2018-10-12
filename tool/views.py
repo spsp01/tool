@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView, View, DetailView,ListView
-from tool.forms import ExtractForm,ExtractUrlForm,ExtractText, UploadFileForm
-from tool.utils.utils import aExtract,gethtml,httpresponse,senutourl,getgooglelinks,getsitelinks
+from tool.forms import ExtractForm,ExtractUrlForm,ExtractText, UploadFileForm,ExtractTwo
+from tool.utils.utils import aExtract,gethtml,httpresponse,senutourl,getgooglelinks,getsitelinks,senutoposition, senutopositioncsv
 from tool.utils.speedp import download, createurljson
 from tool.utils.screaming import NameScreaming, readcsvraport, readcsvallraport
 from tool.utils.position import getposition
@@ -432,8 +432,28 @@ class ScreamignstartView(TemplateView):
     def get(self,request):
         raport = Lighthouseraport('E:\lighthouse\\axa.pl\\5-10-2018\\axa.pl.json')
 
-        content = {'metrics':raport.readproperty('metrics'),
+        content = {'summary': raport.readmetrics(),
+                   'metrics':raport.readproperty('metrics'),
                    'first_meaningful_paint': raport.readproperty('first-meaningful-paint')['displayValue']}
         return render(request, self.template_name, {'content': content})
 
 
+class SenutoPosition(TemplateView):
+    template_name = 'tool/senuto-position.html'
+
+    def get(self,request):
+        form = ExtractTwo()
+        return render(request, self.template_name, {'form': form,})
+
+    def post(self, request):
+        form = ExtractTwo(request.POST)
+
+        if form.is_valid():
+           domain = form.cleaned_data['urlb']
+           phrase=form.cleaned_data['phrase']
+           #response= senutoposition(domain,phrase)
+           response = HttpResponse(senutopositioncsv(domain, phrase))
+           response['Content-Disposition'] = "attachment; filename='pozycje.csv'"
+        return response
+
+        #return render(request, self.template_name,{'form': form,'content':response})

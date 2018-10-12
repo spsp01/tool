@@ -1,7 +1,17 @@
 from bs4 import BeautifulSoup
-import xml, html5lib
+from random import choice
+import csv
 import requests
 from requests.auth import HTTPBasicAuth
+
+desktop_agents = [
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0'
+]
+
+def random_headers():
+    return {'User-Agent': choice(desktop_agents),'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'}
+
 
 def aExtract(html):
     soup = BeautifulSoup(html,'html5lib')
@@ -14,8 +24,8 @@ def aExtract(html):
     return(listlinks2,len1,lenunique)
 
 def gethtml(url):
-    headers = {'user-agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36'}
-    r = requests.get(url,headers=headers)
+
+    r = requests.get(url,random_headers())
 
     if r.status_code == 200:
        return(aExtract(r.text))
@@ -51,29 +61,54 @@ def senutourl(url):
     return(keywordspair)
 
 def getgooglelinks(fraza):
-    headers = {'user-agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36'}
-    url_fraza = 'https://www.google.pl/search?q='+fraza+'&num=100'
-    r = requests.get(url_fraza,headers=headers)
+
+    url_fraza = 'https://www.google.pl/search?q='+fraza+'&num=100&ie=UTF-8&gbv=1'
+    r = requests.get(url_fraza,headers=random_headers())
     if r.status_code == 200:
         soup = BeautifulSoup(r.text, 'lxml')
         h3s= soup.find_all('h3', class_='r')
         urls=[]
         for index,a in enumerate(h3s):
-            urls.append(a.find('a').get('href'))
+            urls.append(a.find('a').get('href').replace('/url?q=', '').split('&')[0])
         return(urls)
 
 
 def getsitelinks(domain):
-    headers = {'user-agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36'}
-    url_site = 'https://www.google.pl/search?q=site%3A'+domain+'&num=100'
-
-    r = requests.get(url_site,headers=headers)
+    url_site = 'https://www.google.pl/search?q=site%3A'+domain+'&num=100&ie=UTF-8&gbv=1'
+    r = requests.get(url_site,headers=random_headers())
     if r.status_code == 200:
         soup = BeautifulSoup(r.text, 'lxml')
         h3s= soup.find_all('h3', class_='r')
         urls=[]
         for index,a in enumerate(h3s):
             if index > 0:
-                urls.append(a.find('a').get('href'))
+                urls.append(a.find('a').get('href').replace('/url?q=', '').split('&')[0])
 
         return(urls)
+
+
+def senutoposition(domain,phrase):
+    files= {'file':phrase}
+    payload = {'domain':domain}
+    r = requests.post('http://dolphin.senuto.com/positions_batch.php', auth=HTTPBasicAuth('senuto', 'SenutO'),files=files, data=payload)
+    #print(r.text.encode('UTF-8').split('\n'))
+    csv_reader = csv.reader(r.text.splitlines())
+    keywords = []
+
+    for i in csv_reader:
+        print(i)
+        keyword={}
+        keyword['keyword']= i[0].replace('Å¼','ż')
+        keyword['llow'] = i[1]
+        keyword['position'] = i[2]
+        keyword['url'] = i[3]
+        keywords.append(keyword)
+    return keywords
+
+
+def senutopositioncsv(domain,phrase):
+    files= {'file':phrase}
+    payload = {'domain':domain}
+    r = requests.post('http://dolphin.senuto.com/positions_batch.php', auth=HTTPBasicAuth('senuto', 'SenutO'),files=files, data=payload)
+
+    return r.text
