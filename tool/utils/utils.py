@@ -111,4 +111,4 @@ def senutopositioncsv(domain,phrase):
     payload = {'domain':domain}
     r = requests.post('http://dolphin.senuto.com/positions_batch.php', auth=HTTPBasicAuth('senuto', 'SenutO'),files=files, data=payload)
 
-    return r.text
+    return r.text.replace('Å¼','ż').encode('UTF-8')

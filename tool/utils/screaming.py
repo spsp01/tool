@@ -7,20 +7,26 @@ def readcsvraport(csvfileraw):
      csv_reader = csv.reader(io_string,delimiter=',', quotechar='"')
      csvlist=list(csv_reader)
 
-     if csvlist[216][1] != None:
-         csvlist.insert(216, [0,0,0])
-     if csvlist[217][1] != None:
-         csvlist.insert(217, [0,0,0])
-     if csvlist[218][1] != None:
-         csvlist.insert(218, [0,0,0])
-     if csvlist[219][1] != None:
-         csvlist.insert(219, [0,0,0])
-     if csvlist[220][1] != None:
-         csvlist.insert(220, [0,0,0])
-     if csvlist[221][1] != None:
-         csvlist.insert(221, [0,0,0])
+     try:
+         print(csvlist[236][1])
+     except:
+         csvlist[236] = [0,0,0]
+     if csvlist[237][1] == None:
+         csvlist[237] = [0,0,0]
+     if csvlist[238][1] == None:
+         csvlist[238] = [0, 0, 0]
+     if csvlist[239][1] == None:
+         csvlist[239] = [0, 0, 0]
+     if csvlist[240][1] == None:
+         csvlist[240] = [0, 0, 0]
+     if csvlist[241][1] == None:
+         csvlist[241] = [0, 0, 0]
 
-     return(csvlist)
+     try:
+         print(csvlist[246][1])
+     except:
+          csvlist[246] = [0, 0, 0]
+     return csvlist
 
 
 def readcsvallraport(csvfileraw):
@@ -100,3 +106,21 @@ class NameScreaming():
         for i in range(108, 111):
             images.append(NameScreaming.rownumber(i))
         return images
+
+
+#
+# def readcsvraporttest(csvfileraw):
+#
+#      csv_reader = csv.reader(csvfileraw,delimiter=',', quotechar='"')
+#      csvlist=list(csv_reader)
+#      for index, i in enumerate(csvlist):
+#          print(str(index)+' '+ str(i))
+#
+#
+#      return csvlist
+#
+#
+# def opener():
+#         with open('crawl_overview.csv') as readfile:
+#             readcsvraporttest(readfile)
+# opener()

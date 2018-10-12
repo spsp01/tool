@@ -41,10 +41,10 @@ class Lighthouseraport():
         return self.raport['audits'][property]
 
     def readmetrics(self):
-        seo= raport.readfile()['categories']['seo']['score']
-        performance = raport.readfile()['categories']['performance']['score']
-        best_practices = raport.readfile()['categories']['best-practices']['score']
-        pwa = raport.readfile()['categories']['pwa']['score']
+        seo= self.raport['categories']['seo']['score']
+        performance = self.raport['categories']['performance']['score']
+        best_practices = self.raport['categories']['best-practices']['score']
+        pwa = self.raport['categories']['pwa']['score']
 
         response = {'seo': int(seo*100),
                     'performance': int(performance*100),
@@ -75,5 +75,5 @@ class Lighthouseraport():
             # external_anchors_use_rel_noopener = data['audits']['external-anchors-use-rel-noopener']
 
 
-raport = Lighthouseraport('E:\lighthouse\\axa.pl\\5-10-2018\\axa.pl.json')
-print(raport.readmetrics())
+# raport = Lighthouseraport('E:\lighthouse\\axa.pl\\5-10-2018\\axa.pl.json')
+# print(raport.readmetrics())

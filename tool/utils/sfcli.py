@@ -6,7 +6,12 @@ import subprocess
 
 def getdomain(url):
     # Returns domain from url
-    domain = urlparse(url).hostname.replace("www.", "")
+    print(url)
+    if 'www' in url:
+        domain = urlparse(url).hostname.replace("www.", "")
+    else:
+        domain = urlparse(url).hostname
+    print(domain)
     return domain
 
 def pathwindows(domain,folder,subfolder):
@@ -23,11 +28,11 @@ def pathwindows(domain,folder,subfolder):
     return path
 
 
-def startsf(url):
-    string = 'ScreamingFrogSEOSpiderCli -crawl ' + url +' --headless --overwrite --save-crawl --export-tabs "Internal:All" '+isconfigin(getdomain(url)) +' --output-folder ' + str(pathwindows(getdomain(url),'screaming','crawl'))
-    print(string)
-    subprocess.run(string,shell=True, check=True)
-    return 'OK'
+# def startsf(url):
+#     string = 'ScreamingFrogSEOSpiderCli -crawl ' + url +' --headless --overwrite --save-crawl --export-tabs "Internal:All" '+isconfigin(getdomain(url)) +' --output-folder ' + str(pathwindows(getdomain(url),'screaming','crawl'))
+#     print(string)
+#     subprocess.run(string,shell=True, check=True)
+#     return 'OK'
 
 def getfile():
     b = os.walk('E:/screaming/crawl')
@@ -64,7 +69,7 @@ def isconfigin(domain):
     return ''
 
 def startsf(url):
-    string = 'ScreamingFrogSEOSpiderCli -crawl ' + url +' --headless --overwrite --save-crawl --export-tabs "Internal:All" '+isconfigin(getdomain(url)) +' --output-folder ' + str(pathwindows(getdomain(url)))
+    string = 'ScreamingFrogSEOSpiderCli -crawl ' + url +' --headless --overwrite --save-crawl --export-tabs "Internal:All" '+isconfigin(getdomain(url)) +' --output-folder ' + str(pathwindows(getdomain(url),'screaming','crawl'))
     print(string)
     subprocess.run(string,shell=True, check=True)
     return 'OK'
@@ -97,7 +102,7 @@ def startlighthouse(url):
     return 'OK'
 
 #geturl('https://axa.pl/dsf/')
-#startlighthouse('https://axa.pl/ubezpieczenie-zycie-i-zdrowie/')
+#startlighthouse('https://axa.pl/')
 # def readoutput():
 #     p= subprocess.Popen('dir',shell=True,  stdout=subprocess.PIPE)
 
