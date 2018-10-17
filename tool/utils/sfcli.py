@@ -47,8 +47,13 @@ def getfile():
                     b=i[0].split("\\")[2]
                     c= str(a)+', '+ str(b)+', '+ str(i[-1][0])
                     d =str(a)+', '+ str(b)+', '+ str(i[-1][1])
+                    try:
+                        e = str(a) + ', ' + str(b) + ', ' + str(i[-1][2])
+                    except:
+                        e=('N/A')
                     files.append(c)
                     files.append(d)
+                    files.append(e)
             except:
                 files.append('>NA')
     #print(files)
@@ -69,7 +74,7 @@ def isconfigin(domain):
     return ''
 
 def startsf(url):
-    string = 'ScreamingFrogSEOSpiderCli -crawl ' + url +' --headless --overwrite --save-crawl --export-tabs "Internal:All" '+isconfigin(getdomain(url)) +' --output-folder ' + str(pathwindows(getdomain(url),'screaming','crawl'))
+    string = 'ScreamingFrogSEOSpiderCli -crawl ' + url +' --headless --overwrite --save-crawl --save-report "Crawl Overview" --export-tabs "Internal:All" '+isconfigin(getdomain(url)) +' --output-folder ' + str(pathwindows(getdomain(url),'screaming','crawl'))
     print(string)
     subprocess.run(string,shell=True, check=True)
     return 'OK'
@@ -102,7 +107,7 @@ def startlighthouse(url):
     return 'OK'
 
 #geturl('https://axa.pl/dsf/')
-#startlighthouse('https://axa.pl/')
+
 # def readoutput():
 #     p= subprocess.Popen('dir',shell=True,  stdout=subprocess.PIPE)
 

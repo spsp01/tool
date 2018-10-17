@@ -4,7 +4,7 @@ import time
 
 def selpoz(phrase,driver):
     dchrome= driver
-    url_phrase = 'https://www.google.pl/search?q='+phrase
+    url_phrase = 'https://www.google.pl/search?q='+phrase+'&oq='+phrase+'&num=50&sourceid=chrome&ie=UTF-8'
     base_url = dchrome.get(url_phrase)
     urlssel = dchrome.find_elements_by_css_selector('div.r a')
     urls = []
@@ -15,7 +15,6 @@ def selpoz(phrase,driver):
              urls.append(url)
              domains.append(urlparse(url).hostname.replace("www.", ""))
     return urls,domains
-
 
 def startchrome(lista,domain):
     options = webdriver.ChromeOptions()
@@ -35,8 +34,25 @@ def startchrome(lista,domain):
     return(results)
 
 
-lista= ['ubezpieczenia','ubezpieczenie ac','axa']
-print(startchrome(lista,'axa.pl'))
+
+def selhtml(phrase):
+
+    options = webdriver.ChromeOptions()
+    options.add_argument('headless')
+    dchrome = webdriver.Chrome()
+
+    url_phrase = 'https://www.google.pl/search?q='+phrase
+    base_url = dchrome.get(url_phrase)
+    urlssel = dchrome.find_elements_by_css_selector('div.r a')
+    urls = []
+    domains =[]
+    for index, i in enumerate(urlssel):
+        url = i.get_property('href')
+        if i.get_attribute('class') == '':
+             urls.append(url)
+             domains.append(urlparse(url).hostname.replace("www.", ""))
+    dchrome.close()
+    return urls,domains
 
 def generatelist(arr, size):
     arrs = []
@@ -46,3 +62,8 @@ def generatelist(arr, size):
          arr   = arr[size:]
     arrs.append(arr)
     return arrs
+
+def seltest():
+       dchrome = webdriver.Firefox()
+       dchrome.add_cookie({})
+

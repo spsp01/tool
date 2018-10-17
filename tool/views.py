@@ -430,11 +430,25 @@ class LighthouseView(TemplateView):
     template_name = 'tool/lighthouse-raport.html'
 
     def get(self,request):
-        raport = Lighthouseraport('E:\lighthouse\\axa.pl\\12-10-2018\\axa.pl.json')
+        raport = Lighthouseraport('E:\lighthouse\\axa.pl\\5-10-2018\\axa.pl-ubezpieczenie-zycie-i-zdrowie.json')
 
         content = {'summary': raport.readmetrics(),
+                   'url':raport.readinfo(),
                    'metrics':raport.readproperty('metrics'),
-                   'first_meaningful_paint': raport.readproperty('first-meaningful-paint')['displayValue']}
+                   'first_contentful_paint': raport.readproperty('first-contentful-paint'),
+                   'first_meaningful_paint': raport.readproperty('first-meaningful-paint'),
+                   'speed_index':raport.readproperty('speed-index'),
+                   'interactive':raport.readproperty('interactive'),
+                   'errors_in_console': raport.readproperty('errors-in-console'),
+                   'is_on_https': raport.readproperty('is-on-https'),
+                   'mobile_friendly':raport.readproperty('mobile-friendly'),
+                   'robots_txt':raport.readproperty('robots-txt'),
+                   'is_crawlable':raport.readproperty('is-crawlable'),
+                   'without_javascript':raport.readproperty('without-javascript'),
+                   'final_screenshot':raport.readproperty('final-screenshot'),
+                   'network_requests': raport.readproperty('network-requests'),
+                   }
+
         return render(request, self.template_name, {'content': content})
 
 
@@ -460,3 +474,20 @@ class SenutoPosition(TemplateView):
            else:
               response= senutoposition(domain,phrase)
            return render(request, self.template_name,{'form': form,'content':response})
+
+class SeleniumPosition(TemplateView):
+    template_name = 'tool/senuto-position.html'
+
+    def get(self,request):
+        form = ExtractTwo()
+        return render(request, self.template_name, {'form': form,})
+
+    def post(self, request):
+        form = ExtractTwo(request.POST)
+
+        if form.is_valid():
+
+           domain = form.cleaned_data['urlb']
+           phrase=form.cleaned_data['phrase']
+           response='a'
+           return render(request, self.template_name, {'form': form, 'content': response})

@@ -61,6 +61,114 @@
                   </div>
                 </div>
               </div>
+<div class="col-sm-6 col-lg-3">
+                <div class="card p-3">
+                  <div class="d-flex align-items-center">
+                    <span class="stamp stamp-md bg-green mr-3">
+                      <i class="fa fa-link"></i>
+                    </span>
+                    <div>
+                      <h4 class="m-0"><a href="javascript:void(0)">  {{content.first_contentful_paint.displayValue}} </a></h4>
+                      <small class="text-muted">First Contentful Paint</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+         <div class="col-sm-6 col-lg-3">
+                <div class="card p-3">
+                  <div class="d-flex align-items-center">
+                    <span class="stamp stamp-md bg-green mr-3">
+                      <i class="fa fa-link"></i>
+                    </span>
+                    <div>
+                      <h4 class="m-0"><a href="javascript:void(0)">{{content.first_meaningful_paint.displayValue}}</a></h4>
+                      <small class="text-muted">First Meaningful Paint</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+         <div class="col-sm-6 col-lg-3">
+                <div class="card p-3">
+                  <div class="d-flex align-items-center">
+                    <span class="stamp stamp-md bg-green mr-3">
+                      <i class="fa fa-link"></i>
+                    </span>
+                    <div>
+                      <h4 class="m-0"><a href="javascript:void(0)">{{content.speed_index.displayValue}}</a></h4>
+                      <small class="text-muted">Speed Index</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+         <div class="col-sm-6 col-lg-3">
+                <div class="card p-3">
+                  <div class="d-flex align-items-center">
+                    <span class="stamp stamp-md bg-green mr-3">
+                      <i class="fa fa-link"></i>
+                    </span>
+                    <div>
+                      <h4 class="m-0"><a href="javascript:void(0)">{{content.interactive.displayValue}}</a></h4>
+                      <small class="text-muted">Time to Interactive</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+         <div class="col-sm-6 col-lg-4">
+                <div class="card">
+                  <div class="card-header">
+                    <h2 class="card-title">Screen</h2>
+                  </div>
+                 <div class="card-body">
+                     <div class="text-center">                      <img src="{{content.final_screenshot.details.data}}" alt="screen" />
+</div>
+                 </div>
+                </div>
+              </div>
+<div class="col-sm-6 col-lg-8">
+                <div class="card">
+                  <div class="card-header">
+                    <h2 class="card-title">Raport</h2>
+                  </div>
+                  <table class="table card-table">
+                    <tbody><tr>
+                      <td>Adres URL</td>
+                      <td class="text-right">
+                        <span class="badge badge-default">{{content.url}}</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Mobile Friendly</td>
+                      <td class="text-right">
+                        <span class="badge badge-success">{{content.mobile_friendly.title}}</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Https</td>
+                      <td class="text-right">
+                        <span class="badge badge-success">{{content.is_on_https.title}}</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Robots txt</td>
+                      <td class="text-right">
+                        <span class="badge badge-danger">{{content.robots_txt.title}}</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Crawlable</td>
+                      <td class="text-right">
+                        <span class="badge badge-default">{{content.is_crawlable.title}}</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Without Javascript</td>
+                      <td class="text-right">
+                        <span class="badge badge-warning">{{content.without_javascript.title}}</span>
+                      </td>
+                    </tr>
+                  </tbody></table>
+                </div>
+              </div>
 
         <div class="col-lg-12">
             <div class="card">
@@ -74,10 +182,44 @@
                        {{content.metrics}}
                    </li>
                      <li>
-                       {{content.first_meaningful_paint}}
-                   </li>
+                        {{content.errors_in_console.title}}
+
+                                            </li>
+
+
                 </ol>
                 </div>
+            </div>
+
+        </div>
+
+                 <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Urls</h3>
+                </div>
+             <div class="table-responsive">
+                 <table class="table card-table table-vcenter ">
+                 <thead>
+                        <tr>
+                          <th>Type</th>
+                          <th>Url</th>
+
+
+                        </tr>
+                      </thead>
+                     <tbody>
+                     {% for i in content.network_requests.details.items %}
+                     <tr>
+                         <td>  {{i.mimeType}} </td>
+                   <td> {{i.url}}</td>
+
+                         </tr>
+                    {% endfor %}
+                     </tbody>
+                     </table>
+
+                                </div>
             </div>
 
         </div>

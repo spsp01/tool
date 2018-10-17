@@ -2,11 +2,15 @@ from bs4 import BeautifulSoup
 from random import choice
 import csv
 import requests
+
+
 from requests.auth import HTTPBasicAuth
 
 desktop_agents = [
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
-    'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+    'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)',
+    'Opera/9.80 (Windows NT 6.0) Presto/2.12.388 Version/12.14'
 ]
 
 def random_headers():
@@ -71,6 +75,8 @@ def getgooglelinks(fraza):
         for index,a in enumerate(h3s):
             urls.append(a.find('a').get('href').replace('/url?q=', '').split('&')[0])
         return(urls)
+    else:
+        return (['Błąd', str(r.status_code)])
 
 
 def getsitelinks(domain):
@@ -83,8 +89,9 @@ def getsitelinks(domain):
         for index,a in enumerate(h3s):
             if index > 0:
                 urls.append(a.find('a').get('href').replace('/url?q=', '').split('&')[0])
-
         return(urls)
+    else:
+        return(['Błąd',str(r.status_code)])
 
 
 def senutoposition(domain,phrase):

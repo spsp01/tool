@@ -26,6 +26,18 @@ def readcsvraport(csvfileraw):
          print(csvlist[246][1])
      except:
           csvlist[246] = [0, 0, 0]
+     try:
+         print(csvlist[274][1])
+     except:
+          csvlist.append([0, 0, 0])
+     try:
+         print(csvlist[275][1])
+     except:
+         csvlist.append([0, 0, 0])
+     try:
+         print(csvlist[276][1])
+     except:
+          csvlist.append([0, 0, 0])
      return csvlist
 
 
