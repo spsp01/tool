@@ -1,4 +1,5 @@
 from selenium import webdriver
+from selenium.webdriver.support.ui import WebDriverWait
 from urllib.parse import urlparse, unquote
 import time
 
@@ -41,7 +42,7 @@ def selhtml(phrase):
     options.add_argument('headless')
     dchrome = webdriver.Chrome()
 
-    url_phrase = 'https://www.google.pl/search?q='+phrase
+    url_phrase = 'https://www.google.pl/search?q='+phrase+'&num=50'
     base_url = dchrome.get(url_phrase)
     urlssel = dchrome.find_elements_by_css_selector('div.r a')
     urls = []
@@ -67,3 +68,31 @@ def seltest():
        dchrome = webdriver.Firefox()
        dchrome.add_cookie({})
 
+def selgoogle(phrase):
+    #using next function
+    dchrome = webdriver.Firefox()
+
+    url_phrase = 'https://www.google.pl/search?q='+phrase
+    base_url = dchrome.get(url_phrase)
+    print(dchrome.page_source)
+    urls= []
+    for x in range(0, 4):
+       urls.extend(divr(dchrome))
+       time.sleep(2)
+       dchrome.find_element_by_id('pnnext').click()
+    urls.extend(divr(dchrome))
+    return urls
+
+def divr(driver):
+    urlssel = driver.find_elements_by_css_selector('div.r a')
+    urls = []
+    for index, i in enumerate(urlssel):
+        url = i.get_property('href')
+        if i.get_attribute('class') == '':
+            urls.append(url)
+    return urls
+
+# for index, i in enumerate(selgoogle('ubezpieczenia ac')):
+#     print(index,' ',i)
+# for index, i in enumerate(selhtml('ubezpieczenia ac')):
+#     print(index,' ',i)

@@ -74,6 +74,7 @@ def isconfigin(domain):
     return ''
 
 def startsf(url):
+    print(url)
     string = 'ScreamingFrogSEOSpiderCli -crawl ' + url +' --headless --overwrite --save-crawl --save-report "Crawl Overview" --export-tabs "Internal:All" '+isconfigin(getdomain(url)) +' --output-folder ' + str(pathwindows(getdomain(url),'screaming','crawl'))
     print(string)
     subprocess.run(string,shell=True, check=True)

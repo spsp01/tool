@@ -7,6 +7,7 @@ from tool.utils.screaming import NameScreaming, readcsvraport, readcsvallraport
 from tool.utils.position import getposition
 from tool.utils.sfcli import startsf, getfile
 from tool.utils.readlight import Lighthouseraport
+from tool.utils.dolphin import getapi
 from django.http import JsonResponse, HttpResponseRedirect, HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from tool.models import RaportScreaming, RaportScreamingtest, Client, RaportInlink
@@ -491,3 +492,22 @@ class SeleniumPosition(TemplateView):
            phrase=form.cleaned_data['phrase']
            response='a'
            return render(request, self.template_name, {'form': form, 'content': response})
+
+class SenutoApi(TemplateView):
+    template_name = 'tool/senuto-dolphin.html'
+
+    def get(self,request):
+        form = ExtractText()
+        return render(request, self.template_name, {'form': form,})
+
+    def post(self, request):
+        form = ExtractText(request.POST)
+
+        if form.is_valid():
+
+           domain = form.cleaned_data['urlb']
+           response= getapi(domain,'weekly','domain_seasonality')
+           information = getapi(domain, 'weekly', 0)
+           domain_competitors = getapi(domain, 'weekly', 'domain_competitors')
+           phrases = getapi(domain, 'weekly', 'domain_keywords_top')
+           return render(request, self.template_name,{'form': form,'content':response,'information':information,'domain_competitors':domain_competitors,'phrases':phrases})

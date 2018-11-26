@@ -78,6 +78,6 @@ class Lighthouseraport():
             # uses_responsive_images = data['audits']['uses-responsive-images']
             # external_anchors_use_rel_noopener = data['audits']['external-anchors-use-rel-noopener']
 
-
-raport = Lighthouseraport('E:\lighthouse\\axa.pl\\5-10-2018\\axa.pl.json')
-print()
+#
+# raport = Lighthouseraport('E:\lighthouse\\axa.pl\\5-10-2018\\axa.pl.json')
+# print()
