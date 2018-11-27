@@ -2,6 +2,10 @@ from bs4 import BeautifulSoup
 from random import choice
 import csv
 import requests
+from requests_html import HTMLSession
+from requests_html import HTML
+from lxml import etree
+
 
 
 from requests.auth import HTTPBasicAuth
@@ -119,3 +123,38 @@ def senutopositioncsv(domain,phrase):
     r = requests.post('http://dolphin.senuto.com/positions_batch.php', auth=HTTPBasicAuth('senuto', 'SenutO'),files=files, data=payload)
 
     return r.text.replace('Å¼','ż').encode('UTF-8')
+
+def getlinks(url):
+    session = HTMLSession()
+    try:
+        r = session.get(url)
+        links = r.html.absolute_links
+        listlinks2 = list(set(r.html.absolute_links))
+        len1 = len(r.html.absolute_links)
+        lenunique = len(listlinks2)
+
+        return links,len1,lenunique
+    except:
+        return 'no links'
+
+
+def linksfromsitemap(sitemap):
+    session = HTMLSession()
+    r = session.get(sitemap)
+    soup = BeautifulSoup(r.text,'lxml')
+    result =[]
+    for loc in soup.find_all('loc'):
+        result.append(loc.text)
+    #print(result)
+    #print(len(result))
+    return result
+#linksfromsitemap('https://axa.pl/sitemap.xml')
+
+def geturl(url):
+    session = HTMLSession()
+    r = session.get(sitemap)
+    if r.status_code == 200:
+       return(aExtract(r.text))
+    else:
+        print(r.status_code)
+        return('Brak linków',0,0)

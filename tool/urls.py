@@ -1,6 +1,6 @@
 from django.urls import path
 from tool.views import Index, Extractor,Httpheader,Senutourl,Googletop, Googlesite, profile, \
-    Speedpage,ScreamingFrog,RaportScreamingView,upload_file,upload_raport_all,Clientraportlist, positions,PositionView, ScreamignstartView,SenutoPosition,LighthouseView,SenutoApi
+    Speedpage,ScreamingFrog,RaportScreamingView,upload_file,upload_raport_all,Clientraportlist, positions,PositionView, ScreamignstartView,SenutoPosition,LighthouseView,SenutoApi,Sitemaplinks
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -25,4 +25,5 @@ urlpatterns = [
     path('screamingstart',ScreamignstartView.as_view(), name='screamingstart'),
     path('lighthouse',LighthouseView.as_view(), name='lighthouse'),
     path('senutoapi',SenutoApi.as_view(), name='senutoapi'),
+    path('sitemaplinks', Sitemaplinks.as_view(), name='sitemaplinks' ),
     ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)+static(settings.STATIC_URL, document_root=settings.MEDIA_URL)

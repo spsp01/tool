@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView, View, DetailView,ListView
 from tool.forms import ExtractForm,ExtractUrlForm,ExtractText, UploadFileForm,ExtractTwo
-from tool.utils.utils import aExtract,gethtml,httpresponse,senutourl,getgooglelinks,getsitelinks,senutoposition, senutopositioncsv
+from tool.utils.utils import aExtract,gethtml,httpresponse,senutourl,getgooglelinks,getsitelinks,senutoposition, senutopositioncsv,getlinks,linksfromsitemap
 from tool.utils.speedp import download, createurljson
 from tool.utils.screaming import NameScreaming, readcsvraport, readcsvallraport
 from tool.utils.position import getposition
@@ -34,7 +34,7 @@ class Extractor(TemplateView):
 
         if form2.is_valid():
             extractform = form2.cleaned_data['urla']
-            links, alllinks, uniquelinks = gethtml(extractform)
+            links, alllinks, uniquelinks = getlinks(extractform)
             print(alllinks)
             print(uniquelinks)
 
@@ -511,3 +511,19 @@ class SenutoApi(TemplateView):
            domain_competitors = getapi(domain, 'weekly', 'domain_competitors')
            phrases = getapi(domain, 'weekly', 'domain_keywords_top')
            return render(request, self.template_name,{'form': form,'content':response,'information':information,'domain_competitors':domain_competitors,'phrases':phrases})
+
+class Sitemaplinks(TemplateView):
+    template_name = 'tool/sitemaplinks.html'
+
+    def get(self,request):
+        form = ExtractUrlForm()
+        return render(request, self.template_name, {'form': form,})
+
+    def post(self, request):
+        form = ExtractUrlForm(request.POST)
+        if form.is_valid():
+            extractform = form.cleaned_data['urla']
+            sitemaplinks= linksfromsitemap(extractform)
+            #print(sitemaplinks)
+
+        return render(request, self.template_name,{'form': form,'payload':sitemaplinks})
