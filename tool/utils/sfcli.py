@@ -107,8 +107,17 @@ def startlighthouse(url):
     subprocess.run(string,shell=True, check=True)
     return 'OK'
 
-#geturl('https://axa.pl/dsf/')
 
+def startlighthousebatch(url):
+    string = 'lighthouse '+cleanurl(url)+' --chrome-flags="--headless" --output=json --output-path='+str(Path('E:', '/','batch',geturl(url)+'.json'))
+    print(string)
+    subprocess.run(string,shell=True, check=True)
+    return 'OK'
+
+# listurl= ['https://axa.pl','https://axa.pl/ubezpieczenie-zycie-i-zdrowie/','https://kobieceinspiracje.pl/kulinaria/119506,podudzia-faszerowane-miesem-mielonym-w-sosie-orientalnym-z-papryka-z-jednej-patelni.html']
+#
+# for i in listurl:
+#     startlighthousebatch(i)
 # def readoutput():
 #     p= subprocess.Popen('dir',shell=True,  stdout=subprocess.PIPE)
 

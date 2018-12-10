@@ -8,14 +8,12 @@ def createurljson(url,type):
 def download(url):
     urljson = createurljson(url,'mobile')
     req = requests.get(urljson, timeout=60).json()
+    #print(req.status)
     string = url+';'+str(req['ruleGroups']['SPEED']['score'])+';'+str(req['pageStats']['numberHosts'])+';'+str(req['pageStats']['numberJsResources'])+';'+str(req['pageStats']['numberCssResources'])+';'+str(req['pageStats']['numberResources'])+';'+str(req['pageStats']['totalRequestBytes'])
     errors = ''
     print(url)
     print(string)
     return string
-
-
-
 
 # with open('urls.txt','r',encoding='UTF-8') as f:
 #     content = f.readlines()

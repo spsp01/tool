@@ -1,0 +1,1150 @@
+1542362031828	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Jarek\\AppData\\Local\\Temp\\rust_mozprofile.OirNv3aOc9lJ"
+1542362035524	Marionette	INFO	Listening on port 64053
+1542362035674	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 13104, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PImageBridge::Msg_Update Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PImageBridge::Msg_Update Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+[Parent 13104, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7748, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PImageBridge::Msg_Update Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PImageBridge::Msg_Update Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+[Child 12844, MediaPlayback #3] WARNING: Decoder=197123cbf10 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> __cdecl mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file z:/build/build/src/dom/media/MediaDecoderStateMachine.cpp, line 3429
+[Child 12844, MediaPlayback #1] WARNING: Decoder=197123cbf10 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> __cdecl mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file z:/build/build/src/dom/media/MediaDecoderStateMachine.cpp, line 3429
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PImageBridge::Msg_Update Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+[Parent 13104, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1542362134146	Marionette	INFO	Stopped listening on port 64053
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 12260, C
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542362184014	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "user-data-dir=C:\\Users\\Jarek\\Desktop\\temp" "-foreground" "-no-remote" "-profile" "C:\\Users\\Jarek\\AppData\\Local\\Temp\\rust_mozprofile.sxTmIDuj9jMo"
+1542362186112	Marionette	INFO	Listening on port 64450
+1542362186129	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+[Child 18740, MediaPlayback #1] WARNING: Decoder=2ad6f0c4e90 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> __cdecl mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file z:/build/build/src/dom/media/MediaDecoderStateMachine.cpp, line 3429
+[Child 18740, MediaPlayback #1] WARNING: Decoder=2ad6f0c4e90 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> __cdecl mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file z:/build/build/src/dom/media/MediaDecoderStateMachine.cpp, line 3429
+[Parent 18828, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 18828, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 18828, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6616, Chrome_1542371702298	Marionette	INFO	Stopped listening on port 64450
+[GPU 
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ line 2458: ReferenceError: reference to undefined property "disabled"
+JavaScript strict warning: resource://gre/modules/LightweightThemeConsumer.jsm, line 198: ReferenceError: reference to undefined property "experimental"
+JavaScript strict warning: resource:///modules/PingCentre.jsm, line 60: ReferenceError: reference to undefined property "overrideEndpointPref"
+JavaScript strict warning: resource://gre/modules/ProfileAge.jsm, line 224: ReferenceError: reference to undefined property "reset"
+JavaScript strict warning: resource://gre/modules/PushService.jsm, line 18: ReferenceError: reference to undefined property "getCryptoParams"
+JavaScript strict warning: resource://activity-stream/vendor/Redux.jsm, line 739: ReferenceError: reference to undefined property "NODE_ENV"
+JavaScript strict warning: resource://activity-stream/vendor/Redux.jsm, line 1161: ReferenceError: reference to undefined property "NODE_ENV"
+JavaScript strict warning: resource://activity-stream/vendor/Redux.jsm, line 1192: ReferenceError: reference to undefined property "NODE_ENV"
+1542371189366	addons.webextension.ahrefs@AhrefsPteLtd	WARN	Loading extension 'ahrefs@AhrefsPteLtd': Reading manifest: Error processing background.persistent: Event pages are not currently supported. This will run as a persistent background page.
+JavaScript strict warning: resource://gre/modules/RemoteWebProgress.jsm, line 184: ReferenceError: reference to undefined property "matchedList"
+JavaScript strict warning: chrome://browser/content/tabbrowser.js, line 4767: ReferenceError: reference to undefined property "initialPageLoadedFromURLBar"
+JavaScript strict warning: resource://gre/modules/ExtensionCommon.jsm, line 1843: ReferenceError: reference to undefined property "placeholders"
+JavaScript strict warning: resource://activity-stream/lib/SectionsManager.jsm, line 103: ReferenceError: reference to undefined property "feeds.section.highlights.options"
+JavaScript strict warning: resource://gre/modules/Extension.jsm, line 1564: ReferenceError: reference to undefined property "scripts"
+JavaScript strict warning: resource://gre/modules/ExtensionChild.jsm, line 564: ReferenceError: reference to undefined property "viewType"
+JavaScript strict warning: resource://gre/modules/ExtensionChild.jsm, line 470: ReferenceError: reference to undefined property "viewType"
+JavaScript strict warning: resource://services-common/kinto-http-client.js, line 1640: ReferenceError: reference to undefined property "initializer"
+JavaScript strict warning: resource://services-common/kinto-http-client.js, line 1103: ReferenceError: reference to undefined property "initializer"
+JavaScript strict warning: resource://services-common/kinto-http-client.js, line 348: ReferenceError: reference to undefined property "initializer"
+JavaScript strict warning: resource:///modules/CustomizableUI.jsm, line 1532: ReferenceError: reference to undefined property "viewId"
+JavaScript strict warning: resource://gre/modules/ExtensionSettingsStore.jsm, line 62: ReferenceError: reference to undefined property "version"
+JavaScript strict warning: resource://services-common/kinto-offline-client.js, line 354: ReferenceError: reference to undefined property 0
+JavaScript strict warning: chrome://marionette/content/atom.js, line 43: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: chrome://marionette/content/atom.js, line 64: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: chrome://marionette/content/atom.js, line 65: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: chrome://marionette/content/atom.js, line 66: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: chrome://marionette/content/atom.js, line 67: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: chrome://marionette/content/atom.js, line 83: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: chrome://marionette/content/atom.js, line 116: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: chrome://marionette/content/atom.js, line 137: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: chrome://marionette/content/atom.js, line 138: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: chrome://marionette/content/atom.js, line 139: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: chrome://marionette/content/atom.js, line 140: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: chrome://marionette/content/atom.js, line 173: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: chrome://marionette/content/atom.js, line 194: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: chrome://marionette/content/atom.js, line 195: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: chrome://marionette/content/atom.js, line 196: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: chrome://marionette/content/atom.js, line 197: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: chrome://marionette/content/atom.js, line 212: SyntaxError: test for equality (==) mistyped as assignment (=)?
+1542371189967	Marionette	INFO	Listening on port 63187
+JavaScript strict warning: resource://gre/modules/LanguagePrompt.jsm, line 55: ReferenceError: reference to undefined property "pref"
+JavaScript strict warning: resource://gre/modules/addons/XPIInstall.jsm, line 642: ReferenceError: reference to undefined property "strictCompatibility"
+1542371190168	addons.xpi-utils	WARN	updateMetadata: Add-on {e968fc70-8f95-4ab9-9e79-304de2a71ee1} is invalid: Error: Non-restartless extensions no longer supported(resource://gre/modules/addons/XPIInstall.jsm:647:13) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:647:13
+loadFromRDF@XPIInstall.jsm:787:23
+awaitPromise@XPIProvider.jsm:190:3
+syncLoadManifestFromFile@XPIInstall.jsm:870:10
+updateMetadata@XPIDatabase.jsm:2484:21
+updateExistingAddon@XPIDatabase.jsm:2644:18
+processFileChanges@XPIDatabase.jsm:2716:26
+getNewSideloads@XPIProvider.jsm:2592:7
+1542371190181	addons.xpi-utils	WARN	updateMetadata: Add-on jid1-kyxEAcWua7BEKq@jetpack is invalid: Error: Install manifest specifies unknown optionsType: 2(resource://gre/modules/addons/XPIInstall.jsm:655:13) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:655:13
+loadFromRDF@XPIInstall.jsm:787:23
+awaitPromise@XPIProvider.jsm:190:3
+syncLoadManifestFromFile@XPIInstall.jsm:870:10
+updateMetadata@XPIDatabase.jsm:2484:21
+updateExistingAddon@XPIDatabase.jsm:2644:18
+processFileChanges@XPIDatabase.jsm:2716:26
+getNewSideloads@XPIProvider.jsm:2592:7
+1542371190188	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript strict warning: chrome://marionette/content/atom.js, line 43: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: chrome://marionette/content/atom.js, line 64: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: chrome://marionette/content/atom.js, line 65: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: chrome://marionette/content/atom.js, line 66: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: chrome://marionette/content/atom.js, line 67: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: chrome://marionette/content/atom.js, line 83: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: chrome://marionette/content/atom.js, line 116: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: chrome://marionette/content/atom.js, line 137: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: chrome://marionette/content/atom.js, line 138: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: chrome://marionette/content/atom.js, line 139: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: chrome://marionette/content/atom.js, line 140: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: chrome://marionette/content/atom.js, line 173: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: chrome://marionette/content/atom.js, line 194: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: chrome://marionette/content/atom.js, line 195: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: chrome://marionette/content/atom.js, line 196: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: chrome://marionette/content/atom.js, line 197: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: chrome://marionette/content/atom.js, line 212: SyntaxError: test for equality (==) mistyped as assignment (=)?
+1542371190238	addons.xpi-utils	WARN	disabling legacy extension {DDC359D1-844A-42a7-9AA1-88A850A938A8}
+1542371190238	addons.xpi-utils	WARN	disabling legacy extension {DDC359D1-844A-42a7-9AA1-88A850A938A8}
+JavaScript strict warning: chrome://marionette/content/driver.js, line 323: ReferenceError: reference to undefined property "seenEls"
+1542371190265	addons.xpi-utils	WARN	disabling legacy extension useragentoverrider@qixinglu.com
+1542371190265	addons.xpi-utils	WARN	disabling legacy extension useragentoverrider@qixinglu.com
+1542371190274	addons.xpi-utils	WARN	disabling legacy extension jid1-ggfZ35HBOWTEfA@jetpack
+1542371190274	addons.xpi-utils	WARN	disabling legacy extension jid1-ggfZ35HBOWTEfA@jetpack
+1542371190432	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing url: An unexpected property was found in the WebExtension manifest.
+JavaScript strict warning: moz-extension://a0683bcb-d368-426f-978f-73859fd2b9db/build/buildSettings.js, line 10: TypeError: useless expression
+JavaScript strict warning: moz-extension://873f0c4e-0d41-48a4-9a05-14820c3ecc80/event.js, line 1716: ReferenceError: reference to undefined property "Buffer"
+JavaScript strict warning: moz-extension://873f0c4e-0d41-48a4-9a05-14820c3ecc80/event.js, line 9180: ReferenceError: reference to undefined property "Buffer"
+JavaScript strict warning: moz-extension://873f0c4e-0d41-48a4-9a05-14820c3ecc80/event.js, line 5883: TypeError: Symbol.toStringTag is read-only
+JavaScript strict warning: moz-extension://873f0c4e-0d41-48a4-9a05-14820c3ecc80/event.js, line 5883: TypeError: Symbol.toStringTag is read-only
+JavaScript strict warning: moz-extension://873f0c4e-0d41-48a4-9a05-14820c3ecc80/event.js, line 5883: TypeError: Symbol.toStringTag is read-only
+JavaScript strict warning: moz-extension://873f0c4e-0d41-48a4-9a05-14820c3ecc80/event.js, line 5883: TypeError: Symbol.toStringTag is read-only
+JavaScript strict warning: moz-extension://873f0c4e-0d41-48a4-9a05-14820c3ecc80/event.js, line 5883: TypeError: Symbol.toStringTag is read-only
+JavaScript strict warning: moz-extension://c26d5e25-4d44-4e13-9c6a-d7d75ceab555/scripts/utils.js, line 43: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: moz-extension://fc192ee0-ed68-4707-be61-70323768b2f4/common/javascript/jquery/jquery.js, line 7678: SyntaxError: test for equality (==) mistyped as assignment (=)?
+1542371190790	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing background.persistent: Event pages are not currently supported. This will run as a persistent background page.
+JavaScript strict warning: moz-extension://fc192ee0-ed68-4707-be61-70323768b2f4/common/javascript/jquery/jquery.js, line 7734: ReferenceError: reference to undefined property "triggered"
+JavaScript strict warning: moz-extension://873f0c4e-0d41-48a4-9a05-14820c3ecc80/event.js, line 6594: ReferenceError: reference to undefined property "ahrefs__isEnabled"
+JavaScript strict warning: resource://gre/modules/Extension.jsm, line 1995: ReferenceError: reference to undefined property "cleanupFile"
+1542371190897	addons.xpi	WARN	Error loading bootstrap.js for {e968fc70-8f95-4ab9-9e79-304de2a71ee1}: Error opening input stream (invalid filename?): jar:file:///C:/Users/Jarek/AppData/Roaming/Mozilla/Firefox/Profiles/8tujeeh8.default/extensions/%7Be968fc70-8f95-4ab9-9e79-304de2a71ee1%7D.xpi!/bootstrap.js
+1542371190898	addons.xpi	WARN	Add-on {e968fc70-8f95-4ab9-9e79-304de2a71ee1} is missing bootstrap method uninstall
+1542371190901	addons.xpi	WARN	Error loading bootstrap.js for jid1-kyxEAcWua7BEKq@jetpack: ReferenceError: __SCRIPT_URI_SPEC__ is not defined(resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Users/Jarek/AppData/Roaming/Mozilla/Firefox/Profiles/8tujeeh8.default/extensions/jid1-kyxEAcWua7BEKq@jetpack.xpi!/bootstrap.js:7:7) JS Stack trace: @resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Users/Jarek/AppData/Roaming/Mozilla/Firefox/Profiles/8tujeeh8.default/extensions/jid1-kyxEAcWua7BEKq@bootstrap.js:7:7
+loadBootstrapScope@XPIProvider.jsm:1677:9
+callBootstrapMethod@XPIProvider.jsm:1535:9
+_uninstall@XPIProvider.jsm:1823:7
+uninstall@XPIProvider.jsm:1815:12
+processFileChanges@XPIDatabase.jsm:2787:49
+getNewSideloads@XPIProvider.jsm:2592:7
+1542371190902	addons.xpi	WARN	Add-on jid1-kyxEAcWua7BEKq@jetpack is missing bootstrap method uninstall
+1542371190907	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing url: An unexpected property was found in the WebExtension manifest.
+JavaScript strict warning: resource://activity-stream/common/Reducers.jsm, line 269: ReferenceError: reference to undefined property "pinned"
+1542371190928	addons.webextension.<unknown>	WARN	Loading extension 'null': Reading manifest: Error processing background.persistent: Event pages are not currently supported. This will run as a persistent background page.
+JavaScript strict warning: https://www.onet.pl/, line 6: ReferenceError: assignment to undeclared variable accConf
+JavaScript strict warning: https://www.onet.pl/, line 51: ReferenceError: assignment to undeclared variable dataLayer
+JavaScript strict warning: https://www.onet.pl/, line 80: ReferenceError: reference to undefined property "webkitRTCPeerConnection"
+JavaScript strict warning: https://www.onet.pl/, line 117: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.onet.pl/, line 130: ReferenceError: assignment to undeclared variable pp_gemius_identifier
+JavaScript strict warning: https://sgqcvfjvr.onet.pl/YnVpbGQvezlzbG50YTJafWRsQXBpL2RsLmxpYntONWFzX0ZXMn0ubWluLmpz, line 1: ReferenceError: reference to undefined property "msBattery"
+JavaScript strict warning: https://sgqcvfjvr.onet.pl/YnVpbGQvezlzbG50YTJafWRsQXBpL2RsLmxpYntONWFzX0ZXMn0ubWluLmpz, line 1: ReferenceError: reference to undefined property "forEach"
+JavaScript strict warning: https://onet.hit.gemius.pl/xgemius.js, line 40: ReferenceError: assignment to undeclared variable gemius_cmpclient
+JavaScript strict warning: https://onet.hit.gemius.pl/xgemius.js, line 762: ReferenceError: assignment to undeclared variable gemius_hcconn
+JavaScript strict warning: https://lib.onet.pl/s.csr/v1/build/dlApi/dl.sg.utils.min.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://lib.onet.pl/s.csr/v1/build/dlApi/dl.sg.utils.min.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://lib.onet.pl/s.csr/v1/build/dlApi/dl.sg.utils.min.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://lib.onet.pl/s.csr/v1/build/dlApi/dl.sg.utils.min.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://lib.onet.pl/s.csr/v1/build/dlApi/dl.sg.utils.min.js, line 1: ReferenceError: reference to undefined property "radio"
+JavaScript strict warning: https://www.googletagservices.com/tag/js/gpt.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.googletagservices.com/tag/js/gpt.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.googletagservices.com/tag/js/gpt.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.googletagservices.com/tag/js/gpt.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.googletagservices.com/tag/js/gpt.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.googletagservices.com/tag/js/gpt.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.googletagservices.com/tag/js/gpt.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.googletagservices.com/tag/js/gpt.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.googletagservices.com/tag/js/gpt.js, line 1: ReferenceError: reference to undefined property 3
+JavaScript strict warning: https://www.googletagservices.com/tag/js/gpt.js, line 1: ReferenceError: reference to undefined property 59
+JavaScript strict warning: https://www.googletagservices.com/tag/js/gpt.js, line 1: ReferenceError: reference to undefined property 1
+JavaScript strict warning: resource:///modules/sessionstore/SessionStore.jsm, line 4576: ReferenceError: reference to undefined property "customizemode"
+JavaScript strict warning: https://ocdn.eu/paas-static/template-engine/a6c0cff4926358865a5a02a938f033e4/build/uststd.js, line 34: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://ocdn.eu/paas-static/template-engine/474179e49089547f245e52b0f514e58b/build/main.js, line 13: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://ocdn.eu/paas-static/template-engine/474179e49089547f245e52b0f514e58b/build/main.js, line 41: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://ocdn.eu/ucs/static/21beac9ead4cc9dbb3be1674c7b82f34/f4470560539454d6067ceb461c61aade/build/js/main.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://ocdn.eu/ucs/static/21beac9ead4cc9dbb3be1674c7b82f34/f4470560539454d6067ceb461c61aade/build/js/main.js, line 1: ReferenceError: assignment to undeclared variable os
+JavaScript strict warning: https://ocdn.eu/ucs/static/21beac9ead4cc9dbb3be1674c7b82f34/f4470560539454d6067ceb461c61aade/build/js/main.js, line 1: ReferenceError: reference to undefined property "MaxTouchPoints"
+JavaScript strict warning: https://ocdn.eu/paas-static/template-engine/474179e49089547f245e52b0f514e58b/build/main.js, line 29: ReferenceError: assignment to undeclared variable airLink
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: ReferenceError: reference to undefined property "ta"
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: ReferenceError: reference to undefined property 3
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: ReferenceError: reference to undefined property 79
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: ReferenceError: reference to undefined property "foo"
+JavaScript strict warning: https://sgqcvfjvr.onet.pl/YnVpbGQvezlzbG50YTJafWRsQXBpL2RsLmxpYntONWFzX0ZXMn0ubWluLmpz, line 1: ReferenceError: reference to undefined property "map"
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: ReferenceError: reference to undefined property "slotAdded"
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: ReferenceError: reference to undefined property "$b"
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: ReferenceError: reference to undefined property "slotRenderEnded"
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: ReferenceError: reference to undefined property "sandbox"
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: ReferenceError: reference to undefined property 6
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: ReferenceError: reference to undefined property "page_url"
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: ReferenceError: reference to undefined property "43863810/GLOWNA/NOWASG/top_0"
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: ReferenceError: reference to undefined property "slotVisibilityChanged"
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: ReferenceError: reference to undefined property "google_ad_width"
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: ReferenceError: reference to undefined property "google_ad_width"
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: ReferenceError: reference to undefined property "AMP"
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: ReferenceError: reference to undefined property "cid"
+JavaScript strict warning: https://ocdn.eu/paas-static/template-engine/d7c8bd7de7148d245960d47c8140e177/build/pulsembed.js, line 1: TypeError: useless expression
+JavaScript strict warning: https://ocdn.eu/paas-static/template-engine/d7c8bd7de7148d245960d47c8140e177/build/pulsembed.js, line 1: TypeError: useless expression
+JavaScript strict warning: https://pulsembed.eu/p2em/yMW4CuSeM/, line 7: ReferenceError: assignment to undeclared variable accConf
+JavaScript strict warning: https://cdn.pushwoosh.com/webpush/v3/pushwoosh-web-notifications.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.googletagmanager.com/gtm.js?id=GTM-P85SF2J, line 1039: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.googletagmanager.com/gtm.js?id=GTM-P85SF2J, line 974: ReferenceError: reference to undefined property "gtm"
+JavaScript strict warning: https://www.googletagmanager.com/gtm.js?id=GTM-P85SF2J, line 968: ReferenceError: reference to undefined property "gtm.gtm.whitelist"
+JavaScript strict warning: https://www.googletagmanager.com/gtm.js?id=GTM-P85SF2J, line 1108: ReferenceError: reference to undefined property "vtp_defaultValue"
+JavaScript strict warning: https://www.googletagmanager.com/gtm.js?id=GTM-P85SF2J, line 1045: ReferenceError: reference to undefined property "teardown_tags"
+JavaScript strict warning: https://www.googletagmanager.com/gtm.js?id=GTM-P85SF2J, line 1043: ReferenceError: reference to undefined property "setup_tags"
+JavaScript strict warning: https://www.googletagmanager.com/gtm.js?id=GTM-P85SF2J, line 1100: ReferenceError: reference to undefined property "vtp_horizontalThresholdUnits"
+JavaScript strict warning: https://www.googletagmanager.com/gtm.js?id=GTM-P85SF2J line 3 > eval, line 1: ReferenceError: assignment to undeclared variable i
+JavaScript strict warning: https://www.googletagmanager.com/gtm.js?id=GTM-P85SF2J line 3 > eval, line 1: ReferenceError: reference to undefined property "pageViewId"
+JavaScript strict warning: https://www.googletagmanager.com/gtm.js?id=GTM-P85SF2J, line 1109: ReferenceError: reference to undefined property "vtp_contentGroup"
+JavaScript strict warning: https://onet.tv/script/embed.js, line 1: ReferenceError: reference to undefined property "embedUuid"
+JavaScript strict warning: https://onet.tv/embed-external.html?mvp=1928097.1260011912&preset=teaserVideo&dv=www%2FLUBLIN%2FAUTO&target=GLOWNA%2FNOWASG&du=https%253A%2F%2Fwww.onet.pl%2F&context=MAIN_ELEMENT#dr=, line 30: ReferenceError: assignment to undeclared variable accConf
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_rendering_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_rendering_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_rendering_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_rendering_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_rendering_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_rendering_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_rendering_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_rendering_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_rendering_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_rendering_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_rendering_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_rendering_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_rendering_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_rendering_275.js, line 1: ReferenceError: reference to undefined property "_a_exps_"
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_rendering_275.js, line 1: ReferenceError: reference to undefined property "Goog_Osd_UnloadAdBlock"
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_rendering_275.js, line 1: ReferenceError: reference to undefined property "allowOverlayExpansion"
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_rendering_275.js, line 1: ReferenceError: reference to undefined property 21061864
+JavaScript strict warning: https://connect.facebook.net/en_US/fbevents.js, line 25: ReferenceError: reference to undefined property "disableConfigLoading"
+JavaScript strict warning: https://www.google-analytics.com/analytics.js, line 13: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google-analytics.com/analytics.js, line 18: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google-analytics.com/analytics.js, line 29: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google-analytics.com/analytics.js, line 56: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google-analytics.com/analytics.js, line 57: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google-analytics.com/analytics.js, line 57: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google-analytics.com/analytics.js, line 60: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google-analytics.com/analytics.js, line 17: ReferenceError: reference to undefined property ":linker"
+JavaScript strict warning: https://www.google-analytics.com/analytics.js, line 64: ReferenceError: reference to undefined property 2
+JavaScript strict warning: https://www.google-analytics.com/analytics.js, line 71: ReferenceError: reference to undefined property "t0"
+JavaScript strict warning: https://www.google-analytics.com/analytics.js, line 56: ReferenceError: reference to undefined property "cookieName"
+JavaScript strict warning: https://www.google-analytics.com/analytics.js, line 14: ReferenceError: reference to undefined property 0
+JavaScript strict warning: https://onet.tv/embed-external.html?mvp=1928097.1260011912&preset=teaserVideo&dv=www%2FLUBLIN%2FAUTO&target=GLOWNA%2FNOWASG&du=https%253A%2F%2Fwww.onet.pl%2F&context=MAIN_ELEMENT#dr=, line 39: ReferenceError: assignment to undeclared variable originalReferrer
+JavaScript strict warning: https://onet.tv/embed-external.html?mvp=1928097.1260011912&preset=teaserVideo&dv=www%2FLUBLIN%2FAUTO&target=GLOWNA%2FNOWASG&du=https%253A%2F%2Fwww.onet.pl%2F&context=MAIN_ELEMENT#dr=, line 40: ReferenceError: assignment to undeclared variable isPulsEmbed
+JavaScript strict warning: https://ocdn.eu/adp/prebid/prod/prebid.js, line 3: ReferenceError: reference to undefined property "map"
+JavaScript strict warning: https://ocdn.eu/adp/prebid/prod/prebid.js, line 3: ReferenceError: reference to undefined property "forEach"
+JavaScript strict warning: https://ocdn.eu/adp/prebid/prod/prebid.js, line 3: ReferenceError: reference to undefined property "debug"
+JavaScript strict warning: https://ocdn.eu/adp/prebid/prod/prebid.js, line 3: ReferenceError: reference to undefined property "aliases"
+JavaScript strict warning: https://ocdn.eu/adp/prebid/prod/prebid.js, line 3: ReferenceError: reference to undefined property "map"
+JavaScript strict warning: https://ocdn.eu/adp/prebid/prod/prebid.js, line 3: ReferenceError: reference to undefined property "forEach"
+JavaScript strict warning: https://ocdn.eu/adp/prebid/prod/prebid.js, line 3: ReferenceError: reference to undefined property "debug"
+JavaScript strict warning: https://ocdn.eu/adp/prebid/prod/prebid.js, line 3: ReferenceError: reference to undefined property "aliases"
+JavaScript strict warning: https://ocdn.eu/adp/prebid/prod/prebid.js, line 3: ReferenceError: reference to undefined property "map"
+JavaScript strict warning: https://ocdn.eu/adp/prebid/prod/prebid.js, line 3: ReferenceError: reference to undefined property "forEach"
+JavaScript strict warning: https://ocdn.eu/adp/prebid/prod/prebid.js, line 3: ReferenceError: reference to undefined property "debug"
+JavaScript strict warning: https://ocdn.eu/adp/prebid/prod/prebid.js, line 3: ReferenceError: reference to undefined property "aliases"
+JavaScript strict warning: https://ocdn.eu/adp/prebid/prod/prebid.js, line 3: ReferenceError: reference to undefined property "map"
+JavaScript strict warning: https://ocdn.eu/adp/prebid/prod/prebid.js, line 3: ReferenceError: reference to undefined property "forEach"
+JavaScript strict warning: https://ocdn.eu/adp/prebid/prod/prebid.js, line 3: ReferenceError: reference to undefined property "debug"
+JavaScript strict warning: https://ocdn.eu/adp/prebid/prod/prebid.js, line 3: ReferenceError: reference to undefined property "aliases"
+JavaScript strict warning: https://ocdn.eu/adp/prebid/prod/prebid.js, line 3: ReferenceError: reference to undefined property "map"
+JavaScript strict warning: https://ocdn.eu/adp/prebid/prod/prebid.js, line 3: ReferenceError: reference to undefined property "forEach"
+JavaScript strict warning: https://ocdn.eu/adp/prebid/prod/prebid.js, line 3: ReferenceError: reference to undefined property "debug"
+JavaScript strict warning: https://ocdn.eu/adp/prebid/prod/prebid.js, line 3: ReferenceError: reference to undefined property "aliases"
+JavaScript strict warning: https://ocdn.eu/resources/template-engine/onetonte.template-engine/resource/none/3.034/embed.js, line 35: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://ocdn.eu/resources/template-engine/onetonte.template-engine/resource/none/3.034/embed.js, line 35: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://ocdn.eu/resources/template-engine/onetonte.template-engine/resource/none/3.034/embed.js, line 1088: SyntaxError: applying the 'delete' operator to an unqualified name is deprecated
+JavaScript strict warning: https://ocdn.eu/resources/template-engine/onetonte.template-engine/resource/none/3.034/embed.js, line 32: ReferenceError: reference to undefined property "forEach"
+JavaScript strict warning: https://ocdn.eu/resources/template-engine/onetonte.template-engine/resource/none/3.034/embed.js, line 1980: ReferenceError: assignment to undeclared variable param
+JavaScript strict warning: https://onet.tv/embed-external.html?mvp=1928097.1260011912&preset=teaserVideo&dv=www%2FLUBLIN%2FAUTO&target=GLOWNA%2FNOWASG&du=https%253A%2F%2Fwww.onet.pl%2F&context=MAIN_ELEMENT#dr=, line 117: ReferenceError: assignment to undeclared variable onetAds
+JavaScript strict warning: https://ty0lm9uz.onet.pl/e1Jrajlqejd9/build/init.js, line 1: ReferenceError: reference to undefined property "keyvalues"
+JavaScript strict warning: https://www.onet.pl/, line 12: ReferenceError: assignment to undeclared variable keywords
+JavaScript strict warning: https://ocdn.eu/adp/prebid/prod/prebid.js, line 8: ReferenceError: reference to undefined property "cmpApi"
+JavaScript strict warning: https://ocdn.eu/adp/prebid/prod/prebid.js, line 3: ReferenceError: reference to undefined property "addAdUnits"
+JavaScript strict warning: https://www.onet.pl/, line 12: ReferenceError: assignment to undeclared variable keywords
+JavaScript strict warning: https://ocdn.eu/adp/prebid/prod/prebid.js, line 8: ReferenceError: reference to undefined property "cmpApi"
+JavaScript strict warning: https://ocdn.eu/adp/prebid/prod/prebid.js, line 3: ReferenceError: reference to undefined property "addAdUnits"
+JavaScript strict warning: https://www.onet.pl/, line 12: ReferenceError: assignment to undeclared variable keywords
+JavaScript strict warning: https://ocdn.eu/adp/prebid/prod/prebid.js, line 8: ReferenceError: reference to undefined property "cmpApi"
+JavaScript strict warning: https://ocdn.eu/adp/prebid/prod/prebid.js, line 3: ReferenceError: reference to undefined property "addAdUnits"
+JavaScript strict warning: https://www.onet.pl/, line 12: ReferenceError: assignment to undeclared variable keywords
+JavaScript strict warning: https://ocdn.eu/adp/prebid/prod/prebid.js, line 8: ReferenceError: reference to undefined property "cmpApi"
+JavaScript strict warning: https://ocdn.eu/adp/prebid/prod/prebid.js, line 3: ReferenceError: reference to undefined property "addAdUnits"
+JavaScript strict warning: https://www.onet.pl/, line 12: ReferenceError: assignment to undeclared variable keywords
+JavaScript strict warning: https://ocdn.eu/adp/prebid/prod/prebid.js, line 8: ReferenceError: reference to undefined property "cmpApi"
+JavaScript strict warning: https://ocdn.eu/adp/prebid/prod/prebid.js, line 3: ReferenceError: reference to undefined property "addAdUnits"
+JavaScript strict warning: https://tpc.googlesyndication.com/safeframe/1-0-31/html/container.html, line 7: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/safeframe/1-0-31/html/container.html, line 7: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://pagead2.googlesyndication.com/pagead/osd.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://pagead2.googlesyndication.com/pagead/osd.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://pagead2.googlesyndication.com/pagead/osd.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://pagead2.googlesyndication.com/pagead/osd.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://pagead2.googlesyndication.com/pagead/osd.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://pagead2.googlesyndication.com/pagead/osd.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://pagead2.googlesyndication.com/pagead/osd.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://pagead2.googlesyndication.com/pagead/osd.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://pagead2.googlesyndication.com/pagead/osd.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://pagead2.googlesyndication.com/pagead/osd.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://pagead2.googlesyndication.com/pagead/osd.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://pagead2.googlesyndication.com/pagead/osd.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://pagead2.googlesyndication.com/pagead/osd.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://pagead2.googlesyndication.com/pagead/osd.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://pagead2.googlesyndication.com/pagead/osd.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://pagead2.googlesyndication.com/pagead/osd.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://pagead2.googlesyndication.com/pagead/osd.js, line 1: ReferenceError: reference to undefined property "Goog_Common_getAdAdapterInstance"
+JavaScript strict warning: https://pagead2.googlesyndication.com/pagead/osd.js, line 1: ReferenceError: reference to undefined property "foo"
+JavaScript strict warning: https://pagead2.googlesyndication.com/pagead/osd.js, line 1: ReferenceError: reference to undefined property "_adk_"
+JavaScript strict warning: https://pagead2.googlesyndication.com/pagead/osd.js, line 1: ReferenceError: reference to undefined property 21061864
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://cmp.dreamlab.pl/static/cmp.complete.bundle.js?v=9, line 1: SyntaxError: mistyped ; after conditional?
+JavaScript strict warning: https://cmp.dreamlab.pl/static/cmp.complete.bundle.js?v=9, line 1: ReferenceError: reference to undefined property "reduce"
+JavaScript strict warning: https://cmp.dreamlab.pl/static/cmp.complete.bundle.js?v=9, line 1: ReferenceError: reference to undefined property "values"
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://connect.facebook.net/en_US/fbevents.js, line 25: ReferenceError: reference to undefined property "validationSchema"
+JavaScript strict warning: https://connect.facebook.net/en_US/fbevents.js, line 25: ReferenceError: reference to undefined property "agent"
+JavaScript strict warning: https://connect.facebook.net/en_US/fbevents.js, line 24: ReferenceError: reference to undefined property "disableConfigLoading"
+JavaScript strict warning: https://connect.facebook.net/signals/config/1511413572442101?v=2.8.33&r=stable, line 25: ReferenceError: reference to undefined property "_forceFPCookies"
+JavaScript strict warning: https://connect.facebook.net/signals/config/1511413572442101?v=2.8.33&r=stable, line 25: ReferenceError: reference to undefined property "payload"
+JavaScript strict warning: https://connect.facebook.net/en_US/fbevents.js, line 25: ReferenceError: reference to undefined property "disablePushState"
+JavaScript strict warning: https://ocdn.eu/static/mastt/xgemius.js, line 479: ReferenceError: assignment to undeclared variable gemius_hcconn
+JavaScript strict warning: https://ocdn.eu/static/mastt/xgemius.js, line 521: ReferenceError: assignment to undeclared variable gemius_hit
+JavaScript strict warning: https://ocdn.eu/static/mastt/xgemius.js, line 522: ReferenceError: assignment to undeclared variable gemius_event
+JavaScript strict warning: https://ocdn.eu/static/mastt/xgemius.js, line 523: ReferenceError: assignment to undeclared variable pp_gemius_hit
+JavaScript strict warning: https://ocdn.eu/static/mastt/xgemius.js, line 524: ReferenceError: assignment to undeclared variable pp_gemius_event
+JavaScript strict warning: https://pagead2.googlesyndication.com/pagead/osd.js, line 1: ReferenceError: reference to undefined property 12
+JavaScript strict warning: https://ocdn.eu/ramp/1746213/Gigaboard-Standard/tpl.min.js, line 1: ReferenceError: reference to undefined property "crid"
+JavaScript strict warning: https://ocdn.eu/resources/template-engine/onetonte.template-engine/resource/none/3.034/embed.js, line 416: ReferenceError: reference to undefined property 0
+JavaScript strict warning: https://onet.tv/embed-external.html?mvp=1928097.1260011912&preset=teaserVideo&dv=www%2FLUBLIN%2FAUTO&target=GLOWNA%2FNOWASG&du=https%253A%2F%2Fwww.onet.pl%2F&context=MAIN_ELEMENT#dr=, line 299: ReferenceError: assignment to undeclared variable script
+JavaScript strict warning: https://cmp.dreamlab.pl/static/cmp.complete.bundle.js?v=9, line 1: ReferenceError: reference to undefined property "pl"
+JavaScript strict warning: https://cmp.dreamlab.pl/static/cmp.complete.bundle.js?v=9, line 1: ReferenceError: reference to undefined property "pl-pl"
+JavaScript strict warning: https://cmp.dreamlab.pl/static/cmp.complete.bundle.js?v=9, line 1: ReferenceError: reference to undefined property "class"
+JavaScript strict warning: https://tpc.googlesyndication.com/safeframe/1-0-31/js/ext.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/safeframe/1-0-31/js/ext.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/safeframe/1-0-31/js/ext.js, line 1: ReferenceError: reference to undefined property "_context"
+JavaScript strict warning: https://tpc.googlesyndication.com/safeframe/1-0-31/js/ext.js, line 1: ReferenceError: reference to undefined property "posCoords_t"
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: ReferenceError: reference to undefined property 12
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: ReferenceError: reference to undefined property "foo"
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: ReferenceError: reference to undefined property 12
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: ReferenceError: reference to undefined property "foo"
+JavaScript strict warning: https://ty0lm9uz.onet.pl/e1Jrajlqejd9/build/init.js, line 1: ReferenceError: reference to undefined property "forEach"
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: ReferenceError: reference to undefined property 12
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: ReferenceError: reference to undefined property "foo"
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_rendering_275.js, line 1: ReferenceError: reference to undefined property "s"
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: ReferenceError: reference to undefined property 12
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: ReferenceError: reference to undefined property "foo"
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: ReferenceError: reference to undefined property 12
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: ReferenceError: reference to undefined property "foo"
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: ReferenceError: reference to undefined property 12
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: ReferenceError: reference to undefined property "foo"
+JavaScript strict warning: https://tpc.googlesyndication.com/safeframe/1-0-31/js/ext.js, line 1: ReferenceError: reference to undefined property "s"
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_rendering_275.js, line 1: ReferenceError: reference to undefined property "sentinel"
+JavaScript strict warning: https://www.googletagservices.com/tag/js/gpt.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.googletagservices.com/tag/js/gpt.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.googletagservices.com/tag/js/gpt.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.googletagservices.com/tag/js/gpt.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.googletagservices.com/tag/js/gpt.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.googletagservices.com/tag/js/gpt.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.googletagservices.com/tag/js/gpt.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.googletagservices.com/tag/js/gpt.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.googletagservices.com/tag/js/gpt.js, line 1: ReferenceError: reference to undefined property 3
+JavaScript strict warning: https://www.googletagservices.com/tag/js/gpt.js, line 1: ReferenceError: reference to undefined property 59
+JavaScript strict warning: https://www.googletagservices.com/tag/js/gpt.js, line 1: ReferenceError: reference to undefined property 1
+JavaScript strict warning: https://ty0lm9uz.onet.pl/e1Jrajlqejd9/build/init.js, line 1: ReferenceError: reference to undefined property "dfpFetch"
+JavaScript strict warning: https://cmp.dreamlab.pl/static/cmp.complete.bundle.js?v=9, line 1: SyntaxError: mistyped ; after conditional?
+JavaScript strict warning: https://cmp.dreamlab.pl/static/cmp.complete.bundle.js?v=9, line 1: ReferenceError: reference to undefined property "reduce"
+JavaScript strict warning: https://cmp.dreamlab.pl/static/cmp.complete.bundle.js?v=9, line 1: ReferenceError: reference to undefined property "values"
+JavaScript strict warning: https://www.googletagmanager.com/gtm.js?id=GTM-MD7GG3, line 509: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://cmp.dreamlab.pl/static/cmp.complete.bundle.js?v=9, line 1: ReferenceError: reference to undefined property "pl"
+JavaScript strict warning: https://cmp.dreamlab.pl/static/cmp.complete.bundle.js?v=9, line 1: ReferenceError: reference to undefined property "pl-pl"
+JavaScript strict warning: https://cmp.dreamlab.pl/static/cmp.complete.bundle.js?v=9, line 1: ReferenceError: reference to undefined property "class"
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 25: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 96: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 98: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 98: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 100: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 101: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 102: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 104: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 104: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 111: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 115: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 119: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 149: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 173: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 181: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 218: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 275: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 275: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 290: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 291: SyntaxError: applying the 'delete' operator to an unqualified name is deprecated
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 372: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 401: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 713: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 715: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 1072: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 1139: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 73: ReferenceError: reference to undefined property "radio"
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_ line 220 > Function, line 3: ReferenceError: assignment to undeclared variable Model
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_ line 220 > Function, line 3: ReferenceError: assignment to undeclared variable View
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_ line 220 > Function, line 3: ReferenceError: assignment to undeclared variable Controller
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_ line 220 > Function, line 3: ReferenceError: assignment to undeclared variable Notifier
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_ line 220 > Function, line 3: ReferenceError: assignment to undeclared variable Mediator
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_ line 220 > Function, line 3: ReferenceError: assignment to undeclared variable Facade
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_ line 220 > Function, line 3: ReferenceError: assignment to undeclared variable Observer
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_ line 220 > Function, line 3: ReferenceError: assignment to undeclared variable MacroCommand
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_ line 220 > Function, line 3: ReferenceError: assignment to undeclared variable SimpleCommand
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 294: ReferenceError: assignment to undeclared variable getUserIdForWatchlater
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 294: ReferenceError: assignment to undeclared variable setCsrResponseToOnetAds
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 1082: ReferenceError: assignment to undeclared variable EndScreenMediator
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 29: ReferenceError: reference to undefined property "selector"
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: ReferenceError: reference to undefined property "ta"
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: ReferenceError: reference to undefined property 3
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js, line 1: ReferenceError: reference to undefined property 79
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: ReferenceError: reference to undefined property 12
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: ReferenceError: reference to undefined property "foo"
+JavaScript strict warning: https://sgqcvfjvr.onet.pl/YnVpbGQvezlzbG50YTJafWRsQXBpL2RsLmxpYntONWFzX0ZXMn0ubWluLmpz, line 1: ReferenceError: reference to undefined property "id"
+JavaScript strict warning: https://gapl.hit.gemius.pl/gemiuslib.js, line 38: ReferenceError: assignment to undeclared variable gemius_cmpclient
+JavaScript strict warning: https://securepubads.g.doubleclick.net/gpt/pubads_impl_rendering_275.js, line 1: ReferenceError: reference to undefined property "sentinel"
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 78: ReferenceError: reference to undefined property "triggered"
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 54: ReferenceError: reference to undefined property "undefined"
+JavaScript strict warning: https://www.googletagmanager.com/gtm.js?id=GTM-MD7GG3, line 444: ReferenceError: reference to undefined property "gtm"
+JavaScript strict warning: https://www.googletagmanager.com/gtm.js?id=GTM-MD7GG3, line 438: ReferenceError: reference to undefined property "gtm.gtm.whitelist"
+JavaScript strict warning: https://www.googletagmanager.com/gtm.js?id=GTM-MD7GG3, line 570: ReferenceError: reference to undefined property "vtp_defaultValue"
+JavaScript strict warning: https://tpc.googlesyndication.com/safeframe/1-0-31/js/ext.js, line 1: ReferenceError: reference to undefined property "sentinel"
+JavaScript strict warning: https://ocdn.eu/aops/dlads/nativeinfeed/script.js, line 54: ReferenceError: reference to undefined property "action"
+JavaScript strict warning: https://www.onet.pl/, line 80: ReferenceError: reference to undefined property "className"
+JavaScript strict warning: https://ty0lm9uz.onet.pl/e1Jrajlqejd9/build/init.js, line 1: ReferenceError: reference to undefined property "VEP"
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 1128: ReferenceError: reference to undefined property "dotExtraParams"
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 207: ReferenceError: reference to undefined property "TTL"
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 103: ReferenceError: reference to undefined property 6
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 54: ReferenceError: reference to undefined property "jQuery18306241943375011916"
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 448: ReferenceError: reference to undefined property "workMode"
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 171: ReferenceError: reference to undefined property "traditional"
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 161: ReferenceError: reference to undefined property "traditional"
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 22: ReferenceError: reference to undefined property "*"
+JavaScript strict warning: https://ocdn.eu/aops/mip/f/ford/20181114/index3.html, line 19: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://ocdn.eu/aops/mip/f/ford/20181114/index3.html, line 19: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://ocdn.eu/aops/mip/f/ford/20181114/index3.html, line 19: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://ocdn.eu/aops/mip/f/ford/20181114/index3.html, line 19: ReferenceError: reference to undefined property "displayConfigParameters"
+JavaScript strict warning: https://cmp.dreamlab.pl/static/cmp.complete.bundle.js?v=9, line 1: ReferenceError: reference to undefined property "key"
+JavaScript strict warning: https://cmp.dreamlab.pl/static/cmp.complete.bundle.js?v=9, line 1: ReferenceError: reference to undefined property "key"
+JavaScript strict warning: https://cmp.dreamlab.pl/static/cmp.complete.bundle.js?v=9, line 1: ReferenceError: reference to undefined property "key"
+JavaScript strict warning: https://cmp.dreamlab.pl/static/cmp.complete.bundle.js?v=9, line 1: ReferenceError: reference to undefined property "key"
+JavaScript strict warning: https://www.googletagmanager.com/gtm.js?id=GTM-P85SF2J line 3 > eval, line 1: ReferenceError: reference to undefined property "pageViewId"
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 1190: ReferenceError: assignment to undeclared variable image
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 1193: ReferenceError: reference to undefined property "licenseurl"
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_ line 220 > Function, line 3: ReferenceError: reference to undefined property "PlaylistMediator_undefined"
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 749: ReferenceError: reference to undefined property "titleHolder"
+JavaScript strict warning: https://ocdn.eu/resources/template-engine/onetonte.template-engine/resource/none/3.034/embed.js, line 19: ReferenceError: reference to undefined property "traditional"
+JavaScript strict warning: https://ocdn.eu/resources/template-engine/onetonte.template-engine/resource/none/3.034/embed.js, line 19: ReferenceError: reference to undefined property "cache"
+JavaScript strict warning: https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_245.js, line 14: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_245.js, line 23: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_245.js, line 46: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_245.js, line 46: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_245.js, line 58: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_245.js, line 88: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_245.js, line 90: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_245.js, line 128: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_245.js, line 133: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_245.js, line 135: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_245.js, line 142: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_245.js, line 148: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_245.js, line 148: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_245.js, line 152: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_245.js, line 153: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_245.js, line 161: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_245.js, line 168: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_245.js, line 168: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_245.js, line 168: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_245.js, line 170: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_245.js, line 170: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_245.js, line 171: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_245.js, line 171: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_245.js, line 179: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_245.js, line 1: ReferenceError: reference to undefined property "studioV2"
+JavaScript strict warning: https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_245.js, line 81: ReferenceError: reference to undefined property "mtfRenderFloatInplace"
+JavaScript strict warning: https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_245.js, line 42: ReferenceError: reference to undefined property "EXPAND"
+JavaScript strict warning: https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_245.js, line 127: ReferenceError: reference to undefined property "mraid"
+JavaScript strict warning: https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_245.js, line 47: ReferenceError: reference to undefined property "closure_lm_915115"
+JavaScript strict warning: https://connect.facebook.net/en_US/fbevents.js, line 25: ReferenceError: reference to undefined property "1023614747809903"
+JavaScript strict warning: https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_245.js, line 40: ReferenceError: reference to undefined property "relatedTarget"
+JavaScript strict warning: https://ocdn.eu/ucs/static/21beac9ead4cc9dbb3be1674c7b82f34/f4470560539454d6067ceb461c61aade/build/js/main.js, line 1: ReferenceError: assignment to undeclared variable mpbRelatives
+JavaScript strict warning: https://imasdk.googleapis.com/js/sdkloader/ima3.js, line 51: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/sdkloader/ima3.js, line 51: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/sdkloader/ima3.js, line 72: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/sdkloader/ima3.js, line 72: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/sdkloader/ima3.js, line 75: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/sdkloader/ima3.js, line 77: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/sdkloader/ima3.js, line 81: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/sdkloader/ima3.js, line 103: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/sdkloader/ima3.js, line 106: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/sdkloader/ima3.js, line 117: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/sdkloader/ima3.js, line 118: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/sdkloader/ima3.js, line 122: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/sdkloader/ima3.js, line 154: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/sdkloader/ima3.js, line 163: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/sdkloader/ima3.js, line 163: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/sdkloader/ima3.js, line 214: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/sdkloader/ima3.js, line 222: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/sdkloader/ima3.js, line 223: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/sdkloader/ima3.js, line 241: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/sdkloader/ima3.js, line 255: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/sdkloader/ima3.js, line 271: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/sdkloader/ima3.js, line 274: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/sdkloader/ima3.js, line 274: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/sdkloader/ima3.js, line 275: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/sdkloader/ima3.js, line 281: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/sdkloader/ima3.js, line 292: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/sdkloader/ima3.js, line 321: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/sdkloader/ima3.js, line 330: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/sdkloader/ima3.js, line 348: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/sdkloader/ima3.js, line 352: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/sdkloader/ima3.js, line 372: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/sdkloader/ima3.js, line 36: ReferenceError: reference to undefined property "foo"
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/dash.all.min.js, line 16: SyntaxError: mistyped ; after conditional?
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/dash.all.min.js, line 17: SyntaxError: mistyped ; after conditional?
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/dash.all.min.js, line 18: ReferenceError: reference to undefined property "EventBus"
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/dash.all.min.js, line 17: ReferenceError: reference to undefined property "qname"
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/dash.all.min.js, line 16: ReferenceError: reference to undefined property "qname"
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/dash.all.min.js, line 18: ReferenceError: reference to undefined property "__dashjs_factory_name"
+JavaScript strict warning: https://imasdk.googleapis.com/js/sdkloader/ima3.js, line 52: ReferenceError: reference to undefined property "closure_lm_605242"
+JavaScript strict warning: https://imasdk.googleapis.com/js/sdkloader/ima3.js, line 47: ReferenceError: reference to undefined property "load"
+JavaScript strict warning: https://imasdk.googleapis.com/js/sdkloader/ima3.js, line 24: ReferenceError: reference to undefined property "gptProxyInstance"
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 30: ReferenceError: reference to undefined property 0
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: ReferenceError: reference to undefined property "avxm"
+JavaScript strict warning: https://cdn.mookie1.com/containr.js?tagid=V2_500976&tagType=imp&host=pl-gmtdmp.mookie1.com&src.rand=3826275350&src.campaignID=21845030&src.placementID=232396752, line 20: SyntaxError: 'use strict' statement won't be enforced as a directive because it isn't in directive prologue position
+JavaScript strict warning: https://cdn.mookie1.com/containr.js?tagid=V2_500976&tagType=imp&host=pl-gmtdmp.mookie1.com&src.rand=3826275350&src.campaignID=21845030&src.placementID=232396752, line 392: ReferenceError: reference to undefined property 2
+JavaScript strict warning: chrome://browser/content/urlbarBindings.xml, line 2275: ReferenceError: reference to undefined property "_margins"
+JavaScript strict warning: chrome://global/content/bindings/autocomplete.xml, line 1136: TypeError: setting getter-only property "maxRows"
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 72: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 72: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 104: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 104: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 108: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 111: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 111: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 112: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 117: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 140: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 143: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 154: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 155: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 188: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 197: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 197: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 248: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 258: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 259: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 290: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 307: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 332: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 369: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 408: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 408: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 409: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 415: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 417: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 446: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 455: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 456: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 462: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 463: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 485: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 507: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 513: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 539: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 549: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 563: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 569: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 577: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 579: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 597: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 601: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 607: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 608: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 632: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 668: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 694: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 729: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 810: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https:J/avaScript strict warning: chrome://global/content/bindings/autocomplete.xml, line 1136: TypeError: setting getter-only property "maxRows"/
+imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 854: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 874: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://imasdk.googleapis.com/js/core/bridge3.256.0_pl.html#goog_349310084, line 45: ReferenceError: reference to undefined property "foo"
+JavaScript strict warning: https://acdn.adnxs.com/dmp/async_usersync.html, line 6: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 11: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 13: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 22: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 41: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 50: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 61: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 61: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 67: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 67: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 67: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 68: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 70: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 77: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 84: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 85: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 92: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 92: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 93: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 114: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 125: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 126: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 128: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 158: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 165: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 175: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 194: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 205: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 226: ReferenceError: reference to undefined property "xh"
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 134: ReferenceError: reference to undefined property "ScriptEngineMajorVersion"
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 165: ReferenceError: reference to undefined property "runonce"
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 201: ReferenceError: reference to undefined property "MTRCS"
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 176: ReferenceError: reference to undefined property "Wf"
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 174: ReferenceError: reference to undefined property "getBattery"
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 164: ReferenceError: reference to undefined property 2
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 130: ReferenceError: reference to undefined property "ad_id_parameter_name"
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 161: ReferenceError: reference to undefined property 117471
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 197: ReferenceError: reference to undefined property "devicePixelRatio"
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 200: ReferenceError: reference to undefined property "tc"
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 87: ReferenceError: reference to undefined property "o"
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 95: ReferenceError: reference to undefined property "width"
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 91: ReferenceError: reference to undefined property "Df"
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 68: ReferenceError: reference to undefined property "ra"
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 129: ReferenceError: reference to undefined property "ca"
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 129: ReferenceError: reference to undefined property "ca"
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 79: ReferenceError: reference to undefined property "ma"
+JavaScript strict warning: https://s372.mxcdn.net/bb-mx/serve/mtrcs_618288.js, line 74: ReferenceError: reference to undefined property "o"
+JavaScript strict warning: https://sgqcvfjvr.onet.pl/YnVpbGQvezlzbG50YTJafWRsQXBpL2RsLmxpYntONWFzX0ZXMn0ubWluLmpz, line 1: ReferenceError: reference to undefined property "msConnection"
+JavaScript strict warning: https://tpc.googlesyndication.com/sodar/V6zvOIoD.js, line 17: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/sodar/V6zvOIoD.js, line 33: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/sodar/V6zvOIoD.js, line 34: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/sodar/V6zvOIoD.js, line 44: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/sodar/V6zvOIoD.js, line 55: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/sodar/V6zvOIoD.js, line 57: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/sodar/V6zvOIoD.js, line 64: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/sodar/V6zvOIoD.js, line 64: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/sodar/V6zvOIoD.js, line 64: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/sodar/V6zvOIoD.js, line 65: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s0.2mdn.net/instream/video/client.js, line 7: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s0.2mdn.net/instream/video/client.js, line 13: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s0.2mdn.net/instream/video/client.js, line 13: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s0.2mdn.net/instream/video/client.js, line 28: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s0.2mdn.net/instream/video/client.js, line 42: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://s0.2mdn.net/instream/video/client.js, line 15: ReferenceError: reference to undefined property "closure_lm_55894"
+JavaScript strict warning: https://s0.2mdn.net/instream/video/client.js, line 10: ReferenceError: reference to undefined property "message"
+JavaScript strict warning: https://pagead2.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/lidar.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://pagead2.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/lidar.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://pagead2.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/lidar.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://pagead2.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/lidar.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://pagead2.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/lidar.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://pagead2.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/lidar.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://pagead2.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/lidar.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://pagead2.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/lidar.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://pagead2.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/lidar.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://pagead2.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/lidar.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://pagead2.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/lidar.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://pagead2.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/lidar.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://pagead2.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/lidar.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://pagead2.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/lidar.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://pagead2.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/lidar.js, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 74: ReferenceError: reference to undefined property "triggered"
+JavaScript strict warning: https://ocdn.eu/static/mvpplayer/889/_s/js/compiled/compiled.min.js?_, line 83: ReferenceError: reference to undefined property "result"
+JavaScript strict warning: https://code.createjs.com/createjs-2015.11.26.min.js, line 12: SyntaxError: mistyped ; after conditional?
+JavaScript strict warning: https://code.createjs.com/createjs-2015.11.26.min.js, line 13: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://code.createjs.com/createjs-2015.11.26.min.js, line 17: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://code.createjs.com/createjs-2015.11.26.min.js, line 14: ReferenceError: reference to undefined property "json"
+JavaScript strict warning: https://code.createjs.com/createjs-2015.11.26.min.js, line 17: ReferenceError: reference to undefined property "_rotOffS"
+JavaScript strict warning: https://tpc.googlesyndication.com/sodar/V6zvOIoD.js, line 66: ReferenceError: reference to undefined property "closure_lm_827632"
+JavaScript strict warning: https://tpc.googlesyndication.com/sodar/V6zvOIoD.js, line 61: ReferenceError: reference to undefined property "mouseover"
+JavaScript strict warning: https://tpc.googlesyndication.com/sodar/6uQTKQJz.html, line 20: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/sodar/6uQTKQJz.html, line 21: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: ReferenceError: reference to undefined property "avxm"
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: ReferenceError: reference to undefined property "avxm"
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: ReferenceError: reference to undefined property "avxm"
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: ReferenceError: reference to undefined property "avxm"
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: ReferenceError: reference to undefined property "avxm"
+JavaScript strict warning: https://tpc.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/osd_listener.js, line 1: ReferenceError: reference to undefined property "avxm"
+JavaScript strict warning: https://pagead2.googlesyndication.com/pagead/js/r20181107/r20110914/activeview/lidar.js, line 1: ReferenceError: reference to undefined property "foo"
+JavaScript strict warning: https://www.google.com/, line 1: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/, line 2: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/, line 36: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/, line 36: ReferenceError: reference to undefined property "api"
+JavaScript strict warning: https://www.google.com/, line 26: ReferenceError: reference to undefined property "addExtraLink"
+JavaScript strict warning: https://www.google.com/, line 1: ReferenceError: reference to undefined property "0.6674564235396926"
+JavaScript strict warning: https://www.google.com/, line 97: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/, line 97: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/, line 130: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/, line 144: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/, line 161: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/, line 235: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/, line 252: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/, line 292: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/, line 302: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/, line 322: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/, line 286: ReferenceError: reference to undefined property 2
+JavaScript strict warning: https://www.google.com/, line 45: ReferenceError: reference to undefined property 6
+JavaScript strict warning: https://www.google.com/, line 331: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/, line 334: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/, line 334: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/, line 335: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/, line 335: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/, line 334: ReferenceError: reference to undefined property "DOMContentLoaded"
+JavaScript strict warning: https://www.google.com/, line 90: ReferenceError: reference to undefined property "tick"
+JavaScript strict warning: https://www.google.com/, line 98: ReferenceError: reference to undefined property "closure_lm_15672"
+JavaScript strict warning: https://www.google.com/, line 334: ReferenceError: reference to undefined property "pointerType"
+JavaScript strict warning: https://www.gstatic.com/og/_/js/k=og.og2.en_US.ZMe_WxpNhwk.O/rt=j/m=def/exm=in,fot/d=1/ed=1/rs=AA2YrTujvSasDy0loAQWKMWHJLx-fNDIuA, line 19: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.gstatic.com/og/_/js/k=og.og2.en_US.ZMe_WxpNhwk.O/rt=j/m=def/exm=in,fot/d=1/ed=1/rs=AA2YrTujvSasDy0loAQWKMWHJLx-fNDIuA, line 67: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.gstatic.com/og/_/js/k=og.og2.en_US.ZMe_WxpNhwk.O/rt=j/m=def/exm=in,fot/d=1/ed=1/rs=AA2YrTujvSasDy0loAQWKMWHJLx-fNDIuA, line 67: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.gstatic.com/og/_/js/k=og.og2.en_US.ZMe_WxpNhwk.O/rt=j/m=def/exm=in,fot/d=1/ed=1/rs=AA2YrTujvSasDy0loAQWKMWHJLx-fNDIuA, line 76: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.gstatic.com/og/_/js/k=og.og2.en_US.ZMe_WxpNhwk.O/rt=j/m=def/exm=in,fot/d=1/ed=1/rs=AA2YrTujvSasDy0loAQWKMWHJLx-fNDIuA, line 85: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.gstatic.com/og/_/js/k=og.og2.en_US.ZMe_WxpNhwk.O/rt=j/m=def/exm=in,fot/d=1/ed=1/rs=AA2YrTujvSasDy0loAQWKMWHJLx-fNDIuA, line 109: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.gstatic.com/og/_/js/k=og.og2.en_US.ZMe_WxpNhwk.O/rt=j/m=def/exm=in,fot/d=1/ed=1/rs=AA2YrTujvSasDy0loAQWKMWHJLx-fNDIuA, line 115: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.gstatic.com/og/_/js/k=og.og2.en_US.ZMe_WxpNhwk.O/rt=j/m=def/exm=in,fot/d=1/ed=1/rs=AA2YrTujvSasDy0loAQWKMWHJLx-fNDIuA, line 148: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.gstatic.com/og/_/js/k=og.og2.en_US.ZMe_WxpNhwk.O/rt=j/m=def/exm=in,fot/d=1/ed=1/rs=AA2YrTujvSasDy0loAQWKMWHJLx-fNDIuA, line 162: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.gstatic.com/og/_/js/k=og.og2.en_US.ZMe_WxpNhwk.O/rt=j/m=def/exm=in,fot/d=1/ed=1/rs=AA2YrTujvSasDy0loAQWKMWHJLx-fNDIuA, line 189: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.gstatic.com/og/_/js/k=og.og2.en_US.ZMe_WxpNhwk.O/rt=j/m=def/exm=in,fot/d=1/ed=1/rs=AA2YrTujvSasDy0loAQWKMWHJLx-fNDIuA, line 204: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.gstatic.com/og/_/js/k=og.og2.en_US.ZMe_WxpNhwk.O/rt=j/m=def/exm=in,fot/d=1/ed=1/rs=AA2YrTujvSasDy0loAQWKMWHJLx-fNDIuA, line 218: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.gstatic.com/og/_/js/k=og.og2.en_US.ZMe_WxpNhwk.O/rt=j/m=def/exm=in,fot/d=1/ed=1/rs=AA2YrTujvSasDy0loAQWKMWHJLx-fNDIuA, line 229: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.gstatic.com/og/_/js/k=og.og2.en_US.ZMe_WxpNhwk.O/rt=j/m=def/exm=in,fot/d=1/ed=1/rs=AA2YrTujvSasDy0loAQWKMWHJLx-fNDIuA, line 229: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.gstatic.com/og/_/js/k=og.og2.en_US.ZMe_WxpNhwk.O/rt=j/m=def/exm=in,fot/d=1/ed=1/rs=AA2YrTujvSasDy0loAQWKMWHJLx-fNDIuA, line 244: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.gstatic.com/og/_/js/k=og.og2.en_US.ZMe_WxpNhwk.O/rt=j/m=def/exm=in,fot/d=1/ed=1/rs=AA2YrTujvSasDy0loAQWKMWHJLx-fNDIuA, line 261: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.gstatic.com/og/_/js/k=og.og2.en_US.ZMe_WxpNhwk.O/rt=j/m=def/exm=in,fot/d=1/ed=1/rs=AA2YrTujvSasDy0loAQWKMWHJLx-fNDIuA, line 264: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.gstatic.com/og/_/js/k=og.og2.en_US.ZMe_WxpNhwk.O/rt=j/m=def/exm=in,fot/d=1/ed=1/rs=AA2YrTujvSasDy0loAQWKMWHJLx-fNDIuA, line 280: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.gstatic.com/og/_/js/k=og.og2.en_US.ZMe_WxpNhwk.O/rt=j/m=def/exm=in,fot/d=1/ed=1/rs=AA2YrTujvSasDy0loAQWKMWHJLx-fNDIuA, line 283: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.gstatic.com/og/_/js/k=og.og2.en_US.ZMe_WxpNhwk.O/rt=j/m=def/exm=in,fot/d=1/ed=1/rs=AA2YrTujvSasDy0loAQWKMWHJLx-fNDIuA, line 285: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.gstatic.com/og/_/js/k=og.og2.en_US.ZMe_WxpNhwk.O/rt=j/m=def/exm=in,fot/d=1/ed=1/rs=AA2YrTujvSasDy0loAQWKMWHJLx-fNDIuA, line 302: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.gstatic.com/og/_/js/k=og.og2.en_US.ZMe_WxpNhwk.O/rt=j/m=def/exm=in,fot/d=1/ed=1/rs=AA2YrTujvSasDy0loAQWKMWHJLx-fNDIuA, line 108: ReferenceError: reference to undefined property "_c"
+JavaScript strict warning: https://www.gstatic.com/og/_/js/k=og.og2.en_US.ZMe_WxpNhwk.O/rt=j/m=def/exm=in,fot/d=1/ed=1/rs=AA2YrTujvSasDy0loAQWKMWHJLx-fNDIuA, line 114: ReferenceError: reference to undefined property "am"
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 79: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 95: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 118: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 166: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 166: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 168: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 168: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 172: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 179: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 267: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 321: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 431: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 432: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 453: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 455: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 580: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 580: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 614: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 617: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 645: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 690: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 701: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 728: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 736: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 737: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 746: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 747: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 747: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 789: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 791: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 805: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 807: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 807: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 824: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 824: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 828: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 842: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 843: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 862: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 903: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 923: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 930: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 1005: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 1034: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 1036: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 1070: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 1093: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 1128: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 1128: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 1153: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 1194: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 1275: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 1276: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 1298: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 1638: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 1643: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 1649: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 1674: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 1760: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 1761: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 169: ReferenceError: reference to undefined property "closure_lm_403245"
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 161: ReferenceError: reference to undefined property "pageshow"
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 279: ReferenceError: reference to undefined property "active"
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 224: ReferenceError: reference to undefined property "setImmediate"
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 41: ReferenceError: reference to undefined property "i"
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 614: ReferenceError: reference to undefined property "load"
+JavaScript strict warning: https://www.google.com/, line 6: ReferenceError: reference to undefined property "rcuQ6b"
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 177: ReferenceError: reference to undefined property "created"
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 1658: ReferenceError: reference to undefined property "timeStamp"
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 577: ReferenceError: reference to undefined property "rcuQ6b"
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 412: ReferenceError: reference to undefined property "xz7cCd"
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 244: ReferenceError: reference to undefined property "sdch"
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 1126: ReferenceError: reference to undefined property "wa"
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 1129: ReferenceError: reference to undefined property "refspre"
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 788: ReferenceError: reference to undefined property 230
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 1006: ReferenceError: reference to undefined property "Fa"
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 1111: ReferenceError: reference to undefined property "Aa"
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 1114: ReferenceError: reference to undefined property "Aa"
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 824: ReferenceError: reference to undefined property "C1"
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 211: ReferenceError: reference to undefined property 0
+JavaScript strict warning: https://www.google.com/, line 88: ReferenceError: reference to undefined property "pointerType"
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/exm=sx,sb,cdos,cr,hsm,jsa,r,d,csi/ed=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw/m=aa,abd,async,dvl,foot,ipv6,lu,m,mu,sf,xz7cCd,WgDvvc?xjs=s1, line 73: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/exm=sx,sb,cdos,cr,hsm,jsa,r,d,csi/ed=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw/m=aa,abd,async,dvl,foot,ipv6,lu,m,mu,sf,xz7cCd,WgDvvc?xjs=s1, line 132: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/exm=sx,sb,cdos,cr,hsm,jsa,r,d,csi/ed=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw/m=aa,abd,async,dvl,foot,ipv6,lu,m,mu,sf,xz7cCd,WgDvvc?xjs=s1, line 132: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/exm=sx,sb,cdos,cr,hsm,jsa,r,d,csi/ed=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw/m=aa,abd,async,dvl,foot,ipv6,lu,m,mu,sf,xz7cCd,WgDvvc?xjs=s1, line 142: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/exm=sx,sb,cdos,cr,hsm,jsa,r,d,csi/ed=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw/m=aa,abd,async,dvl,foot,ipv6,lu,m,mu,sf,xz7cCd,WgDvvc?xjs=s1, line 147: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/exm=sx,sb,cdos,cr,hsm,jsa,r,d,csi/ed=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw/m=aa,abd,async,dvl,foot,ipv6,lu,m,mu,sf,xz7cCd,WgDvvc?xjs=s1, line 314: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/exm=sx,sb,cdos,cr,hsm,jsa,r,d,csi/ed=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw/m=aa,abd,async,dvl,foot,ipv6,lu,m,mu,sf,xz7cCd,WgDvvc?xjs=s1, line 326: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/exm=sx,sb,cdos,cr,hsm,jsa,r,d,csi/ed=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw/m=aa,abd,async,dvl,foot,ipv6,lu,m,mu,sf,xz7cCd,WgDvvc?xjs=s1, line 355: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/exm=sx,sb,cdos,cr,hsm,jsa,r,d,csi/ed=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw/m=aa,abd,async,dvl,foot,ipv6,lu,m,mu,sf,xz7cCd,WgDvvc?xjs=s1, line 367: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/exm=sx,sb,cdos,cr,hsm,jsa,r,d,csi/ed=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw/m=aa,abd,async,dvl,foot,ipv6,lu,m,mu,sf,xz7cCd,WgDvvc?xjs=s1, line 424: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/exm=sx,sb,cdos,cr,hsm,jsa,r,d,csi/ed=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw/m=aa,abd,async,dvl,foot,ipv6,lu,m,mu,sf,xz7cCd,WgDvvc?xjs=s1, line 427: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 1653: ReferenceError: reference to undefined property "Mw"
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 1655: ReferenceError: reference to undefined property "__source"
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 585: ReferenceError: reference to undefined property "RMhBfe"
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/exm=sx,sb,cdos,cr,hsm,jsa,r,d,csi/ed=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw/m=aa,abd,async,dvl,foot,ipv6,lu,m,mu,sf,xz7cCd,WgDvvc?xjs=s1, line 440: ReferenceError: reference to undefined property "ax"
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/exm=sx,sb,cdos,cr,hsm,jsa,r,d,csi,aa,abd,async,dvl,foot,ipv6,lu,m,mu,sf,xz7cCd,WgDvvc/ed=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw/m=RMhBfe?xjs=s2, line 13: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 1667: ReferenceError: reference to undefined property "wVa"
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 295: ReferenceError: reference to undefined property "dml;;ssv"
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 297: ReferenceError: reference to undefined property "wa"
+JavaScript strict warning: https://apis.google.com/_/scs/abc-static/_/js/k=gapi.gapi.en.CUp85wbT4DI.O/m=gapi_iframes,googleapis_client,plusone/rt=j/sv=1/d=1/ed=1/rs=AHpOoo-XBQda2DFvo9hxbj_dGnCV84SJMA/cb=gapi.loaded_0, line 62: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://apis.google.com/_/scs/abc-static/_/js/k=gapi.gapi.en.CUp85wbT4DI.O/m=gapi_iframes,googleapis_client,plusone/rt=j/sv=1/d=1/ed=1/rs=AHpOoo-XBQda2DFvo9hxbj_dGnCV84SJMA/cb=gapi.loaded_0, line 181: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://apis.google.com/_/scs/abc-static/_/js/k=gapi.gapi.en.CUp85wbT4DI.O/m=gapi_iframes,googleapis_client,plusone/rt=j/sv=1/d=1/ed=1/rs=AHpOoo-XBQda2DFvo9hxbj_dGnCV84SJMA/cb=gapi.loaded_0, line 181: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://apis.google.com/_/scs/abc-static/_/js/k=gapi.gapi.en.CUp85wbT4DI.O/m=gapi_iframes,googleapis_client,plusone/rt=j/sv=1/d=1/ed=1/rs=AHpOoo-XBQda2DFvo9hxbj_dGnCV84SJMA/cb=gapi.loaded_0, line 193: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://apis.google.com/_/scs/abc-static/_/js/k=gapi.gapi.en.CUp85wbT4DI.O/m=gapi_iframes,googleapis_client,plusone/rt=j/sv=1/d=1/ed=1/rs=AHpOoo-XBQda2DFvo9hxbj_dGnCV84SJMA/cb=gapi.loaded_0, line 275: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://apis.google.com/_/scs/abc-static/_/js/k=gapi.gapi.en.CUp85wbT4DI.O/m=gapi_iframes,googleapis_client,plusone/rt=j/sv=1/d=1/ed=1/rs=AHpOoo-XBQda2DFvo9hxbj_dGnCV84SJMA/cb=gapi.loaded_0, line 277: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://apis.google.com/_/scs/abc-static/_/js/k=gapi.gapi.en.CUp85wbT4DI.O/m=gapi_iframes,googleapis_client,plusone/rt=j/sv=1/d=1/ed=1/rs=AHpOoo-XBQda2DFvo9hxbj_dGnCV84SJMA/cb=gapi.loaded_0, line 326: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://apis.google.com/_/scs/abc-static/_/js/k=gapi.gapi.en.CUp85wbT4DI.O/m=gapi_iframes,googleapis_client,plusone/rt=j/sv=1/d=1/ed=1/rs=AHpOoo-XBQda2DFvo9hxbj_dGnCV84SJMA/cb=gapi.loaded_0, line 327: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://apis.google.com/_/scs/abc-static/_/js/k=gapi.gapi.en.CUp85wbT4DI.O/m=gapi_iframes,googleapis_client,plusone/rt=j/sv=1/d=1/ed=1/rs=AHpOoo-XBQda2DFvo9hxbj_dGnCV84SJMA/cb=gapi.loaded_0, line 331: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://apis.google.com/_/scs/abc-static/_/js/k=gapi.gapi.en.CUp85wbT4DI.O/m=gapi_iframes,googleapis_client,plusone/rt=j/sv=1/d=1/ed=1/rs=AHpOoo-XBQda2DFvo9hxbj_dGnCV84SJMA/cb=gapi.loaded_0, line 332: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://apis.google.com/_/scs/abc-static/_/js/k=gapi.gapi.en.CUp85wbT4DI.O/m=gapi_iframes,googleapis_client,plusone/rt=j/sv=1/d=1/ed=1/rs=AHpOoo-XBQda2DFvo9hxbj_dGnCV84SJMA/cb=gapi.loaded_0, line 334: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://apis.google.com/_/scs/abc-static/_/js/k=gapi.gapi.en.CUp85wbT4DI.O/m=gapi_iframes,googleapis_client,plusone/rt=j/sv=1/d=1/ed=1/rs=AHpOoo-XBQda2DFvo9hxbj_dGnCV84SJMA/cb=gapi.loaded_0, line 360: SyntaxError: test for equality (==) mistyped as assignment (=)?
+JavaScript strict warning: https://apis.google.com/_/scs/abc-static/_/js/k=gapi.gapi.en.CUp85wbT4DI.O/m=gapi_iframes,googleapis_client,plusone/rt=j/sv=1/d=1/ed=1/rs=AHpOoo-XBQda2DFvo9hxbj_dGnCV84SJMA/cb=gapi.loaded_0, line 64: ReferenceError: reference to undefined property "push"
+JavaScript strict warning: https://apis.google.com/_/scs/abc-static/_/js/k=gapi.gapi.en.CUp85wbT4DI.O/m=gapi_iframes,googleapis_client,plusone/rt=j/sv=1/d=1/ed=1/rs=AHpOoo-XBQda2DFvo9hxbj_dGnCV84SJMA/cb=gapi.loaded_0, line 146: ReferenceError: reference to undefined property "push"
+JavaScript strict warning: https://apis.google.com/_/scs/abc-static/_/js/k=gapi.gapi.en.CUp85wbT4DI.O/m=gapi_iframes,googleapis_client,plusone/rt=j/sv=1/d=1/ed=1/rs=AHpOoo-XBQda2DFvo9hxbj_dGnCV84SJMA/cb=gapi.loaded_0, line 237: ReferenceError: reference to undefined property "disableForceSecure"
+JavaScript strict warning: https://apis.google.com/_/scs/abc-static/_/js/k=gapi.gapi.en.CUp85wbT4DI.O/m=gapi_iframes,googleapis_client,plusone/rt=j/sv=1/d=1/ed=1/rs=AHpOoo-XBQda2DFvo9hxbj_dGnCV84SJMA/cb=gapi.loaded_0, line 244: ReferenceError: reference to undefined property "useLegacyProtocol"
+JavaScript strict warning: https://apis.google.com/_/scs/abc-static/_/js/k=gapi.gapi.en.CUp85wbT4DI.O/m=gapi_iframes,googleapis_client,plusone/rt=j/sv=1/d=1/ed=1/rs=AHpOoo-XBQda2DFvo9hxbj_dGnCV84SJMA/cb=gapi.loaded_0, line 339: ReferenceError: reference to undefined property "startE"
+JavaScript strict warning: https://apis.google.com/_/scs/abc-static/_/js/k=gapi.gapi.en.CUp85wbT4DI.O/m=gapi_iframes,googleapis_client,plusone/rt=j/sv=1/d=1/ed=1/rs=AHpOoo-XBQda2DFvo9hxbj_dGnCV84SJMA/cb=gapi.loaded_0, line 369: ReferenceError: reference to undefined property "CX"
+JavaScript strict warning: https://www.gstatic.com/og/_/js/k=og.og2.en_US.ZMe_WxpNhwk.O/rt=j/m=def/exm=in,fot/d=1/ed=1/rs=AA2YrTujvSasDy0loAQWKMWHJLx-fNDIuA, line 283: ReferenceError: reference to undefined property "googleapis"
+JavaScript strict warning: https://www.google.com/xjs/_/js/k=xjs.s.pl.xpAbD9nHBAw.O/m=sx,sb,cdos,cr,hsm,jsa,r,d,csi/am=DACLMAMB5P8UQAIIWAUbLJBBiUEJ/rt=j/d=1/dg=2/rs=ACT90oHu9xso0cJaVSyaClvLE5LTh5wKPw, line 157: ReferenceError: reference to undefined property "relatedTarget"
+JavaScript strict warning: chrome://browser/content/browser-compacttheme.js, line 66: TypeError: setting getter-only property "styleSheet"
+[Parent 17376, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 19652, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 20144, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 20144, Chrome_ChildThread] WARNING:[Parent 17376, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1542371200826	Marionette	INFO	Stopped listening on port 63187
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 14076, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542371489128	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Jarek\\AppData\\Local\\Temp\\rust_mozprofile.4hFri3ygXq6j"
+1542371491029	Marionette	INFO	Listening on port 63939
+1542371491245	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-36116321-2&l=dataLayer, line 87: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-36116321-2&l=dataLayer, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-36116321-2&l=dataLayer, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-36116321-2&l=dataLayer, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-36116321-2&l=dataLayer, line 87: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-36116321-2&l=dataLayer, line 147: unreachable code after return statement
+WebGL(000002A0BD9E0800)::ForceLoseContext
+JavaScript warning: resource://gre/modules/Troubleshoot.jsm, line 468: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* tryANGLE
+* Exhausted GL driver options.
+[Child 1272, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 1272, Chrome_Chil[Child 7444, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7444,WebGL(000002A0BD9F2000)::ForceLoseContext
+JavaScript warning: resource://gre/modules/Troubleshoot.jsm, line 468: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* tryANGLE
+* Exhausted GL driver options.
+[Child 8296, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8296, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/commo1542371688329	Marionette	INFO	Stopped listening on port 63939
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[G
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542371701416	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Jarek\\AppData\\Local\\Temp\\rust_mozprofile.1S1MnBvskucd"
+1542371703375	Marionette	INFO	Listening on port 64431
+1542371703528	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542371705016	Marionette	INFO	Stopped listening on port 64431
+[Child 2720, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+JavaScript error: https://sgqcvfjvr.onet.pl/YnVpbGQvezlzbG50YTJafWRsQXBpL2RsLmxpYntONWFzX0ZXMn0ubWluLmpz, line 1: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://sgqcvfjvr.onet.pl/YnVpbGQvezlzbG50YTJafWRsQXBpL2RsLmxpYntONWFzX0ZXMn0ubWluLmpz, line 1: NS_ERROR_NOT_INITIALIZED: 
+[Child 17652, Chrome_ChildThread] WARNING: pipe error: 232: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 513
+[Child 17652, Chrome_ChildThread] WARNING: [Parent 3220, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 19012, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 19012, Chrome_[GPU 1
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542371713918	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Jarek\\AppData\\Local\\Temp\\rust_mozprofile.taAix56AuYnJ"
+1542371715606	Marionette	INFO	Listening on port 64517
+1542371716049	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ocdn.eu/ramp/1746213/Screening-Universal/tpl.min.js, line 2: TypeError: this.service is undefined
+WebGL(000001E248CD4000)::ForceLoseContext
+JavaScript warning: resource://gre/modules/Troubleshoot.jsm, line 468: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* tryANGLE
+* Exhausted GL driver options.
+[Parent 10676, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15244, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/[Parent 10676, Gecko_IOThread] WARNING: pipe error: 232: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 513
+[Parent 10676, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 10676, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13124, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Child 13124, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/comm[Parent 10676, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 10676, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1542371967280	Marionette	INFO	Stopped listening on port 64517
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542372061981	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Jarek\\AppData\\Local\\Temp\\rust_mozprofile.rqtD3NT8jgot"
+1542372063170	Marionette	INFO	Listening on port 65321
+1542372063610	Marionette	WARN	TLS certificate errors will be ignored for this session
+WebGL(000001E764326000)::ForceLoseContext
+JavaScript warning: resource://gre/modules/Troubleshoot.jsm, line 468: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* tryANGLE
+* Exhausted GL driver options.
+[Parent 18500, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 5552, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 5552, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 18500, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1542372115342	Marionette	INFO	Stopped listening on port 65321
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 7640, Chrome_ChildThread] WARNING: pipe
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+error: Found argument '-e' which wasn't expected, or isn't valid in this context
+
+USAGE:
+    geckodriver.exe -v
+
+For more information try --help
